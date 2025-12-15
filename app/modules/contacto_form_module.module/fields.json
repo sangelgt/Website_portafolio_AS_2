@@ -1,0 +1,35 @@
+[
+  {
+    "id": "titulo_formulario",
+    "name": "titulo_formulario",
+    "label": "Título del Formulario",
+    "type": "text",
+    "default": "Hablemos de tu Proyecto"
+  },
+  {
+    "id": "formulario",
+    "name": "formulario",
+    "label": "Formulario de Contacto",
+    "type": "form",
+    "required": true
+  },
+  {
+    "id": "consentimiento_privacidad",
+    "name": "consentimiento_privacidad",
+    "label": "Consentimiento de Privacidad",
+    "type": "boolean",
+    "default": true
+  },
+  {
+    "id": "texto_privacidad",
+    "name": "texto_privacidad",
+    "label": "Texto de Política de Privacidad",
+    "type": "richtext",
+    "default": "<p>Acepto la política de privacidad y los términos de servicio.</p>",
+    "visibility": {
+      "controlling_field": "consentimiento_privacidad",
+      "controlling_value_regex": "true",
+      "operator": "EQUAL"
+    }
+  }
+]

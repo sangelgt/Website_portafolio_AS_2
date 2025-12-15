@@ -1,0 +1,16 @@
+<div class="authority-logos-container">
+  <div class="authority-logos-wrapper">
+
+    {# Bucle a través de cada logo en el repetidor #}
+    {% for item in module.logos %}
+      <div class="logo-item">
+        {% if item.logo_autoridad.src %}
+          <img src="{{ item.logo_autoridad.src }}"
+               alt="{{ item.logo_autoridad.alt }}"
+               loading="lazy">
+        {% endif %}
+      </div>
+    {% endfor %}
+
+  </div>
+</div>

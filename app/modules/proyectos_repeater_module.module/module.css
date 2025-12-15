@@ -1,0 +1,62 @@
+/* --- Estilos Base (Mobile-First) --- */
+.projects-section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5%;
+}
+
+.project-item-wrapper {
+  width: 100%;
+}
+
+.project-image-container {
+  position: relative; /* Contenedor padre para el posicionamiento absoluto */
+  width: 100%;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.authority-number {
+  position: absolute; /* Posicionamiento absoluto para el número */
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  /* Centrado de Precisión */
+  transform: translate(-50%, -50%);
+
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* --- Estilos para Tablets y Desktops (Min-Width) --- */
+@media (min-width: 768px) {
+  .projects-section-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .project-item-wrapper {
+    width: 48%; /* Dos proyectos por fila */
+  }
+
+  .authority-number {
+    font-size: 2rem; /* Aumentar tamaño de fuente en pantallas más grandes */
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-item-wrapper {
+    width: 32%; /* Tres proyectos por fila en pantallas grandes */
+  }
+}
