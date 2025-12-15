@@ -1,0 +1,80 @@
+/* --- Estilos Base (Mobile-First) --- */
+.home-hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10% 5%; /* Espaciado adaptable */
+}
+
+.home-hero-title {
+  font-size: 2.5rem; /* Tamaño de fuente relativo */
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+.home-hero-bio {
+  font-size: 1.1rem;
+  margin-bottom: 1.5em;
+  max-width: 90%; /* Ancho máximo para legibilidad */
+  line-height: 1.6;
+}
+
+.home-hero-cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cta {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 1em; /* Espacio entre botones en móvil */
+  border: 2px solid transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-primary {
+  color: #fff;
+}
+
+.cta-secondary {
+  background-color: transparent;
+  border-color: #000000;
+  color: #000000;
+}
+
+.cta-secondary:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+/* --- Estilos para Tablets y Desktops (Min-Width) --- */
+@media (min-width: 768px) {
+  .home-hero-container {
+    align-items: flex-start; /* Alinear a la izquierda en pantallas grandes */
+    text-align: left;
+  }
+
+  .home-hero-title {
+    font-size: 3.5rem; /* Aumentar tamaño de fuente */
+  }
+
+  .home-hero-bio {
+    max-width: 70ch; /* Limitar ancho para legibilidad */
+    font-size: 1.2rem;
+  }
+
+  .home-hero-cta-wrapper {
+    flex-direction: row; /* Alinear botones en fila */
+    justify-content: flex-start; /* Alinear a la izquierda */
+  }
+
+  .cta {
+    margin-right: 1.5em; /* Espacio entre botones */
+    margin-bottom: 0;
+  }
+}

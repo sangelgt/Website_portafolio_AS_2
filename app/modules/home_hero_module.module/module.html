@@ -1,0 +1,41 @@
+<div class="home-hero-container">
+
+  {# Título Principal - H1 #}
+  {% if module.titulo_principal %}
+    <h1 class="home-hero-title">{{ module.titulo_principal }}</h1>
+  {% endif %}
+
+  {# Biografía Detallada - Rich Text #}
+  {% if module.bio_detallada %}
+    <div class="home-hero-bio">
+      {{ module.bio_detallada }}
+    </div>
+  {% endif %}
+
+  {# Sección de Botones de CTA #}
+  <div class="home-hero-cta-wrapper">
+
+    {# CTA Principal #}
+    {% if module.cta_principal.texto and module.cta_principal.enlace.href %}
+      <a href="{{ module.cta_principal.enlace.href }}"
+         class="cta cta-primary"
+         {% if module.cta_principal.enlace.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.cta_principal.enlace.rel %}rel="{{ module.cta_principal.enlace.rel }}"{% endif %}
+         style="background-color: rgba({{ module.cta_color.color|convert_rgb }}, {{ module.cta_color.opacity / 100 }}); border-color: rgba({{ module.cta_color.color|convert_rgb }}, {{ module.cta_color.opacity / 100 }});">
+        {{ module.cta_principal.texto }}
+      </a>
+    {% endif %}
+
+    {# CTA Secundario #}
+    {% if module.cta_secundario.texto and module.cta_secundario.enlace.href %}
+      <a href="{{ module.cta_secundario.enlace.href }}"
+         class="cta cta-secondary"
+         {% if module.cta_secundario.enlace.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.cta_secundario.enlace.rel %}rel="{{ module.cta_secundario.enlace.rel }}"{% endif %}>
+        {{ module.cta_secundario.texto }}
+      </a>
+    {% endif %}
+
+  </div>
+
+</div>

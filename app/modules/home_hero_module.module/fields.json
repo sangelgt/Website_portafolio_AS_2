@@ -1,0 +1,79 @@
+[
+  {
+    "id": "titulo_principal",
+    "name": "titulo_principal",
+    "label": "Título Principal (H1)",
+    "type": "text",
+    "default": "Texto del Título Principal",
+    "required": true
+  },
+  {
+    "id": "bio_detallada",
+    "name": "bio_detallada",
+    "label": "Biografía Detallada",
+    "type": "richtext",
+    "default": "<p>Esta es una breve biografía o texto introductorio. Puede ser editado para añadir más detalles sobre la persona o el proyecto.</p>"
+  },
+  {
+    "id": "cta_principal",
+    "name": "cta_principal",
+    "label": "Botón de Llamada a la Acción Principal",
+    "type": "group",
+    "children": [
+      {
+        "id": "texto",
+        "name": "texto",
+        "label": "Texto del Botón",
+        "type": "text",
+        "default": "Contactar"
+      },
+      {
+        "id": "enlace",
+        "name": "enlace",
+        "label": "Enlace del Botón",
+        "type": "url",
+        "default": {
+          "href": "#",
+          "open_in_new_tab": false,
+          "rel": ""
+        }
+      }
+    ]
+  },
+  {
+    "id": "cta_secundario",
+    "name": "cta_secundario",
+    "label": "Botón de Llamada a la Acción Secundario",
+    "type": "group",
+    "children": [
+      {
+        "id": "texto",
+        "name": "texto",
+        "label": "Texto del Botón",
+        "type": "text",
+        "default": "Ver Proyectos"
+      },
+      {
+        "id": "enlace",
+        "name": "enlace",
+        "label": "Enlace del Botón",
+        "type": "url",
+        "default": {
+          "href": "#",
+          "open_in_new_tab": false,
+          "rel": ""
+        }
+      }
+    ]
+  },
+  {
+    "id": "cta_color",
+    "name": "cta_color",
+    "label": "Color del CTA Principal",
+    "type": "color",
+    "default": {
+      "color": "#8E248C",
+      "opacity": 100
+    }
+  }
+]

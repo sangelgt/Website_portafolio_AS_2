@@ -1,0 +1,31 @@
+<div class="projects-section-container">
+
+  {# Bucle a través de cada proyecto en el repetidor #}
+  {% for proyecto in module.proyectos %}
+    <div class="project-item-wrapper">
+
+      {# Contenedor Padre para Posicionamiento Relativo #}
+      <div class="project-image-container">
+
+        {# Imagen del Proyecto #}
+        {% if proyecto.imagen_proyecto.src %}
+          <img src="{{ proyecto.imagen_proyecto.src }}"
+               alt="{{ proyecto.imagen_proyecto.alt }}"
+               class="project-image"
+               loading="lazy">
+        {% endif %}
+
+        {# Número de Autoridad (span) - Posicionamiento Absoluto #}
+        {% if proyecto.numero_impacto %}
+          <span class="authority-number"
+              style="top: {{ proyecto.pos_y }}%; left: {{ proyecto.pos_x }}%;">
+            {{ proyecto.numero_impacto }}
+          </span>
+        {% endif %}
+
+      </div>
+
+    </div>
+  {% endfor %}
+
+</div>
