@@ -1,0 +1,50 @@
+[
+  {
+    "id": "proyectos",
+    "name": "proyectos",
+    "label": "Proyectos",
+    "type": "repeater",
+    "occurrence": {
+      "min": 1,
+      "default": 2
+    },
+    "children": [
+      {
+        "id": "imagen_proyecto",
+        "name": "imagen_proyecto",
+        "label": "Imagen del Proyecto",
+        "type": "image",
+        "required": true,
+        "default": {
+          "src": "https://via.placeholder.com/600x400",
+          "alt": "Imagen de un proyecto destacado"
+        }
+      },
+      {
+        "id": "numero_impacto",
+        "name": "numero_impacto",
+        "label": "Número de Impacto (Ej: $1.1M, +346%)",
+        "type": "text",
+        "default": "$1.1M"
+      },
+      {
+        "id": "pos_x",
+        "name": "pos_x",
+        "label": "Posición Horizontal (X %)",
+        "type": "number",
+        "default": 50,
+        "min": 0,
+        "max": 100
+      },
+      {
+        "id": "pos_y",
+        "name": "pos_y",
+        "label": "Posición Vertical (Y %)",
+        "type": "number",
+        "default": 50,
+        "min": 0,
+        "max": 100
+      }
+    ]
+  }
+]

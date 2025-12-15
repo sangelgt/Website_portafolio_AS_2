@@ -1,0 +1,26 @@
+[
+  {
+    "id": "logos_repeater",
+    "name": "logos",
+    "label": "Logos de Autoridad",
+    "type": "repeater",
+    "occurrence": {
+      "min": 1,
+      "max": 8,
+      "default": 4
+    },
+    "children": [
+      {
+        "id": "logo_autoridad",
+        "name": "logo_autoridad",
+        "label": "Logo de Autoridad",
+        "type": "image",
+        "required": true,
+        "default": {
+          "src": "https://via.placeholder.com/150",
+          "alt": "Logo de empresa colaboradora"
+        }
+      }
+    ]
+  }
+]

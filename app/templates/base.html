@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="{{ html_lang }}" {{ html_lang_dir }}>
+<head>
+    <meta charset="utf-8">
+    <title>{{ page_meta.html_title }}</title>
+
+    {# Standard HubSpot header includes #}
+    {{ standard_header_includes }}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    {# Contenedor principal del contenido de la página #}
+    <main id="main-content" class="body-container-wrapper" role="main">
+        {% dnd_area 'main_dnd_area'
+            label='Área de Arrastrar y Soltar Principal',
+            class='body-container'
+        %}
+        {% end_dnd_area %}
+    </main>
+
+    {# Standard HubSpot footer includes #}
+    {{ standard_footer_includes }}
+
+</body>
+</html>
