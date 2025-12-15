@@ -1,0 +1,43 @@
+[
+  {
+    "id": "titulo_principal",
+    "name": "titulo_principal",
+    "label": "Titular Principal (H1)",
+    "type": "text",
+    "default": "Soy Ángel Salazar: No Soy Solo un 'Programador', Soy un Arquitecto de Conversión.",
+    "required": true
+  },
+  {
+    "id": "subtitulo",
+    "name": "subtitulo",
+    "label": "Subtítulo (H2)",
+    "type": "text",
+    "default": "Mi trabajo es tomar un negocio con potencial y traducirlo a un sistema digital que vende, opera y escala con la mínima fricción humana."
+  },
+  {
+    "id": "contenido_principal",
+    "name": "contenido_principal",
+    "label": "Contenido Principal",
+    "type": "richtext",
+    "default": "<p>Durante años, he visto a empresas quemar cientos de miles de dólares en 'sitios web bonitos' que no convierten y en 'software a medida' que nadie usa. El problema es siempre el mismo: una desconexión total entre la operación del negocio y la tecnología que se supone que debe potenciarla.</p><p>Mi enfoque es radicalmente diferente. Yo no empiezo con el código, empiezo con el cuello de botella. ¿Dónde está el punto de fricción que, si se elimina, desata el crecimiento? ¿Es el proceso de ventas? ¿La captación de leads? ¿La entrega del servicio? Una vez identificado, construyo la solución tecnológica mínima y necesaria para resolver ESE problema, y solo ese.</p>"
+  },
+  {
+    "id": "logros",
+    "name": "logros",
+    "label": "Lo que Logrará con Mi Enfoque (Lista)",
+    "type": "repeater",
+    "occurrence": {
+      "min": 1,
+      "default": 3
+    },
+    "children": [
+      {
+        "id": "logro_item",
+        "name": "logro_item",
+        "label": "Elemento de la Lista",
+        "type": "text",
+        "default": "Un sistema, no solo un sitio web."
+      }
+    ]
+  }
+]
