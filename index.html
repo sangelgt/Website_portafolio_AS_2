@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Angel Salazar - Portafolio Estratégico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Hubot+Sans:wght@300;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Base Styles */
+        :root {
+            --purple-transformation: #8E248C;
+            --black: #000000;
+            --white: #FFFFFF;
+        }
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: var(--black);
+            color: var(--white);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1, h2, h3, h4 {
+            margin: 0;
+            padding: 2rem 0;
+        }
+        h1 {
+            font-family: 'Hubot Sans', sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+        h2, h3 {
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 400;
+        }
+        h4 {
+            font-family: 'Hubot Sans', sans-serif;
+            font-weight: 800;
+        }
+        p, small, cite, input, textarea, button, label {
+            font-family: sans-serif;
+        }
+        .header, .footer {
+            padding: 1rem;
+        }
+        .header__nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .header__nav a, .footer a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        .section--white {
+            background-color: var(--white);
+            color: var(--black);
+        }
+        .section--black {
+            background-color: var(--black);
+            color: var(--white);
+        }
+
+        /* home_hero_module.module.css */
+        .home-hero { padding: 4rem 2rem; }
+        .cta-buttons { margin-top: 2rem; }
+        .cta-primary, .cta-secondary { display: inline-block; padding: 1rem 2rem; text-decoration: none; font-weight: bold; border-radius: 5px; margin: 0.5rem; }
+        .cta-primary { background-color: var(--purple-transformation); color: var(--white); }
+        .cta-secondary { border: 2px solid var(--purple-transformation); color: var(--purple-transformation); }
+
+        /* authority_logos_module.module.css */
+        .authority-logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2rem; padding: 2rem 0; }
+        .authority-logos img { height: 50px; }
+
+        /* methodology_module.module.css */
+        .methodology { padding: 4rem 2rem; }
+        .pillars { display: flex; flex-direction: column; md:flex-direction: row; justify-content: space-around; gap: 2rem; margin-top: 2rem; }
+        .pillar { flex: 1; }
+        .ceremony { margin-top: 4rem; }
+
+        /* proyectos_module.module.css */
+        .proyectos { padding: 4rem 2rem; }
+        .project { margin-bottom: 4rem; }
+        .roi-figures { display: flex; flex-direction: column; md:flex-direction: row; justify-content: space-around; gap: 2rem; margin-top: 2rem; }
+        .roi-figure { flex: 1; }
+
+        /* contacto_form_module.module.css */
+        .contacto-form { padding: 4rem 2rem; }
+        .form-container { max-width: 500px; margin: 2rem auto; text-align: left; }
+        .form-container label { display: block; margin-bottom: 0.5rem; }
+        .form-container input, .form-container select { width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #555; background-color: #222; color: white; border-radius: 4px; }
+        .form-container button { width: 100%; padding: 1rem; background-color: var(--purple-transformation); color: white; border: none; font-weight: bold; border-radius: 4px; cursor: pointer; }
+        .security-microcopy { margin-top: 1rem; font-size: 0.8rem; opacity: 0.8; }
+        .testimonial { margin-top: 4rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .testimonial blockquote { font-style: italic; font-size: 1.2rem; border-left: 3px solid var(--purple-transformation); padding-left: 1rem; margin: 0; text-align: left; }
+        .testimonial cite { display: block; margin-top: 1rem; font-weight: bold; text-align: right; }
+    </style>
+</head>
+<body>
+    <div class="body-container-wrapper">
+        <header class="header">
+            <div class="header__logo">
+                <a href="/">Angel Salazar</a>
+            </div>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#metodologia">Mi Metodología</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content" role="main">
+            <div class="section--black">
+                <div class="home-hero">
+                    <h1>Deje de Comprar Herramientas de IA. Comience a Construir Sistemas de Rentabilidad.</h1>
+                    <h2>Socio Estratégico para PyMEs LATAM. Garantizamos el ROI en IA/Automatización con Mitigación de Riesgo Estructural y medición del delta financiero verificable a 90 días.</h2>
+                    <div class="cta-buttons">
+                        <a href="#contacto" class="cta-primary">Agenda tu Diagnóstico Operativo (ROI Garantizado)</a>
+                        <a href="#" class="cta-secondary">Descargar Marco de Mitigación de Riesgo IA (Gratis)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section--white">
+                <div class="authority-logos">
+                    <img src="https://via.placeholder.com/150" alt="Logo de empresa colaboradora">
+                    <img src="https://via.placeholder.com/150" alt="Logo de empresa colaboradora">
+                    <img src="https://via.placeholder.com/150" alt="Logo de empresa colaboradora">
+                    <img src="https://via.placeholder.com/150" alt="Logo de empresa colaboradora">
+                </div>
+            </div>
+            <div class="section--black">
+                <div class="methodology" id="metodologia">
+                    <h2>MI METODOLOGÍA</h2>
+                    <div class="pillars">
+                        <div class="pillar">
+                            <h3>Orquestación de Procesos</h3>
+                            <p>La causa del fracaso es automatizar tareas aisladas. Nosotros orquestamos procesos de negocio completos.</p>
+                        </div>
+                        <div class="pillar">
+                            <h3>Gobernanza Clara</h3>
+                            <p>Introducimos la figura del 'AI Owner' para garantizar la gobernanza y la responsabilidad de los resultados.</p>
+                        </div>
+                        <div class="pillar">
+                            <h3>Sistematización de Lecciones Aprendidas (LL)</h3>
+                            <p>Evitamos la amnesia organizacional sistematizando las lecciones aprendidas para la mejora continua.</p>
+                        </div>
+                    </div>
+                    <div class="ceremony">
+                        <h4>Ceremonia de Resultados Financieros</h4>
+                        <p>Medimos el delta financiero real, no las métricas de vanidad. Aquí es donde se demuestra el ROI.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section--white">
+                <div class="proyectos" id="proyectos">
+                    <h2>PROYECTOS</h2>
+                    <div class="project">
+                        <h3>Acme Corp.</h3>
+                        <p>Análisis post-mortem de la implementación de un sistema de automatización de marketing. Se identificaron cuellos de botella en el proceso de ventas y se implementó una solución que...</p>
+                        <div class="roi-figures">
+                            <div class="roi-figure">
+                                <h4>30%</h4>
+                                <p>Reducción en tiempo de respuesta</p>
+                            </div>
+                            <div class="roi-figure">
+                                <h4>35%</h4>
+                                <p>Aumento en tasa de conversión</p>
+                            </div>
+                            <div class="roi-figure">
+                                <h4>2</h4>
+                                <p>Ahorro de horas diarias de trabajo administrativo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section--black">
+                <div class="contacto-form" id="contacto">
+                    <h2>Solicita tu Diagnóstico Estratégico Sin Costo</h2>
+                    <div class="form-container">
+                        <form onsubmit="alert('Gracias por tu mensaje. Este es un formulario de demostración.'); return false;">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="email">Correo Empresarial</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="company-size">Tamaño de la Empresa</label>
+                            <select id="company-size" name="company-size" required>
+                                <option value="1-10">1-10 empleados</option>
+                                <option value="11-50">11-50 empleados</option>
+                                <option value="51-200">51-200 empleados</option>
+                                <option value="201+">201+ empleados</option>
+                            </select>
+                            <button type="submit">Obtener mi Diagnóstico de ROI</button>
+                        </form>
+                    </div>
+                    <div class="security-microcopy">
+                        <small>Tu correo está seguro. Odiamos el spam tanto como tú.</small>
+                    </div>
+                    <div class="testimonial">
+                        <blockquote>"Transformaron nuestro caos operativo en un sistema rentable. Su enfoque en el ROI es real y medible."</blockquote>
+                        <cite>- CEO, Acme Corp.</cite>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__copyright">
+                <p>&copy; 2024 Angel Salazar. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer__social">
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
