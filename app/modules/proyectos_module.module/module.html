@@ -1,0 +1,23 @@
+<div class="proyectos" id="proyectos">
+    <h2>{{ module.title }}</h2>
+    {% for project in module.projects %}
+        <div class="project">
+            <h3>{{ project.name }}</h3>
+            <p>{{ project.description }}</p>
+            <div class="roi-figures">
+                <div class="roi-figure">
+                    <h4>{{ project.roi_figure1_number }}</h4>
+                    <p>{{ project.roi_figure1_label }}</p>
+                </div>
+                <div class="roi-figure">
+                    <h4>{{ project.roi_figure2_number }}</h4>
+                    <p>{{ project.roi_figure2_label }}</p>
+                </div>
+                <div class="roi-figure">
+                    <h4>{{ project.roi_figure3_number }}</h4>
+                    <p>{{ project.roi_figure3_label }}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>

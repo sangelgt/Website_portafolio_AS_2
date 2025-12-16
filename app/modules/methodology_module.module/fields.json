@@ -1,0 +1,65 @@
+[
+  {
+    "id": "title",
+    "name": "title",
+    "label": "Title",
+    "type": "text",
+    "default": "MI METODOLOGÍA"
+  },
+  {
+    "id": "pillar1_title",
+    "name": "pillar1_title",
+    "label": "Pillar 1 Title",
+    "type": "text",
+    "default": "Orquestación de Procesos"
+  },
+  {
+    "id": "pillar1_description",
+    "name": "pillar1_description",
+    "label": "Pillar 1 Description",
+    "type": "text",
+    "default": "La causa del fracaso es automatizar tareas aisladas. Nosotros orquestamos procesos de negocio completos."
+  },
+  {
+    "id": "pillar2_title",
+    "name": "pillar2_title",
+    "label": "Pillar 2 Title",
+    "type": "text",
+    "default": "Gobernanza Clara"
+  },
+  {
+    "id": "pillar2_description",
+    "name": "pillar2_description",
+    "label": "Pillar 2 Description",
+    "type": "text",
+    "default": "Introducimos la figura del 'AI Owner' para garantizar la gobernanza y la responsabilidad de los resultados."
+  },
+  {
+    "id": "pillar3_title",
+    "name": "pillar3_title",
+    "label": "Pillar 3 Title",
+    "type": "text",
+    "default": "Sistematización de Lecciones Aprendidas (LL)"
+  },
+  {
+    "id": "pillar3_description",
+    "name": "pillar3_description",
+    "label": "Pillar 3 Description",
+    "type": "text",
+    "default": "Evitamos la amnesia organizacional sistematizando las lecciones aprendidas para la mejora continua."
+  },
+  {
+    "id": "ceremony_title",
+    "name": "ceremony_title",
+    "label": "Ceremony Title",
+    "type": "text",
+    "default": "Ceremonia de Resultados Financieros"
+  },
+  {
+    "id": "ceremony_description",
+    "name": "ceremony_description",
+    "label": "Ceremony Description",
+    "type": "text",
+    "default": "Medimos el delta financiero real, no las métricas de vanidad. Aquí es donde se demuestra el ROI."
+  }
+]

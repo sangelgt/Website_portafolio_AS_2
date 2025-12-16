@@ -1,68 +1,20 @@
-<div class="contact-form-container">
-
-  {# Título del Formulario #}
-  {% if module.titulo_formulario %}
-    <h2 class="form-title">{{ module.titulo_formulario }}</h2>
-  {% endif %}
-
-  {# Contenedor para Mensajes de Error de Formulario (Accesibilidad) #}
-  {# Este div con role="alert" anunciará los errores a los lectores de pantalla #}
-  <div id="form-submission-errors" role="alert" aria-live="assertive"></div>
-
-  {# Renderizado del Formulario de HubSpot #}
-  {% if module.formulario %}
-    {{ hubspot_form(form_id=module.formulario, form_type='HUBSPOT') }}
-  {% endif %}
-
+<div class="contacto-form" id="contacto">
+    <h2>{{ module.title }}</h2>
+    <div class="form-container">
+        {% form
+            form_id="{{ module.form.form_id }}"
+            response_response_type="{{ module.form.response_type }}"
+            response_message="{{ module.form.message }}"
+            response_redirect_id="{{ module.form.redirect_id }}"
+            response_redirect_url="{{ module.form.redirect_url }}"
+            gotowebinar_webinar_key="{{ module.form.gotowebinar_webinar_key }}"
+        %}
+    </div>
+    <div class="security-microcopy">
+        <small>{{ module.microcopy }}</small>
+    </div>
+    <div class="testimonial">
+        <blockquote>"{{ module.testimonial_text }}"</blockquote>
+        <cite>- {{ module.testimonial_author }}</cite>
+    </div>
 </div>
-
-{# Script para mejorar la accesibilidad del formulario de HubSpot #}
-{# Demuestra cómo se manejarían los atributos ARIA dinámicamente #}
-<script>
-  window.addEventListener('message', event => {
-    if (event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmit') {
-      const form = event.data.data.form;
-
-      // Vaciar los errores anteriores al reenviar
-      const errorContainer = document.getElementById('form-submission-errors');
-      if (errorContainer) {
-        errorContainer.innerHTML = '';
-      }
-
-      // Simulación de validación: HubSpot maneja esto, pero aquí se demuestra el concepto.
-      // En una implementación real, se verificaría la respuesta de la API.
-      // Si hubiera errores de validación...
-      const errors = form.querySelectorAll('.hs-error-msg');
-      let errorMessages = [];
-
-      errors.forEach(error => {
-        const input = error.previousElementSibling; // El input asociado al error
-        if (input) {
-          input.setAttribute('aria-invalid', 'true'); // Marcar el campo como inválido
-          errorMessages.push(error.textContent);
-        }
-      });
-
-      // Si se encontraron errores, se anuncian en el contenedor de alerta.
-      if (errorMessages.length > 0 && errorContainer) {
-        errorContainer.innerHTML = '<h3>Errores de validación:</h3><ul>' +
-                                   errorMessages.map(msg => `<li>${msg}</li>`).join('') +
-                                   '</ul>';
-      }
-    }
-
-    // Limpiar 'aria-invalid' cuando el usuario empieza a corregir un campo
-    if (event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormValidation') {
-       const form = event.data.data.form;
-       const inputs = form.querySelectorAll('input, textarea, select');
-       inputs.forEach(input => {
-         if (input.getAttribute('aria-invalid') === 'true' && input.value !== '') {
-           const errorMsg = input.nextElementSibling;
-           if (!errorMsg || !errorMsg.classList.contains('hs-error-msg')) {
-                input.setAttribute('aria-invalid', 'false');
-           }
-         }
-       });
-    }
-  });
-</script>

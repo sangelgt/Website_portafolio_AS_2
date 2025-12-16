@@ -1,0 +1,18 @@
+.methodology {
+    padding: 4rem 2rem;
+}
+
+.pillars {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.pillar {
+    flex: 1;
+}
+
+.ceremony {
+    margin-top: 4rem;
+}
