@@ -1,35 +1,41 @@
 [
   {
-    "id": "titulo_formulario",
-    "name": "titulo_formulario",
-    "label": "Título del Formulario",
+    "id": "title",
+    "name": "title",
+    "label": "Title",
     "type": "text",
-    "default": "Hablemos de tu Proyecto"
+    "default": "Solicita tu Diagnóstico Estratégico Sin Costo"
   },
   {
-    "id": "formulario",
-    "name": "formulario",
-    "label": "Formulario de Contacto",
+    "id": "form",
+    "name": "form",
+    "label": "Form",
     "type": "form",
-    "required": true
-  },
-  {
-    "id": "consentimiento_privacidad",
-    "name": "consentimiento_privacidad",
-    "label": "Consentimiento de Privacidad",
-    "type": "boolean",
-    "default": true
-  },
-  {
-    "id": "texto_privacidad",
-    "name": "texto_privacidad",
-    "label": "Texto de Política de Privacidad",
-    "type": "richtext",
-    "default": "<p>Acepto la política de privacidad y los términos de servicio.</p>",
-    "visibility": {
-      "controlling_field": "consentimiento_privacidad",
-      "controlling_value_regex": "true",
-      "operator": "EQUAL"
+    "default": {
+      "form_id": "",
+      "response_type": "inline",
+      "message": "Gracias por tu mensaje. Nos pondremos en contacto contigo en breve."
     }
+  },
+  {
+    "id": "microcopy",
+    "name": "microcopy",
+    "label": "Security Microcopy",
+    "type": "text",
+    "default": "Tu correo está seguro. Odiamos el spam tanto como tú."
+  },
+  {
+    "id": "testimonial_text",
+    "name": "testimonial_text",
+    "label": "Testimonial Text",
+    "type": "textarea",
+    "default": "Transformaron nuestro caos operativo en un sistema rentable. Su enfoque en el ROI es real y medible."
+  },
+  {
+    "id": "testimonial_author",
+    "name": "testimonial_author",
+    "label": "Testimonial Author",
+    "type": "text",
+    "default": "CEO, Acme Corp."
   }
 ]

@@ -1,79 +1,44 @@
 [
   {
-    "id": "titulo_principal",
-    "name": "titulo_principal",
-    "label": "Título Principal (H1)",
+    "id": "title",
+    "name": "title",
+    "label": "Title",
     "type": "text",
-    "default": "Texto del Título Principal",
-    "required": true
+    "default": "Deje de Comprar Herramientas de IA. Comience a Construir Sistemas de Rentabilidad."
   },
   {
-    "id": "bio_detallada",
-    "name": "bio_detallada",
-    "label": "Biografía Detallada",
-    "type": "richtext",
-    "default": "<p>Esta es una breve biografía o texto introductorio. Puede ser editado para añadir más detalles sobre la persona o el proyecto.</p>"
+    "id": "subtitle",
+    "name": "subtitle",
+    "label": "Subtitle",
+    "type": "text",
+    "default": "Socio Estratégico para PyMEs LATAM. Garantizamos el ROI en IA/Automatización con Mitigación de Riesgo Estructural y medición del delta financiero verificable a 90 días."
   },
   {
-    "id": "cta_principal",
-    "name": "cta_principal",
-    "label": "Botón de Llamada a la Acción Principal",
-    "type": "group",
-    "children": [
-      {
-        "id": "texto",
-        "name": "texto",
-        "label": "Texto del Botón",
-        "type": "text",
-        "default": "Contactar"
-      },
-      {
-        "id": "enlace",
-        "name": "enlace",
-        "label": "Enlace del Botón",
-        "type": "url",
-        "default": {
-          "href": "#",
-          "open_in_new_tab": false,
-          "rel": ""
-        }
-      }
-    ]
+    "id": "primary_cta_text",
+    "name": "primary_cta_text",
+    "label": "Primary CTA Text",
+    "type": "text",
+    "default": "Agenda tu Diagnóstico Operativo (ROI Garantizado)"
   },
   {
-    "id": "cta_secundario",
-    "name": "cta_secundario",
-    "label": "Botón de Llamada a la Acción Secundario",
-    "type": "group",
-    "children": [
-      {
-        "id": "texto",
-        "name": "texto",
-        "label": "Texto del Botón",
-        "type": "text",
-        "default": "Ver Proyectos"
-      },
-      {
-        "id": "enlace",
-        "name": "enlace",
-        "label": "Enlace del Botón",
-        "type": "url",
-        "default": {
-          "href": "#",
-          "open_in_new_tab": false,
-          "rel": ""
-        }
-      }
-    ]
+    "id": "primary_cta_link",
+    "name": "primary_cta_link",
+    "label": "Primary CTA Link",
+    "type": "text",
+    "default": "#contacto"
   },
   {
-    "id": "cta_color",
-    "name": "cta_color",
-    "label": "Color del CTA Principal",
-    "type": "color",
-    "default": {
-      "color": "#8E248C",
-      "opacity": 100
-    }
+    "id": "secondary_cta_text",
+    "name": "secondary_cta_text",
+    "label": "Secondary CTA Text",
+    "type": "text",
+    "default": "Descargar Marco de Mitigación de Riesgo IA (Gratis)"
+  },
+  {
+    "id": "secondary_cta_link",
+    "name": "secondary_cta_link",
+    "label": "Secondary CTA Link",
+    "type": "text",
+    "default": "#"
   }
 ]
