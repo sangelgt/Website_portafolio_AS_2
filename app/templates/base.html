@@ -1,27 +1,92 @@
 <!doctype html>
-<html lang="{{ html_lang }}" {{ html_lang_dir }}>
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <title>{{ page_meta.html_title }}</title>
-
-    {# Standard HubSpot header includes #}
-    {{ standard_header_includes }}
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {# Google Fonts #}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Hubot+Sans:wght@300;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --purple-transformation: #8E248C;
+            --black: #000000;
+            --white: #FFFFFF;
+        }
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: var(--black);
+            color: var(--white);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1, h2, h3, h4 {
+            margin: 0;
+            padding: 2rem 0;
+        }
+        h1 {
+            font-family: 'Hubot Sans', sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+        h2, h3 {
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 400;
+        }
+        h4 {
+            font-family: 'Hubot Sans', sans-serif;
+            font-weight: 800;
+        }
+        p {
+            font-family: sans-serif;
+        }
+        small {
+            font-family: sans-serif;
+        }
+        .header, .footer {
+            padding: 1rem;
+        }
+        .header__nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .header__nav a, .footer a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        .section--white {
+            background-color: var(--white);
+            color: var(--black);
+        }
+        .section--black {
+            background-color: var(--black);
+            color: var(--white);
+        }
+    </style>
+    {{ standard_header_includes }}
 </head>
 <body>
+    <div class="body-container-wrapper">
+        {% block header %}
+            {% include "./partials/header.html" %}
+        {% endblock header %}
 
-    {# Contenedor principal del contenido de la página #}
-    <main id="main-content" class="body-container-wrapper" role="main">
-        {% dnd_area 'main_dnd_area'
-            label='Área de Arrastrar y Soltar Principal',
-            class='body-container'
-        %}
-        {% end_dnd_area %}
-    </main>
+        <main id="main-content" role="main">
+            {% block body %}{% endblock body %}
+        </main>
 
-    {# Standard HubSpot footer includes #}
+        {% block footer %}
+            {% include "./partials/footer.html" %}
+        {% endblock footer %}
+    </div>
     {{ standard_footer_includes }}
-
 </body>
 </html>

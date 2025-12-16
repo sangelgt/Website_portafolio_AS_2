@@ -1,0 +1,78 @@
+[
+  {
+    "id": "title",
+    "name": "title",
+    "label": "Title",
+    "type": "text",
+    "default": "PROYECTOS"
+  },
+  {
+    "id": "projects",
+    "name": "projects",
+    "label": "Projects",
+    "type": "repeater",
+    "occurrence": {
+      "min": 1,
+      "max": null,
+      "default": 1
+    },
+    "fields": [
+      {
+        "id": "name",
+        "name": "name",
+        "label": "Project Name",
+        "type": "text",
+        "default": "Acme Corp."
+      },
+      {
+        "id": "description",
+        "name": "description",
+        "label": "Description",
+        "type": "textarea",
+        "default": "Análisis post-mortem de la implementación de un sistema de automatización de marketing. Se identificaron cuellos de botella en el proceso de ventas y se implementó una solución que..."
+      },
+      {
+        "id": "roi_figure1_number",
+        "name": "roi_figure1_number",
+        "label": "ROI Figure 1 Number",
+        "type": "text",
+        "default": "30%"
+      },
+      {
+        "id": "roi_figure1_label",
+        "name": "roi_figure1_label",
+        "label": "ROI Figure 1 Label",
+        "type": "text",
+        "default": "Reducción en tiempo de respuesta"
+      },
+      {
+        "id": "roi_figure2_number",
+        "name": "roi_figure2_number",
+        "label": "ROI Figure 2 Number",
+        "type": "text",
+        "default": "35%"
+      },
+      {
+        "id": "roi_figure2_label",
+        "name": "roi_figure2_label",
+        "label": "ROI Figure 2 Label",
+        "type": "text",
+        "default": "Aumento en tasa de conversión"
+      },
+      {
+        "id": "roi_figure3_number",
+        "name": "roi_figure3_number",
+        "label": "ROI Figure 3 Number",
+        "type": "text",
+        "default": "2"
+      },
+      {
+        "id": "roi_figure3_label",
+        "name": "roi_figure3_label",
+        "label": "ROI Figure 3 Label",
+        "type": "text",
+        "default": "Ahorro de horas diarias de trabajo administrativo"
+      }
+    ]
+  }
+]
