@@ -1,0 +1,122 @@
+{
+  "label": "Problem vs. Solution",
+  "css_assets": [],
+  "external_js": [],
+  "global": false,
+  "host_template_types": ["PAGE"],
+  "js_assets": [],
+  "module_id": 3344556677,
+  "fields": [
+    {
+      "id": "title",
+      "name": "title",
+      "label": "Title",
+      "type": "text",
+      "default": "El Problema vs. La Solución"
+    },
+    {
+      "id": "subtitle",
+      "name": "subtitle",
+      "label": "Subtitle",
+      "type": "textarea",
+      "default": "La diferencia entre gastar presupuesto en \"juguetes\" tecnológicos y generar capital con sistemas estratégicos."
+    },
+    {
+      "id": "problem_column",
+      "name": "problem_column",
+      "label": "Problem Column",
+      "type": "group",
+      "children": [
+        {
+          "id": "icon",
+          "name": "icon",
+          "label": "Icon (Material Symbols Outlined)",
+          "type": "text",
+          "default": "money_off"
+        },
+        {
+          "id": "title",
+          "name": "title",
+          "label": "Title",
+          "type": "text",
+          "default": "Comprar Herramientas"
+        },
+        {
+          "id": "list_items",
+          "name": "list_items",
+          "label": "List Items",
+          "type": "repeater",
+          "occurrence": { "min": 1, "default": 4 },
+          "fields": [
+            {
+              "id": "icon",
+              "name": "icon",
+              "label": "Icon (Material Symbols Outlined)",
+              "type": "text",
+              "default": "close"
+            },
+            {
+              "id": "text",
+              "name": "text",
+              "label": "Text",
+              "type": "text",
+              "default": "Foco en características, no en resultados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "solution_column",
+      "name": "solution_column",
+      "label": "Solution Column",
+      "type": "group",
+      "children": [
+        {
+          "id": "badge_text",
+          "name": "badge_text",
+          "label": "Badge Text",
+          "type": "text",
+          "default": "RECOMENDADO"
+        },
+        {
+          "id": "icon",
+          "name": "icon",
+          "label": "Icon (Material Symbols Outlined)",
+          "type": "text",
+          "default": "trending_up"
+        },
+        {
+          "id": "title",
+          "name": "title",
+          "label": "Title",
+          "type": "text",
+          "default": "Construir Sistemas"
+        },
+        {
+          "id": "list_items",
+          "name": "list_items",
+          "label": "List Items",
+          "type": "repeater",
+          "occurrence": { "min": 1, "default": 4 },
+          "fields": [
+            {
+              "id": "icon",
+              "name": "icon",
+              "label": "Icon (Material Symbols Outlined)",
+              "type": "text",
+              "default": "check_circle"
+            },
+            {
+              "id": "text",
+              "name": "text",
+              "label": "Text",
+              "type": "text",
+              "default": "Ingeniería inversa desde objetivos financieros."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,228 +1,186 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html class="dark" lang="es">
 <head>
-    <meta charset="utf-8">
-    <title>Angel Salazar - Portafolio Estratégico</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Home: Construye Sistemas de Rentabilidad</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #221910;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    /* header.module.css */
+    .site-header{position:fixed;top:0;left:0;width:100%;z-index:50;border-bottom:1px solid #493622;background-color:rgba(34,25,16,0.95);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.site-header__container{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.5rem;max-width:1280px;margin-left:auto;margin-right:auto}.site-header__branding{display:flex;align-items:center}.site-header__logo-link{display:flex;align-items:center;gap:.75rem;text-decoration:none;color:#fff}.site-header__logo-placeholder{display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;background-color:rgba(242,127,13,.2);border-radius:.5rem;color:#f27f0d}.site-header__logo-img{width:2rem;height:2rem;object-fit:contain}.site-header__logo-text{font-size:1.125rem;font-weight:700;line-height:1.2;letter-spacing:-.015em}.site-header__nav{display:none}.site-header__nav-link{color:rgba(255,255,255,.8);text-decoration:none;font-size:.875rem;font-weight:500;transition:color .2s ease-in-out}.site-header__nav-link:hover{color:#fff}.site-header__actions{display:flex;align-items:center;gap:1rem}.site-header__cta-button{display:flex;align-items:center;justify-content:center;min-width:84px;height:2.5rem;padding:0 1.5rem;background-color:#f27f0d;color:#231a10;border-radius:.5rem;font-size:.875rem;font-weight:700;text-decoration:none;transition:background-color .2s ease-in-out;text-align:center}.site-header__cta-button:hover{background-color:#e6780c}.site-header__mobile-toggle{display:block;background:0 0;border:none;color:#fff;cursor:pointer;padding:.5rem}@media (min-width:768px){.site-header__container{padding:1rem 2.5rem}.site-header__nav{display:flex;align-items:center;gap:2rem}.site-header__mobile-toggle{display:none}}
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Hubot+Sans:wght@300;800&display=swap" rel="stylesheet">
+    /* hero_home.module.css */
+    .hero-home{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;min-height:100vh;padding:6rem 1rem 4rem;background-color:#221910;overflow:hidden;text-align:center}.hero-home__bg-overlay{position:absolute;inset:0;z-index:0;opacity:.2;background-image:radial-gradient(ellipse at top,rgba(242,127,13,.3),#221910,#221910)}.hero-home__container{position:relative;z-index:10;display:flex;flex-direction:column;align-items:center;gap:2.5rem;width:100%;max-width:960px}.hero-home__pre-headline-wrapper{animation:fade-in-up .6s ease-out}.hero-home__pre-headline{display:inline-flex;align-items:center;gap:.75rem;padding:.5rem 1rem;border-radius:9999px;border:1px solid rgba(239,68,68,.3);background-color:rgba(239,68,68,.1);color:#fecaca;font-size:.875rem;backdrop-filter:blur(16px)}.hero-home__pre-headline-icon{font-family:'Material Symbols Outlined';font-size:18px;color:#ef4444}.hero-home__content{display:flex;flex-direction:column;gap:1.5rem}.hero-home__headline{color:#fff;font-size:2.25rem;font-weight:900;line-height:1.1;letter-spacing:-.033em}.hero-home__headline .highlight{background-image:linear-gradient(to right,#f27f0d,#fed7aa);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-home__sub-headline{max-width:720px;margin-left:auto;margin-right:auto;font-size:1.125rem;color:#d1d5db;font-weight:300;line-height:1.75}.hero-home__actions{display:flex;flex-direction:column;align-items:center;gap:1rem;width:100%}.hero-home__cta{display:flex;min-width:200px;cursor:pointer;align-items:center;justify-content:center;gap:.5rem;border-radius:.5rem;height:3.5rem;padding:0 2rem;text-decoration:none;transition:all .3s ease;font-size:1rem;width:100%;max-width:300px}.hero-home__cta--primary{background-color:#f27f0d;color:#231a10;font-weight:700;box-shadow:0 0 20px rgba(242,127,13,.3)}.hero-home__cta--primary:hover{background-color:#dd720c;box-shadow:0 0 30px rgba(242,127,13,.5)}.hero-home__cta--primary .hero-home__cta-icon{font-family:'Material Symbols Outlined';transition:transform .3s ease}.hero-home__cta--primary:hover .hero-home__cta-icon{transform:translateX(4px)}.hero-home__cta--secondary{border:1px solid #493622;color:#fff;font-weight:500}.hero-home__cta--secondary:hover{background-color:#2c2117}@media (min-width:640px){.hero-home__actions{flex-direction:row;justify-content:center}.hero-home__cta{width:auto}}@media (min-width:768px){.hero-home__headline{font-size:3.75rem}.hero-home__sub-headline{font-size:1.25rem}}@media (min-width:1024px){.hero-home__headline{font-size:4.5rem}}@keyframes fade-in-up{0%{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 
-    <style>
-        /* Base Styles */
-        :root {
-            --purple-transformation: #8E248C;
-            --black: #000000;
-            --white: #FFFFFF;
-        }
-        body {
-            font-family: 'Roboto Mono', monospace;
-            background-color: var(--black);
-            color: var(--white);
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        h1, h2, h3, h4 {
-            margin: 0;
-            padding: 2rem 0;
-        }
-        h1 {
-            font-family: 'Hubot Sans', sans-serif;
-            font-weight: 300;
-            font-style: italic;
-        }
-        h2, h3 {
-            font-family: 'Roboto Mono', monospace;
-            font-weight: 400;
-        }
-        h4 {
-            font-family: 'Hubot Sans', sans-serif;
-            font-weight: 800;
-        }
-        p, small, cite, input, textarea, button, label {
-            font-family: sans-serif;
-        }
-        .header, .footer {
-            padding: 1rem;
-        }
-        .header__nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-        .header__nav a, .footer a {
-            color: var(--white);
-            text-decoration: none;
-        }
-        .section--white {
-            background-color: var(--white);
-            color: var(--black);
-        }
-        .section--black {
-            background-color: var(--black);
-            color: var(--white);
-        }
+    /* logo_cloud.module.css */
+    .logo-cloud{width:100%;padding:2.5rem 1rem;border-top:1px solid rgba(73,54,34,.5)}.logo-cloud__container{max-width:1280px;margin-left:auto;margin-right:auto}.logo-cloud__title{text-align:center;font-size:.875rem;font-weight:500;color:#a0aec0;margin-bottom:2rem;text-transform:uppercase;letter-spacing:.1em}.logo-cloud__logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2.5rem;opacity:.6;filter:grayscale(100%);transition:all .5s ease-in-out}.logo-cloud__logos:hover{opacity:1;filter:grayscale(0%)}.logo-cloud__logo-item{display:flex;align-items:center;gap:.5rem;font-size:1.25rem;font-weight:700;color:#fff}.logo-cloud__logo-icon{font-family:'Material Symbols Outlined';font-size:1.875rem}@media (min-width:768px){.logo-cloud__logos{gap:4rem}}
 
-        /* home_hero_module.module.css */
-        .home-hero { padding: 4rem 2rem; }
-        .cta-buttons { margin-top: 2rem; }
-        .cta-primary, .cta-secondary { display: inline-block; padding: 1rem 2rem; text-decoration: none; font-weight: bold; border-radius: 5px; margin: 0.5rem; }
-        .cta-primary { background-color: var(--purple-transformation); color: var(--white); }
-        .cta-secondary { border: 2px solid var(--purple-transformation); color: var(--purple-transformation); }
+    /* problem_solution.module.css */
+    .problem-solution{padding:5rem 1rem;background-color:rgba(45,36,27,.18)}.problem-solution__container{max-width:1100px;margin-left:auto;margin-right:auto;display:flex;flex-direction:column;gap:3rem}.problem-solution__header{text-align:center;display:flex;flex-direction:column;gap:1rem}.problem-solution__title{font-size:1.875rem;font-weight:700;color:#fff}.problem-solution__subtitle{color:#a0aec0;max-width:42rem;margin-left:auto;margin-right:auto}.problem-solution__grid{display:grid;grid-template-columns:1fr;gap:2rem}.problem-solution__card{position:relative;display:flex;flex-direction:column;gap:1.5rem;padding:2rem;border-radius:.75rem}.problem-solution__card--problem{border:1px solid rgba(127,29,29,.3);background-color:rgba(127,29,29,.05)}.problem-solution__card--solution{border:1px solid rgba(242,127,13,.3);background-color:rgba(242,127,13,.05)}.problem-solution__card-badge{position:absolute;top:0;right:0;margin-top:-.75rem;margin-right:-.75rem;background-color:#f27f0d;color:#231a10;font-size:.75rem;font-weight:700;padding:.25rem .75rem;border-radius:9999px}.problem-solution__card-icon-wrapper{width:3rem;height:3rem;border-radius:.5rem;display:flex;align-items:center;justify-content:center}.problem-solution__card-icon-wrapper--problem{background-color:rgba(127,29,29,.2);color:#ef4444}.problem-solution__card-icon-wrapper--solution{background-color:rgba(242,127,13,.2);color:#f27f0d}.problem-solution__card-icon{font-family:'Material Symbols Outlined';font-size:1.875rem}.problem-solution__card-title{font-size:1.5rem;font-weight:700;color:#fff}.problem-solution__card-list{display:flex;flex-direction:column;gap:1rem;list-style:none;padding:0;margin:0}.problem-solution__card-list-item{display:flex;align-items:flex-start;gap:.75rem;color:#a0aec0}.problem-solution__card-list-icon{font-family:'Material Symbols Outlined';flex-shrink:0;margin-top:.125rem}.problem-solution__card-list-icon--problem{color:#ef4444}.problem-solution__card-list-icon--solution{color:#f27f0d}@media (min-width:768px){.problem-solution__title{font-size:2.25rem}.problem-solution__grid{grid-template-columns:repeat(2,1fr)}}
 
-        /* authority_logos_module.module.css */
-        .authority-logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2rem; padding: 2rem 0; }
-        .authority-logos img { height: 50px; }
+    /* cta_banner.module.css */
+    .cta-banner{position:relative;padding:6rem 1rem;background-color:#2d241b;overflow:hidden}.cta-banner__overlay{position:absolute;top:0;right:0;width:50%;height:100%;background-image:linear-gradient(to left,rgba(242,127,13,.05),transparent);pointer-events:none}.cta-banner__container{position:relative;z-index:10;display:flex;flex-direction:column;align-items:center;gap:2rem;max-width:800px;margin-left:auto;margin-right:auto;text-align:center}.cta-banner__title{font-size:1.875rem;font-weight:900;color:#fff;line-height:1.2}.cta-banner__subtitle{font-size:1.25rem;color:#a0aec0}.cta-banner__button{display:flex;min-width:240px;cursor:pointer;align-items:center;justify-content:center;border-radius:.5rem;height:4rem;padding:0 2.5rem;background-color:#f27f0d;color:#231a10;font-size:1.125rem;font-weight:700;text-decoration:none;transition:all .3s ease;box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06)}.cta-banner__button:hover{background-color:#dd720c}.cta-banner__disclaimer{margin-top:1rem;font-size:.875rem;color:#718096}@media (min-width:768px){.cta-banner__title{font-size:3rem}}
 
-        /* methodology_module.module.css */
-        .methodology { padding: 4rem 2rem; }
-        .pillars { display: flex; flex-direction: column; md:flex-direction: row; justify-content: space-around; gap: 2rem; margin-top: 2rem; }
-        .pillar { flex: 1; }
-        .ceremony { margin-top: 4rem; }
-
-        /* proyectos_module.module.css */
-        .proyectos { padding: 4rem 2rem; }
-        .project { margin-bottom: 4rem; }
-        .roi-figures { display: flex; flex-direction: column; md:flex-direction: row; justify-content: space-around; gap: 2rem; margin-top: 2rem; }
-        .roi-figure { flex: 1; }
-
-        /* contacto_form_module.module.css */
-        .contacto-form { padding: 4rem 2rem; }
-        .form-container { max-width: 500px; margin: 2rem auto; text-align: left; }
-        .form-container label { display: block; margin-bottom: 0.5rem; }
-        .form-container input, .form-container select { width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #555; background-color: #222; color: white; border-radius: 4px; }
-        .form-container button { width: 100%; padding: 1rem; background-color: var(--purple-transformation); color: white; border: none; font-weight: bold; border-radius: 4px; cursor: pointer; }
-        .security-microcopy { margin-top: 1rem; font-size: 0.8rem; opacity: 0.8; }
-        .testimonial { margin-top: 4rem; max-width: 600px; margin-left: auto; margin-right: auto; }
-        .testimonial blockquote { font-style: italic; font-size: 1.2rem; border-left: 3px solid var(--purple-transformation); padding-left: 1rem; margin: 0; text-align: left; }
-        .testimonial cite { display: block; margin-top: 1rem; font-weight: bold; text-align: right; }
-    </style>
+    /* footer.module.css */
+    .site-footer{border-top:1px solid #493622;background-color:#221910;color:#fff;padding:4rem 1.25rem 3rem}.site-footer__container{max-width:1280px;margin-left:auto;margin-right:auto;display:flex;flex-direction:column;gap:3rem}.site-footer__grid{display:grid;grid-template-columns:1fr;gap:2.5rem}.site-footer__branding{display:flex;flex-direction:column;gap:1.5rem}.site-footer__logo-wrapper{display:flex;align-items:center;gap:.75rem}.site-footer__logo-placeholder{display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;background-color:rgba(242,127,13,.2);border-radius:.5rem;color:#f27f0d}.site-footer__logo-img{width:2rem;height:2rem;object-fit:contain}.site-footer__logo-text{font-size:1.125rem;font-weight:700}.site-footer__description{color:#a0aec0;font-size:.875rem;line-height:1.6;max-width:400px}.site-footer__spacer{display:none}.site-footer__nav-column{display:flex;flex-direction:column;gap:1rem}.site-footer__nav-title{font-size:.875rem;font-weight:700;color:#fff}.site-footer__nav{display:flex;flex-direction:column;gap:.75rem}.site-footer__nav-link{color:#a0aec0;font-size:.875rem;text-decoration:none;transition:color .2s ease-in-out}.site-footer__nav-link:hover{color:#fff}.site-footer__bottom{border-top:1px solid #493622;padding-top:2rem;display:flex;flex-direction:column;align-items:center;gap:1rem;text-align:center}.site-footer__copyright{font-size:.875rem;color:#718096}@media (min-width:768px){.site-footer__grid{grid-template-columns:repeat(12,1fr);gap:2rem}.site-footer__branding{grid-column:span 5/span 5}.site-footer__spacer{display:block;grid-column:span 2/span 2}.site-footer__nav-column--explore{grid-column:span 2/span 2}.site-footer__nav-column--legal{grid-column:span 3/span 3}.site-footer__bottom{flex-direction:row;justify-content:space-between}}
+  </style>
 </head>
 <body>
-    <div class="body-container-wrapper">
-        <header class="header">
-            <div class="header__logo">
-                <a href="/">Angel Salazar</a>
-            </div>
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="#metodologia">Mi Metodología</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <main id="main-content" role="main">
-            <div class="section--black">
-                <div class="home-hero">
-                    <h1>Deje de Comprar Herramientas de IA. Comience a Construir Sistemas de Rentabilidad.</h1>
-                    <h2>Socio Estratégico para PyMEs LATAM. Garantizamos el ROI en IA/Automatización con Mitigación de Riesgo Estructural y medición del delta financiero verificable a 90 días.</h2>
-                    <div class="cta-buttons">
-                        <a href="#contacto" class="cta-primary">Agenda tu Diagnóstico Operativo (ROI Garantizado)</a>
-                        <a href="#" class="cta-secondary">Descargar Marco de Mitigación de Riesgo IA (Gratis)</a>
-                    </div>
-                </div>
-            </div>
-            <div class="section--white">
-                <div class="authority-logos">
-                    <img src="https://via.placeholder.com/150" alt="Logo de empresa colaboradora">
-                    <img src="https://via.placeholder.com/150" alt="Logo de empresa colaboradora">
-                    <img src="https://via.placeholder.com/150" alt="Logo de empresa colaboradora">
-                    <img src="https://via.placeholder.com/150" alt="Logo de empresa colaboradora">
-                </div>
-            </div>
-            <div class="section--black">
-                <div class="methodology" id="metodologia">
-                    <h2>MI METODOLOGÍA</h2>
-                    <div class="pillars">
-                        <div class="pillar">
-                            <h3>Orquestación de Procesos</h3>
-                            <p>La causa del fracaso es automatizar tareas aisladas. Nosotros orquestamos procesos de negocio completos.</p>
-                        </div>
-                        <div class="pillar">
-                            <h3>Gobernanza Clara</h3>
-                            <p>Introducimos la figura del 'AI Owner' para garantizar la gobernanza y la responsabilidad de los resultados.</p>
-                        </div>
-                        <div class="pillar">
-                            <h3>Sistematización de Lecciones Aprendidas (LL)</h3>
-                            <p>Evitamos la amnesia organizacional sistematizando las lecciones aprendidas para la mejora continua.</p>
-                        </div>
-                    </div>
-                    <div class="ceremony">
-                        <h4>Ceremonia de Resultados Financieros</h4>
-                        <p>Medimos el delta financiero real, no las métricas de vanidad. Aquí es donde se demuestra el ROI.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="section--white">
-                <div class="proyectos" id="proyectos">
-                    <h2>PROYECTOS</h2>
-                    <div class="project">
-                        <h3>Acme Corp.</h3>
-                        <p>Análisis post-mortem de la implementación de un sistema de automatización de marketing. Se identificaron cuellos de botella en el proceso de ventas y se implementó una solución que...</p>
-                        <div class="roi-figures">
-                            <div class="roi-figure">
-                                <h4>30%</h4>
-                                <p>Reducción en tiempo de respuesta</p>
-                            </div>
-                            <div class="roi-figure">
-                                <h4>35%</h4>
-                                <p>Aumento en tasa de conversión</p>
-                            </div>
-                            <div class="roi-figure">
-                                <h4>2</h4>
-                                <p>Ahorro de horas diarias de trabajo administrativo</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section--black">
-                <div class="contacto-form" id="contacto">
-                    <h2>Solicita tu Diagnóstico Estratégico Sin Costo</h2>
-                    <div class="form-container">
-                        <form onsubmit="alert('Gracias por tu mensaje. Este es un formulario de demostración.'); return false;">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" name="name" required>
-                            <label for="email">Correo Empresarial</label>
-                            <input type="email" id="email" name="email" required>
-                            <label for="company-size">Tamaño de la Empresa</label>
-                            <select id="company-size" name="company-size" required>
-                                <option value="1-10">1-10 empleados</option>
-                                <option value="11-50">11-50 empleados</option>
-                                <option value="51-200">51-200 empleados</option>
-                                <option value="201+">201+ empleados</option>
-                            </select>
-                            <button type="submit">Obtener mi Diagnóstico de ROI</button>
-                        </form>
-                    </div>
-                    <div class="security-microcopy">
-                        <small>Tu correo está seguro. Odiamos el spam tanto como tú.</small>
-                    </div>
-                    <div class="testimonial">
-                        <blockquote>"Transformaron nuestro caos operativo en un sistema rentable. Su enfoque en el ROI es real y medible."</blockquote>
-                        <cite>- CEO, Acme Corp.</cite>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <footer class="footer">
-            <div class="footer__copyright">
-                <p>&copy; 2024 Angel Salazar. Todos los derechos reservados.</p>
-            </div>
-            <div class="footer__social">
-                <a href="#">LinkedIn</a>
-                <a href="#">Twitter</a>
-            </div>
-        </footer>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-header__container">
+      <div class="site-header__branding">
+        <a href="/" class="site-header__logo-link">
+          <span class="site-header__logo-placeholder material-symbols-outlined">dataset</span>
+          <span class="site-header__logo-text">Construye Sistemas</span>
+        </a>
+      </div>
+      <nav class="site-header__nav">
+        <a href="#" class="site-header__nav-link">Home</a>
+        <a href="#" class="site-header__nav-link">Metodología</a>
+        <a href="#" class="site-header__nav-link">Casos de Éxito</a>
+        <a href="#" class="site-header__nav-link">Diagnóstico</a>
+      </nav>
+      <div class="site-header__actions">
+        <a href="#" class="site-header__cta-button">Calcula TU ROI Ahora</a>
+        <button class="site-header__mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="site-header__mobile-toggle-icon material-symbols-outlined">menu</span>
+        </button>
+      </div>
     </div>
+  </header>
+
+  <!-- Hero Home -->
+  <section class="hero-home">
+    <div class="hero-home__bg-overlay"></div>
+    <div class="hero-home__container">
+      <div class="hero-home__pre-headline-wrapper">
+        <div class="hero-home__pre-headline">
+          <span class="hero-home__pre-headline-icon material-symbols-outlined">warning</span>
+          <span class="hero-home__pre-headline-text">Datos del MIT: El 95% de los pilotos de IA fallan financieramente</span>
+        </div>
+      </div>
+      <div class="hero-home__content">
+        <h1 class="hero-home__headline">Deje de Comprar Herramientas. <br class="hidden md:block"/><span class="highlight">Construya Sistemas.</span></h1>
+        <p class="hero-home__sub-headline">La tecnología por sí sola no genera dinero. Transformamos la adopción de IA desordenada en una estrategia de rentabilidad medible y escalable.</p>
+      </div>
+      <div class="hero-home__actions">
+        <a href="#" class="hero-home__cta hero-home__cta--primary">
+          <span>Calcula TU ROI Ahora</span>
+          <span class="hero-home__cta-icon material-symbols-outlined">arrow_forward</span>
+        </a>
+        <a href="#" class="hero-home__cta hero-home__cta--secondary">Ver Metodología</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Logo Cloud -->
+    <div class="logo-cloud">
+      <div class="logo-cloud__container">
+        <p class="logo-cloud__title">Empresas que escalan con nuestros sistemas</p>
+        <div class="logo-cloud__logos">
+          <div class="logo-cloud__logo-item"><span class="logo-cloud__logo-icon material-symbols-outlined">token</span> <span class="logo-cloud__logo-text">NexTech</span></div>
+          <div class="logo-cloud__logo-item"><span class="logo-cloud__logo-icon material-symbols-outlined">hub</span> <span class="logo-cloud__logo-text">Orbital</span></div>
+          <div class="logo-cloud__logo-item"><span class="logo-cloud__logo-icon material-symbols-outlined">change_history</span> <span class="logo-cloud__logo-text">DeltaForce</span></div>
+          <div class="logo-cloud__logo-item"><span class="logo-cloud__logo-icon material-symbols-outlined">pentagon</span> <span class="logo-cloud__logo-text">Stratos</span></div>
+          <div class="logo-cloud__logo-item"><span class="logo-cloud__logo-icon material-symbols-outlined">all_inclusive</span> <span class="logo-cloud__logo-text">InfinityCorp</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Problem vs. Solution -->
+    <section class="problem-solution">
+      <div class="problem-solution__container">
+        <div class="problem-solution__header">
+          <h2 class="problem-solution__title">El Problema vs. La Solución</h2>
+          <p class="problem-solution__subtitle">La diferencia entre gastar presupuesto en "juguetes" tecnológicos y generar capital con sistemas estratégicos.</p>
+        </div>
+        <div class="problem-solution__grid">
+          <div class="problem-solution__card problem-solution__card--problem">
+            <div class="problem-solution__card-icon-wrapper problem-solution__card-icon-wrapper--problem"><span class="problem-solution__card-icon material-symbols-outlined">money_off</span></div>
+            <h3 class="problem-solution__card-title">Comprar Herramientas</h3>
+            <ul class="problem-solution__card-list">
+              <li class="problem-solution__card-list-item"><span class="problem-solution__card-list-icon problem-solution__card-list-icon--problem material-symbols-outlined">close</span> <span>Foco en características, no en resultados.</span></li>
+              <li class="problem-solution__card-list-item"><span class="problem-solution__card-list-icon problem-solution__card-list-icon--problem material-symbols-outlined">close</span> <span>Silos de datos desconectados.</span></li>
+              <li class="problem-solution__card-list-item"><span class="problem-solution__card-list-icon problem-solution__card-list-icon--problem material-symbols-outlined">close</span> <span>Adopción baja por el equipo humano.</span></li>
+              <li class="problem-solution__card-list-item"><span class="problem-solution__card-list-icon problem-solution__card-list-icon--problem material-symbols-outlined">close</span> <span>ROI negativo o imposible de medir.</span></li>
+            </ul>
+          </div>
+          <div class="problem-solution__card problem-solution__card--solution">
+            <div class="problem-solution__card-badge">RECOMENDADO</div>
+            <div class="problem-solution__card-icon-wrapper problem-solution__card-icon-wrapper--solution"><span class="problem-solution__card-icon material-symbols-outlined">trending_up</span></div>
+            <h3 class="problem-solution__card-title">Construir Sistemas</h3>
+            <ul class="problem-solution__card-list">
+              <li class="problem-solution__card-list-item"><span class="problem-solution__card-list-icon problem-solution__card-list-icon--solution material-symbols-outlined">check_circle</span> <span>Ingeniería inversa desde objetivos financieros.</span></li>
+              <li class="problem-solution__card-list-item"><span class="problem-solution__card-list-icon problem-solution__card-list-icon--solution material-symbols-outlined">check_circle</span> <span>Flujos de trabajo automatizados end-to-end.</span></li>
+              <li class="problem-solution__card-list-item"><span class="problem-solution__card-list-icon problem-solution__card-list-icon--solution material-symbols-outlined">check_circle</span> <span>Capacitación estratégica del personal.</span></li>
+              <li class="problem-solution__card-list-item"><span class="problem-solution__card-list-icon problem-solution__card-list-icon--solution material-symbols-outlined">check_circle</span> <span>KPIs de rentabilidad en tiempo real.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="cta-banner__overlay"></div>
+      <div class="cta-banner__container">
+        <h2 class="cta-banner__title">¿Su empresa está lista para escalar con IA?</h2>
+        <p class="cta-banner__subtitle">Solo trabajamos con 5 nuevos clientes al mes para garantizar la calidad de la implementación.</p>
+        <a href="#" class="cta-banner__button">Agendar Consulta Estratégica</a>
+        <p class="cta-banner__disclaimer">Sin compromiso. Análisis preliminar gratuito incluido.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__container">
+      <div class="site-footer__grid">
+        <div class="site-footer__branding">
+          <div class="site-footer__logo-wrapper">
+            <span class="site-footer__logo-placeholder material-symbols-outlined">dataset</span>
+            <span class="site-footer__logo-text">Construye Sistemas</span>
+          </div>
+          <p class="site-footer__description">Transformamos la adopción de IA desordenada en estrategias de rentabilidad medibles. Nuestra misión es construir sistemas que generen ROI real, no solo implementar tecnología.</p>
+        </div>
+        <div class="site-footer__spacer"></div>
+        <div class="site-footer__nav-column">
+          <h4 class="site-footer__nav-title">Explorar</h4>
+          <nav class="site-footer__nav">
+            <a href="#" class="site-footer__nav-link">Home</a>
+            <a href="#" class="site-footer__nav-link">Metodología</a>
+            <a href="#" class="site-footer__nav-link">Casos de Éxito</a>
+            <a href="#" class="site-footer__nav-link">Diagnóstico</a>
+          </nav>
+        </div>
+        <div class="site-footer__nav-column">
+          <h4 class="site-footer__nav-title">Legal</h4>
+          <nav class="site-footer__nav">
+            <a href="#" class="site-footer__nav-link">Política de Privacidad</a>
+            <a href="#" class="site-footer__nav-link">Términos de Uso</a>
+          </nav>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright">© 2024 Construye Sistemas de Rentabilidad. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

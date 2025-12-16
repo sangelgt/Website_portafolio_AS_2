@@ -1,0 +1,17 @@
+{#
+  templateType: "module",
+  label: "Case Study Hero",
+  description: "Hero section for the Case Study page."
+#}
+
+<section class="case-study-hero">
+  <div class="case-study-hero__bg-overlay"></div>
+  <div class="case-study-hero__container">
+    <div class="case-study-hero__badge">
+      <span class="case-study-hero__badge-icon"></span>
+      {{ module.badge_text }}
+    </div>
+    <h1 class="case-study-hero__title">{{ module.title }}</h1>
+    <p class="case-study-hero__subtitle">{{ module.subtitle }}</p>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+{#
+  templateType: "module",
+  label: "Case Study Timeline",
+  description: "A vertical timeline for showcasing a process or story."
+#}
+
+<section class="case-study-timeline">
+  <div class="case-study-timeline__container">
+    <div class="case-study-timeline__line"></div>
+    {% for item in module.timeline_items %}
+      <div class="case-study-timeline__item">
+        <div class="case-study-timeline__icon-wrapper">
+          <span class="case-study-timeline__icon">{{ item.icon }}</span>
+        </div>
+        <div class="case-study-timeline__content">
+          <h2 class="case-study-timeline__title">{{ item.title }}</h2>
+          <div class="case-study-timeline__description">
+            {{ item.description }}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
