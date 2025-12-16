@@ -1,0 +1,44 @@
+{
+  "label": "Logo Cloud",
+  "css_assets": [],
+  "external_js": [],
+  "global": false,
+  "host_template_types": ["PAGE"],
+  "js_assets": [],
+  "module_id": 2233445566,
+  "fields": [
+    {
+      "id": "title",
+      "name": "title",
+      "label": "Title",
+      "type": "text",
+      "default": "Empresas que escalan con nuestros sistemas"
+    },
+    {
+      "id": "logos",
+      "name": "logos",
+      "label": "Logos",
+      "type": "repeater",
+      "occurrence": {
+        "min": 1,
+        "default": 5
+      },
+      "fields": [
+        {
+          "id": "icon",
+          "name": "icon",
+          "label": "Icon (Material Symbols Outlined)",
+          "type": "text",
+          "default": "token"
+        },
+        {
+          "id": "text",
+          "name": "text",
+          "label": "Company Name",
+          "type": "text",
+          "default": "NexTech"
+        }
+      ]
+    }
+  ]
+}

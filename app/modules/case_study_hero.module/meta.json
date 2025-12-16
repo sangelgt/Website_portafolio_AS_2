@@ -1,0 +1,32 @@
+{
+    "label": "Case Study Hero",
+    "css_assets": [],
+    "external_js": [],
+    "global": false,
+    "host_template_types": ["PAGE"],
+    "js_assets": [],
+    "module_id": 7788990011,
+    "fields": [
+        {
+            "id": "badge_text",
+            "name": "badge_text",
+            "label": "Badge Text",
+            "type": "text",
+            "default": "Caso de Estudio: Acme Corp"
+        },
+        {
+            "id": "title",
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "default": "Análisis Post-Mortem"
+        },
+        {
+            "id": "subtitle",
+            "name": "subtitle",
+            "label": "Subtitle",
+            "type": "textarea",
+            "default": "De la ineficiencia operativa a la automatización rentable. Un desglose transparente de cómo transformamos los cuellos de botella en ROI cuantificable."
+        }
+    ]
+}

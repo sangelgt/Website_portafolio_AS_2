@@ -1,0 +1,68 @@
+{
+    "label": "Methodology Steps",
+    "css_assets": [],
+    "external_js": [],
+    "global": false,
+    "host_template_types": ["PAGE"],
+    "js_assets": [],
+    "module_id": 6677889900,
+    "fields": [
+        {
+            "id": "steps",
+            "name": "steps",
+            "label": "Steps",
+            "type": "repeater",
+            "occurrence": {
+                "min": 1,
+                "default": 3
+            },
+            "fields": [
+                {
+                    "id": "image",
+                    "name": "image",
+                    "label": "Background Image",
+                    "type": "image",
+                    "default": {
+                        "src": "https://via.placeholder.com/600x450",
+                        "alt": "Step image"
+                    }
+                },
+                {
+                    "id": "image_icon",
+                    "name": "image_icon",
+                    "label": "Image Overlay Icon (Material Symbols Outlined)",
+                    "type": "text",
+                    "default": "analytics"
+                },
+                {
+                    "id": "title",
+                    "name": "title",
+                    "label": "Title",
+                    "type": "text",
+                    "default": "Diagnóstico y Análisis Profundo"
+                },
+                {
+                    "id": "description",
+                    "name": "description",
+                    "label": "Description",
+                    "type": "textarea",
+                    "default": "Identificamos los cuellos de botella reales, no los síntomas. Realizamos una auditoría exhaustiva de sus flujos de trabajo actuales para separar lo necesario de lo obsoleto."
+                },
+                {
+                    "id": "badge_icon",
+                    "name": "badge_icon",
+                    "label": "Badge Icon (Material Symbols Outlined)",
+                    "type": "text",
+                    "default": "verified"
+                },
+                {
+                    "id": "badge_text",
+                    "name": "badge_text",
+                    "label": "Badge Text",
+                    "type": "text",
+                    "default": "Basado en metodologías McKinsey"
+                }
+            ]
+        }
+    ]
+}

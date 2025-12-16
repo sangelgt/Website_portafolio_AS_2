@@ -1,0 +1,41 @@
+{#
+  templateType: "module",
+  label: "Methodology Steps",
+  description: "A section that displays a series of steps with alternating layouts."
+#}
+
+<section class="methodology-steps">
+  <div class="methodology-steps__center-line"></div>
+  <div class="methodology-steps__container">
+    {% for step in module.steps %}
+      <div class="methodology-steps__step-item {% if loop.index is odd %}methodology-steps__step-item--odd{% else %}methodology-steps__step-item--even{% endif %}">
+
+        {# Image Column #}
+        <div class="methodology-steps__image-column">
+          <div class="methodology-steps__image-wrapper">
+            <div class="methodology-steps__image-overlay">
+              <span class="methodology-steps__image-icon">{{ step.image_icon }}</span>
+            </div>
+            {% if step.image.src %}
+              <img src="{{ step.image.src }}" alt="{{ step.image.alt }}" class="methodology-steps__image"/>
+            {% endif %}
+          </div>
+        </div>
+
+        {# Text Column #}
+        <div class="methodology-steps__text-column">
+          <div class="methodology-steps__text-content">
+            <span class="methodology-steps__step-number">{{ "0" ~ loop.index }}</span>
+            <h3 class="methodology-steps__step-title">{{ step.title }}</h3>
+            <p class="methodology-steps__step-description">{{ step.description }}</p>
+            <div class="methodology-steps__step-badge">
+              <span class="methodology-steps__step-badge-icon">{{ step.badge_icon }}</span>
+              <span class="methodology-steps__step-badge-text">{{ step.badge_text }}</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    {% endfor %}
+  </div>
+</section>

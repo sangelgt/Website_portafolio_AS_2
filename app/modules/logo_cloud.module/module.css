@@ -1,0 +1,59 @@
+/* Mobile-first styles */
+.logo-cloud {
+  width: 100%;
+  padding: 2.5rem 1rem; /* pt-10 px-4 */
+  border-top: 1px solid rgba(73, 54, 34, 0.5); /* border-[#493622]/50 */
+}
+
+.logo-cloud__container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-cloud__title {
+  text-align: center;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  color: #a0aec0; /* text-gray-500 */
+  margin-bottom: 2rem; /* mb-8 */
+  text-transform: uppercase;
+  letter-spacing: 0.1em; /* tracking-widest */
+}
+
+.logo-cloud__logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem; /* gap-10 */
+  opacity: 0.6;
+  filter: grayscale(100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.logo-cloud__logos:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+.logo-cloud__logo-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700; /* font-bold */
+  color: #ffffff;
+}
+
+.logo-cloud__logo-icon {
+  font-family: 'Material Symbols Outlined';
+  font-size: 1.875rem; /* text-3xl */
+}
+
+/* Desktop styles */
+@media (min-width: 768px) { /* md breakpoint */
+  .logo-cloud__logos {
+    gap: 4rem; /* md:gap-16 */
+  }
+}

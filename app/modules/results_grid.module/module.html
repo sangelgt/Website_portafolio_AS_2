@@ -1,0 +1,28 @@
+{#
+  templateType: "module",
+  label: "Results Grid",
+  description: "A grid to showcase key results and metrics."
+#}
+
+<section class="results-grid">
+  <div class="results-grid__container">
+    <div class="results-grid__header">
+      <h2 class="results-grid__title">{{ module.title }}</h2>
+      <p class="results-grid__subtitle">{{ module.subtitle }}</p>
+    </div>
+    <div class="results-grid__grid">
+      {% for item in module.results %}
+        <div class="results-grid__card">
+          <div class="results-grid__card-value">
+            <span class="results-grid__card-value-text">{{ item.value }}</span>
+            <span class="results-grid__card-value-icon">
+              <span class="material-symbols-outlined">{{ item.icon }}</span>
+            </span>
+          </div>
+          <p class="results-grid__card-title">{{ item.title }}</p>
+          <p class="results-grid__card-subtitle">{{ item.subtitle }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

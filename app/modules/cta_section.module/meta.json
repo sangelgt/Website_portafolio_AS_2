@@ -1,0 +1,63 @@
+{
+    "label": "CTA Section",
+    "css_assets": [],
+    "external_js": [],
+    "global": false,
+    "host_template_types": ["PAGE"],
+    "js_assets": [],
+    "module_id": 2233445566,
+    "fields": [
+        {
+            "id": "title",
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "default": "¿Tu empresa enfrenta los mismos cuellos de botella?"
+        },
+        {
+            "id": "subtitle",
+            "name": "subtitle",
+            "label": "Subtitle",
+            "type": "text",
+            "default": "Deja de perder tiempo en procesos manuales y empieza a generar valor real."
+        },
+        {
+            "id": "cta_button",
+            "name": "cta_button",
+            "label": "CTA Button",
+            "type": "group",
+            "children": [
+                {
+                    "id": "text",
+                    "name": "text",
+                    "label": "Button Text",
+                    "type": "text",
+                    "default": "Verifica TU ROI Potencial"
+                },
+                {
+                    "id": "url",
+                    "name": "url",
+                    "label": "Button URL",
+                    "type": "url",
+                    "default": {
+                        "href": "#"
+                    }
+                },
+                {
+                    "id": "icon",
+                    "name": "icon",
+                    "label": "Icon (Material Symbols Outlined)",
+                    "type": "text",
+                    "default": "arrow_forward"
+                }
+            ]
+        },
+        {
+            "id": "disclaimer",
+            "name": "disclaimer",
+            "label": "Disclaimer",
+            "type": "text",
+            "default": "Sin compromiso. Auditoría inicial gratuita de 30 minutos."
+        }
+    ]
+}
