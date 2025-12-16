@@ -1,0 +1,42 @@
+{#
+  templateType: "module",
+  label: "Home Page Hero",
+  description: "The main hero section for the home page."
+#}
+
+<section class="hero-home">
+  <div class="hero-home__bg-overlay"></div>
+  <div class="hero-home__container">
+    {% if module.pre_headline.text %}
+      <div class="hero-home__pre-headline-wrapper">
+        <div class="hero-home__pre-headline">
+          {% if module.pre_headline.icon %}
+            <span class="hero-home__pre-headline-icon">{{ module.pre_headline.icon }}</span>
+          {% endif %}
+          <span class="hero-home__pre-headline-text">{{ module.pre_headline.text }}</span>
+        </div>
+      </div>
+    {% endif %}
+
+    <div class="hero-home__content">
+      <h1 class="hero-home__headline">{{ module.headline }}</h1>
+      <p class="hero-home__sub-headline">{{ module.sub_headline }}</p>
+    </div>
+
+    <div class="hero-home__actions">
+      {% if module.primary_cta.text %}
+        <a href="{{ module.primary_cta.url.href }}" class="hero-home__cta hero-home__cta--primary">
+          <span>{{ module.primary_cta.text }}</span>
+          {% if module.primary_cta.icon %}
+            <span class="hero-home__cta-icon">{{ module.primary_cta.icon }}</span>
+          {% endif %}
+        </a>
+      {% endif %}
+      {% if module.secondary_cta.text %}
+        <a href="{{ module.secondary_cta.url.href }}" class="hero-home__cta hero-home__cta--secondary">
+          {{ module.secondary_cta.text }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</section>

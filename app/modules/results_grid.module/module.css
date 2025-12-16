@@ -1,0 +1,115 @@
+/* Mobile-first styles */
+.results-grid {
+    padding: 4rem 1.5rem; /* py-16 px-6 */
+    background-color: #1a130c;
+    border-top: 1px solid #493622;
+    border-bottom: 1px solid #493622;
+}
+
+.results-grid__container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.results-grid__header {
+    margin-bottom: 3rem; /* mb-12 */
+    text-align: center;
+}
+
+.results-grid__title {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 900; /* font-black */
+    color: #ffffff;
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.results-grid__subtitle {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    text-transform: uppercase;
+    letter-spacing: 0.1em; /* tracking-widest */
+}
+
+.results-grid__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem; /* gap-6 */
+}
+
+.results-grid__card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem; /* p-6 */
+    border-radius: 0.75rem; /* rounded-xl */
+    background-color: #2a2118; /* bg-card-dark */
+    border: 1px solid #493622; /* border-border-dark */
+    transition: border-color 0.3s ease;
+}
+
+.results-grid__card:hover {
+    border-color: rgba(242, 127, 13, 0.3);
+}
+
+.results-grid__card-value {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.results-grid__card-value-text {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: -0.05em; /* tracking-tighter */
+    transition: color 0.3s ease;
+}
+
+.results-grid__card:hover .results-grid__card-value-text {
+    color: #f27f0d;
+}
+
+.results-grid__card-value-icon {
+    margin-bottom: 0.5rem; /* mb-2 */
+    color: #0bda16; /* A default green, will be overridden by specific classes */
+}
+.results-grid__card-value-icon .material-symbols-outlined {
+    font-size: 1.5rem; /* text-2xl */
+}
+
+/* Specific icon colors based on design */
+.results-grid__card:nth-child(1) .results-grid__card-value-icon {
+    color: #f27f0d; /* text-primary for the first card */
+}
+
+
+.results-grid__card-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.125rem; /* text-lg */
+    line-height: 1.2;
+    margin-bottom: 0.25rem; /* mb-1 */
+}
+
+.results-grid__card-subtitle {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.875rem; /* text-sm */
+}
+
+/* Tablet and Desktop styles */
+@media (min-width: 768px) { /* md breakpoint */
+    .results-grid__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .results-grid__card-value-text {
+        font-size: 3rem; /* lg:text-5xl */
+    }
+}
+
+@media (min-width: 1024px) { /* lg breakpoint */
+    .results-grid__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

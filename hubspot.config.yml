@@ -1,0 +1,7 @@
+defaultPortal: localdev
+portals:
+  - name: localdev
+    portalId: 12345678
+    env: prod
+    authType: none
+    accountType: STANDARD

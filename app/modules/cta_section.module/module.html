@@ -1,0 +1,23 @@
+{#
+  templateType: "module",
+  label: "CTA Section",
+  description: "A section with a title, subtitle, and a call-to-action button."
+#}
+
+<section class="cta-section">
+  <div class="cta-section__container">
+    <h2 class="cta-section__title">{{ module.title }}</h2>
+    <p class="cta-section__subtitle">{{ module.subtitle }}</p>
+    {% if module.cta_button.text %}
+      <a href="{{ module.cta_button.url.href }}" class="cta-section__button">
+        <span class="cta-section__button-text">{{ module.cta_button.text }}</span>
+        {% if module.cta_button.icon %}
+          <span class="material-symbols-outlined">{{ module.cta_button.icon }}</span>
+        {% endif %}
+      </a>
+    {% endif %}
+    {% if module.disclaimer %}
+      <p class="cta-section__disclaimer">{{ module.disclaimer }}</p>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,56 @@
+{
+  "label": "CTA Banner",
+  "css_assets": [],
+  "external_js": [],
+  "global": false,
+  "host_template_types": ["PAGE"],
+  "js_assets": [],
+  "module_id": 4455667788,
+  "fields": [
+    {
+      "id": "title",
+      "name": "title",
+      "label": "Title",
+      "type": "text",
+      "default": "¿Su empresa está lista para escalar con IA?"
+    },
+    {
+      "id": "subtitle",
+      "name": "subtitle",
+      "label": "Subtitle",
+      "type": "text",
+      "default": "Solo trabajamos con 5 nuevos clientes al mes para garantizar la calidad de la implementación."
+    },
+    {
+      "id": "cta_button",
+      "name": "cta_button",
+      "label": "CTA Button",
+      "type": "group",
+      "children": [
+        {
+          "id": "text",
+          "name": "text",
+          "label": "Button Text",
+          "type": "text",
+          "default": "Agendar Consulta Estratégica"
+        },
+        {
+          "id": "url",
+          "name": "url",
+          "label": "Button URL",
+          "type": "url",
+          "default": {
+            "href": "#"
+          }
+        }
+      ]
+    },
+    {
+      "id": "disclaimer",
+      "name": "disclaimer",
+      "label": "Disclaimer",
+      "type": "text",
+      "default": "Sin compromiso. Análisis preliminar gratuito incluido."
+    }
+  ]
+}
