@@ -1,0 +1,44 @@
+{
+    "label": "Case Study Timeline",
+    "css_assets": [],
+    "external_js": [],
+    "global": false,
+    "host_template_types": ["PAGE"],
+    "js_assets": [],
+    "module_id": 8899001122,
+    "fields": [
+        {
+            "id": "timeline_items",
+            "name": "timeline_items",
+            "label": "Timeline Items",
+            "type": "repeater",
+            "occurrence": {
+                "min": 1,
+                "default": 2
+            },
+            "fields": [
+                {
+                    "id": "icon",
+                    "name": "icon",
+                    "label": "Icon (Material Symbols Outlined)",
+                    "type": "text",
+                    "default": "report_problem"
+                },
+                {
+                    "id": "title",
+                    "name": "title",
+                    "label": "Title",
+                    "type": "text",
+                    "default": "El Desafío: Parálisis Administrativa"
+                },
+                {
+                    "id": "description",
+                    "name": "description",
+                    "label": "Description",
+                    "type": "richtext",
+                    "default": "<p>Acme Corp enfrentaba un estancamiento crítico. Su equipo de operaciones dedicaba más del 60% de la jornada laboral a tareas repetitivas: copiar datos de correos electrónicos y pegarlos en un CRM heredado.</p><p>Este proceso manual no solo era propenso a errores humanos, sino que creaba un retraso de 48 horas en la respuesta al cliente. En un mercado saturado, esa demora significaba perder ventas frente a competidores más ágiles.</p>"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Metodología: Orden antes que Herramienta</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <style>
+    body{background-color:#221910;color:#fff;font-family:'Inter',sans-serif;overflow-x:hidden}
+    .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24}
+    /* header.module.css */
+    .site-header{position:fixed;top:0;left:0;width:100%;z-index:50;border-bottom:1px solid #493622;background-color:rgba(34,25,16,.95);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.site-header__container{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.5rem;max-width:1280px;margin-left:auto;margin-right:auto}.site-header__branding{display:flex;align-items:center}.site-header__logo-link{display:flex;align-items:center;gap:.75rem;text-decoration:none;color:#fff}.site-header__logo-placeholder{display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;background-color:rgba(242,127,13,.2);border-radius:.5rem;color:#f27f0d}.site-header__logo-img{width:2rem;height:2rem;object-fit:contain}.site-header__logo-text{font-size:1.125rem;font-weight:700;line-height:1.2;letter-spacing:-.015em}.site-header__nav{display:none}.site-header__nav-link{color:rgba(255,255,255,.8);text-decoration:none;font-size:.875rem;font-weight:500;transition:color .2s ease-in-out}.site-header__nav-link:hover{color:#fff}.site-header__actions{display:flex;align-items:center;gap:1rem}.site-header__cta-button{display:flex;align-items:center;justify-content:center;min-width:84px;height:2.5rem;padding:0 1.5rem;background-color:#f27f0d;color:#231a10;border-radius:.5rem;font-size:.875rem;font-weight:700;text-decoration:none;transition:background-color .2s ease-in-out;text-align:center}.site-header__cta-button:hover{background-color:#e6780c}.site-header__mobile-toggle{display:block;background:0 0;border:none;color:#fff;cursor:pointer;padding:.5rem}@media (min-width:768px){.site-header__container{padding:1rem 2.5rem}.site-header__nav{display:flex;align-items:center;gap:2rem}.site-header__mobile-toggle{display:none}}
+    /* methodology_hero.module.css */
+    .methodology-hero{position:relative;width:100%;display:flex;flex-direction:column;align-items:center;text-align:center;padding:4rem 1.5rem}.methodology-hero__bg-overlay{position:absolute;inset:0;z-index:0;opacity:.1;background-image:radial-gradient(ellipse at top,var(--primary,#f27f0d),var(--background-dark,#221910),transparent);pointer-events:none}.methodology-hero__container{position:relative;z-index:1;max-width:1024px}.methodology-hero__headline{font-size:2.25rem;font-weight:700;letter-spacing:-.025em;color:#fff;margin-bottom:2rem}.methodology-hero__headline .highlight{color:#f27f0d}.methodology-hero__description{font-size:1.25rem;color:#cbad90;line-height:1.75;max-width:896px;margin-left:auto;margin-right:auto}@media (min-width:768px){.methodology-hero{padding:6rem 5rem}.methodology-hero__headline{font-size:3.75rem}.methodology-hero__description{font-size:1.5rem}}@media (min-width:1024px){.methodology-hero__headline{font-size:4.5rem}}
+    /* methodology_steps.module.css */
+    .methodology-steps{position:relative;width:100%;max-width:1440px;padding:0 1.5rem 8rem;margin:0 auto}.methodology-steps__center-line{position:absolute;left:50%;top:0;bottom:0;width:1px;background-image:linear-gradient(to bottom,rgba(242,127,13,.5),rgba(242,127,13,.2),transparent);transform:translateX(-50%);display:none}.methodology-steps__container{position:relative;z-index:10;display:flex;flex-direction:column;gap:6rem}.methodology-steps__step-item{display:flex;flex-direction:column;align-items:center;gap:3rem}.methodology-steps__image-column,.methodology-steps__text-column{width:100%}.methodology-steps__image-wrapper{position:relative;width:100%;max-width:576px;aspect-ratio:4/3;border-radius:1rem;overflow:hidden;box-shadow:0 25px 50px -12px rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.1);transition:all .5s ease}.methodology-steps__step-item:hover .methodology-steps__image-wrapper{border-color:rgba(242,127,13,.5)}.methodology-steps__image-overlay{position:absolute;inset:0;background-color:rgba(45,36,27,.8);display:flex;align-items:center;justify-content:center;padding:2rem;z-index:10}.methodology-steps__image-icon{font-family:'Material Symbols Outlined';font-size:6rem;color:rgba(242,127,13,.9);text-shadow:0 4px 6px rgba(0,0,0,.5)}.methodology-steps__image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.3;mix-blend-mode:overlay;transition:transform .7s ease}.methodology-steps__step-item:hover .methodology-steps__image{transform:scale(1.05)}.methodology-steps__text-content{display:flex;flex-direction:column;align-items:flex-start}.methodology-steps__step-number{font-size:5rem;font-weight:900;background-image:linear-gradient(to bottom right,#f27f0d,#8c4b08);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1;letter-spacing:-.05em;margin-bottom:1rem}.methodology-steps__step-title{font-size:1.875rem;font-weight:700;color:#fff;margin-top:.5rem;line-height:1.2}.methodology-steps__step-description{color:#cbad90;font-size:1.125rem;line-height:1.75;margin-top:2rem;max-width:576px}.methodology-steps__step-badge{display:flex;align-items:center;gap:.75rem;padding:1rem 1.5rem;background-color:rgba(255,255,255,.05);border-radius:9999px;border:1px solid rgba(255,255,255,.1);margin-top:2rem;transition:background-color .3s ease}.methodology-steps__step-item:hover .methodology-steps__step-badge{background-color:rgba(255,255,255,.1)}.methodology-steps__step-badge-icon{font-family:'Material Symbols Outlined';color:#f27f0d;font-size:1.25rem}.methodology-steps__step-badge-text{font-size:1rem;font-weight:600;color:rgba(255,255,255,.9);text-transform:uppercase;letter-spacing:.05em}@media (min-width:1024px){.methodology-steps__center-line{display:block}.methodology-steps__container{gap:8rem}.methodology-steps__step-item{flex-direction:row;gap:6rem}.methodology-steps__image-column,.methodology-steps__text-column{width:50%}.methodology-steps__step-item--odd .methodology-steps__image-column{order:1;display:flex;justify-content:flex-end}.methodology-steps__step-item--odd .methodology-steps__text-column{order:2;padding-left:2.5rem}.methodology-steps__step-item--even .methodology-steps__image-column{order:2;display:flex;justify-content:flex-start}.methodology-steps__step-item--even .methodology-steps__text-column{order:1;padding-right:2.5rem}.methodology-steps__step-item--even .methodology-steps__text-content{align-items:flex-end;text-align:right}.methodology-steps__step-number{font-size:10rem}.methodology-steps__step-title{font-size:3rem}.methodology-steps__step-description{font-size:1.25rem}}
+    /* footer.module.css */
+    .site-footer{border-top:1px solid #493622;background-color:#221910;color:#fff;padding:4rem 1.25rem 3rem}.site-footer__container{max-width:1280px;margin-left:auto;margin-right:auto;display:flex;flex-direction:column;gap:3rem}.site-footer__grid{display:grid;grid-template-columns:1fr;gap:2.5rem}.site-footer__branding{display:flex;flex-direction:column;gap:1.5rem}.site-footer__logo-wrapper{display:flex;align-items:center;gap:.75rem}.site-footer__logo-placeholder{display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;background-color:rgba(242,127,13,.2);border-radius:.5rem;color:#f27f0d}.site-footer__logo-img{width:2rem;height:2rem;object-fit:contain}.site-footer__logo-text{font-size:1.125rem;font-weight:700}.site-footer__description{color:#a0aec0;font-size:.875rem;line-height:1.6;max-width:400px}.site-footer__spacer{display:none}.site-footer__nav-column{display:flex;flex-direction:column;gap:1rem}.site-footer__nav-title{font-size:.875rem;font-weight:700;color:#fff}.site-footer__nav{display:flex;flex-direction:column;gap:.75rem}.site-footer__nav-link{color:#a0aec0;font-size:.875rem;text-decoration:none;transition:color .2s ease-in-out}.site-footer__nav-link:hover{color:#fff}.site-footer__bottom{border-top:1px solid #493622;padding-top:2rem;display:flex;flex-direction:column;align-items:center;gap:1rem;text-align:center}.site-footer__copyright{font-size:.875rem;color:#718096}@media (min-width:768px){.site-footer__grid{grid-template-columns:repeat(12,1fr);gap:2rem}.site-footer__branding{grid-column:span 5/span 5}.site-footer__spacer{display:block;grid-column:span 2/span 2}.site-footer__nav-column--explore{grid-column:span 2/span 2}.site-footer__nav-column--legal{grid-column:span 3/span 3}.site-footer__bottom{flex-direction:row;justify-content:space-between}}
+  </style>
+</head>
+<body style="padding-top: 65px;">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-header__container">
+      <div class="site-header__branding">
+        <a href="/" class="site-header__logo-link">
+          <span class="site-header__logo-placeholder material-symbols-outlined">dataset</span>
+          <span class="site-header__logo-text">Construye Sistemas</span>
+        </a>
+      </div>
+      <nav class="site-header__nav">
+        <a href="./index.html" class="site-header__nav-link">Home</a>
+        <a href="./methodology.html" class="site-header__nav-link">Metodología</a>
+        <a href="./case-study.html" class="site-header__nav-link">Casos de Éxito</a>
+        <a href="./diagnostics.html" class="site-header__nav-link">Diagnóstico</a>
+      </nav>
+      <div class="site-header__actions">
+        <a href="#" class="site-header__cta-button">Calcula TU ROI Ahora</a>
+        <button class="site-header__mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="site-header__mobile-toggle-icon material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Methodology Hero -->
+    <section class="methodology-hero">
+      <div class="methodology-hero__bg-overlay"></div>
+      <div class="methodology-hero__container">
+        <h1 class="methodology-hero__headline">Metodología: <span class="highlight">Orden antes que Herramienta</span></h1>
+        <p class="methodology-hero__description">La automatización aplicada a un proceso ineficiente solo magnifica la ineficiencia. Nuestro enfoque sistemático garantiza un retorno de inversión real antes de escribir una sola línea de código.</p>
+      </div>
+    </section>
+
+    <!-- Methodology Steps -->
+    <section class="methodology-steps">
+      <div class="methodology-steps__center-line"></div>
+      <div class="methodology-steps__container">
+        <!-- Step 1 -->
+        <div class="methodology-steps__step-item methodology-steps__step-item--odd">
+          <div class="methodology-steps__image-column">
+            <div class="methodology-steps__image-wrapper">
+              <div class="methodology-steps__image-overlay"><span class="methodology-steps__image-icon material-symbols-outlined">analytics</span></div>
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp1HcowqCx3mPk5BZEnyjuujlrviTL2fqIBxOzr5zn-KGUQu4OHZ4uqrmfqSlH6DtZtJMJ3WcHo7ALg1Rfbux_pzfdhQ6sKjmQ5UskdRi0ow5WfBw9FS3B2tYSAvXhCoPlUbI-6XJTGC-78RvLd4E4uE6e1VFlTwhAURhWSLQpLB19yElMRbhIr98SgDHLW1C3wRGpv7P0xxTGPeNgFcns9ho8ogOc8_JsErA12Y2d5B7Y_1prB-OuPXhwrYLN6EdfeJ5hADIaGLnW" alt="Step image" class="methodology-steps__image"/>
+            </div>
+          </div>
+          <div class="methodology-steps__text-column">
+            <div class="methodology-steps__text-content">
+              <span class="methodology-steps__step-number">01</span>
+              <h3 class="methodology-steps__step-title">Diagnóstico y Análisis Profundo</h3>
+              <p class="methodology-steps__step-description">Identificamos los cuellos de botella reales, no los síntomas. Realizamos una auditoría exhaustiva de sus flujos de trabajo actuales para separar lo necesario de lo obsoleto.</p>
+              <div class="methodology-steps__step-badge">
+                <span class="methodology-steps__step-badge-icon material-symbols-outlined">verified</span>
+                <span class="methodology-steps__step-badge-text">Basado en metodologías McKinsey</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="methodology-steps__step-item methodology-steps__step-item--even">
+          <div class="methodology-steps__image-column">
+            <div class="methodology-steps__image-wrapper">
+              <div class="methodology-steps__image-overlay"><span class="methodology-steps__image-icon material-symbols-outlined">account_tree</span></div>
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY4PAtA46-hqnmUYSbzwxI-pWaDAJXqBBvtPK4hr-TEigVe3dRhjhJR1jZpe-LgqujFaO-dVQrgVhPAmOALCDNi3w1peZ8eKxiykBMpaXyo5VZ4PJC85JduCr0Mgl6q0IJS1MIF9FXg67cfyQJsira3TqPwCDfK_Ezy8jwaLzmh_jBjlgIPNJa7J5r1Do-hKTQ7vGAMKuWnyLghFK63XWCqxx-KracpW2TYStlbOvNgGzXwLeRxv5IBSZdGuIIcxNv2mfiDJAdkAeW" alt="Step image" class="methodology-steps__image"/>
+            </div>
+          </div>
+          <div class="methodology-steps__text-column">
+            <div class="methodology-steps__text-content">
+              <span class="methodology-steps__step-number">02</span>
+              <h3 class="methodology-steps__step-title">Optimización Estratégica</h3>
+              <p class="methodology-steps__step-description">Refinamos el flujo de trabajo antes de digitalizarlo. Eliminamos redundancias y establecemos nuevos protocolos que preparan el terreno para una adopción tecnológica sin fricciones.</p>
+              <div class="methodology-steps__step-badge">
+                <span class="methodology-steps__step-badge-icon material-symbols-outlined">tune</span>
+                <span class="methodology-steps__step-badge-text">Lean Process Optimization</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="methodology-steps__step-item methodology-steps__step-item--odd">
+          <div class="methodology-steps__image-column">
+            <div class="methodology-steps__image-wrapper">
+              <div class="methodology-steps__image-overlay"><span class="methodology-steps__image-icon material-symbols-outlined">smart_toy</span></div>
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIG31dGvsEdKKhow6HG3YaFufrPNdafra89fTyG1AcFIlSb00tuYNWcOnfkeQnNte4Ug4bWjM-MagEbl2ypF3DgeErrBk9hf1r0r3gnek6eq5i0zav0A_3Jn4iN8whq-hJCeLKaEdnoNj5hQRbuM7bwbqpkvxbBFt_4BWwYiHWNrZAWlFIXRO1YoeVAUYbAG8BagLAy1gsJBMBig-xOSKJVYXW-9_fjqUqpuGY81JtsUSQheEWhPJZ2rSjZGs3amysFzeq6EbPeMea" alt="Step image" class="methodology-steps__image"/>
+            </div>
+          </div>
+          <div class="methodology-steps__text-column">
+            <div class="methodology-steps__text-content">
+              <span class="methodology-steps__step-number">03</span>
+              <h3 class="methodology-steps__step-title">Integración Tecnológica</h3>
+              <p class="methodology-steps__step-description">Aplicamos soluciones de IA personalizadas para acelerar los resultados probados. Aquí es donde la tecnología actúa como multiplicador de fuerza, no como solución mágica.</p>
+              <div class="methodology-steps__step-badge">
+                <span class="methodology-steps__step-badge-icon material-symbols-outlined">rocket_launch</span>
+                <span class="methodology-steps__step-badge-text">Validado por Interact Solutions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__container">
+      <div class="site-footer__grid">
+        <div class="site-footer__branding">
+          <div class="site-footer__logo-wrapper">
+            <span class="site-footer__logo-placeholder material-symbols-outlined">dataset</span>
+            <span class="site-footer__logo-text">Construye Sistemas</span>
+          </div>
+          <p class="site-footer__description">Transformamos la adopción de IA desordenada en estrategias de rentabilidad medibles. Nuestra misión es construir sistemas que generen ROI real, no solo implementar tecnología.</p>
+        </div>
+        <div class="site-footer__spacer"></div>
+        <div class="site-footer__nav-column">
+          <h4 class="site-footer__nav-title">Explorar</h4>
+          <nav class="site-footer__nav">
+          <a href="./index.html" class="site-footer__nav-link">Home</a>
+          <a href="./methodology.html" class="site-footer__nav-link">Metodología</a>
+          <a href="./case-study.html" class="site-footer__nav-link">Casos de Éxito</a>
+          <a href="./diagnostics.html" class="site-footer__nav-link">Diagnóstico</a>
+          </nav>
+        </div>
+        <div class="site-footer__nav-column">
+          <h4 class="site-footer__nav-title">Legal</h4>
+          <nav class="site-footer__nav">
+            <a href="#" class="site-footer__nav-link">Política de Privacidad</a>
+            <a href="#" class="site-footer__nav-link">Términos de Uso</a>
+          </nav>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright">© 2024 Construye Sistemas de Rentabilidad. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

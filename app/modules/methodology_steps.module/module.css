@@ -1,0 +1,210 @@
+/* Mobile-first styles */
+.methodology-steps {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 1.5rem 8rem; /* px-6 pb-32 */
+    margin: 0 auto;
+}
+
+.methodology-steps__center-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-image: linear-gradient(to bottom, rgba(242, 127, 13, 0.5), rgba(242, 127, 13, 0.2), transparent);
+    transform: translateX(-50%);
+    display: none; /* Hidden on mobile */
+}
+
+.methodology-steps__container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem; /* gap-24 */
+}
+
+.methodology-steps__step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem; /* gap-12 */
+}
+
+.methodology-steps__image-column,
+.methodology-steps__text-column {
+    width: 100%;
+}
+
+.methodology-steps__image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 576px; /* max-w-2xl */
+    aspect-ratio: 4 / 3;
+    border-radius: 1rem; /* rounded-2xl */
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.5s ease;
+}
+
+.methodology-steps__step-item:hover .methodology-steps__image-wrapper {
+    border-color: rgba(242, 127, 13, 0.5);
+}
+
+.methodology-steps__image-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(45, 36, 27, 0.8); /* bg-surface-dark/80 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    z-index: 10;
+}
+
+.methodology-steps__image-icon {
+    font-family: 'Material Symbols Outlined';
+    font-size: 6rem; /* !text-9xl */
+    color: rgba(242, 127, 13, 0.9); /* text-primary/90 */
+    text-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+
+.methodology-steps__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    mix-blend-mode: overlay;
+    transition: transform 0.7s ease;
+}
+
+.methodology-steps__step-item:hover .methodology-steps__image {
+    transform: scale(1.05);
+}
+
+.methodology-steps__text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.methodology-steps__step-number {
+    font-size: 5rem; /* text-8xl */
+    font-weight: 900; /* font-black */
+    background-image: linear-gradient(to bottom right, #f27f0d, #8c4b08);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    margin-bottom: 1rem;
+}
+
+.methodology-steps__step-title {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 0.5rem;
+    line-height: 1.2;
+}
+
+.methodology-steps__step-description {
+    color: #cbad90; /* text-text-muted */
+    font-size: 1.125rem; /* text-lg */
+    line-height: 1.75;
+    margin-top: 2rem;
+    max-width: 576px; /* max-w-xl */
+}
+
+.methodology-steps__step-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 9999px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.methodology-steps__step-item:hover .methodology-steps__step-badge {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.methodology-steps__step-badge-icon {
+    font-family: 'Material Symbols Outlined';
+    color: #f27f0d;
+    font-size: 1.25rem; /* text-xl */
+}
+
+.methodology-steps__step-badge-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) { /* lg breakpoint */
+    .methodology-steps__center-line {
+        display: block;
+    }
+
+    .methodology-steps__container {
+        gap: 8rem; /* lg:gap-32 */
+    }
+
+    .methodology-steps__step-item {
+        flex-direction: row;
+        gap: 6rem; /* lg:gap-24 */
+    }
+
+    .methodology-steps__image-column,
+    .methodology-steps__text-column {
+        width: 50%;
+    }
+
+    .methodology-steps__step-item--odd .methodology-steps__image-column {
+        order: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .methodology-steps__step-item--odd .methodology-steps__text-column {
+        order: 2;
+        padding-left: 2.5rem;
+    }
+
+    .methodology-steps__step-item--even .methodology-steps__image-column {
+        order: 2;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .methodology-steps__step-item--even .methodology-steps__text-column {
+        order: 1;
+        padding-right: 2.5rem;
+    }
+
+    .methodology-steps__step-item--even .methodology-steps__text-content {
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    .methodology-steps__step-number {
+        font-size: 10rem;
+    }
+
+    .methodology-steps__step-title {
+        font-size: 3rem; /* lg:text-5xl */
+    }
+
+    .methodology-steps__step-description {
+        font-size: 1.25rem; /* lg:text-xl */
+    }
+}

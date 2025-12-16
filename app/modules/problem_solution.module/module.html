@@ -1,0 +1,52 @@
+{#
+  templateType: "module",
+  label: "Problem vs. Solution",
+  description: "A two-column section to compare and contrast two concepts."
+#}
+
+<section class="problem-solution">
+  <div class="problem-solution__container">
+    <div class="problem-solution__header">
+      <h2 class="problem-solution__title">{{ module.title }}</h2>
+      <p class="problem-solution__subtitle">{{ module.subtitle }}</p>
+    </div>
+    <div class="problem-solution__grid">
+
+      {# Column 1 - The Problem #}
+      <div class="problem-solution__card problem-solution__card--problem">
+        <div class="problem-solution__card-icon-wrapper problem-solution__card-icon-wrapper--problem">
+          <span class="problem-solution__card-icon">{{ module.problem_column.icon }}</span>
+        </div>
+        <h3 class="problem-solution__card-title">{{ module.problem_column.title }}</h3>
+        <ul class="problem-solution__card-list">
+          {% for item in module.problem_column.list_items %}
+            <li class="problem-solution__card-list-item">
+              <span class="problem-solution__card-list-icon problem-solution__card-list-icon--problem">{{ item.icon }}</span>
+              <span>{{ item.text }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      {# Column 2 - The Solution #}
+      <div class="problem-solution__card problem-solution__card--solution">
+        {% if module.solution_column.badge_text %}
+        <div class="problem-solution__card-badge">{{ module.solution_column.badge_text }}</div>
+        {% endif %}
+        <div class="problem-solution__card-icon-wrapper problem-solution__card-icon-wrapper--solution">
+          <span class="problem-solution__card-icon">{{ module.solution_column.icon }}</span>
+        </div>
+        <h3 class="problem-solution__card-title">{{ module.solution_column.title }}</h3>
+        <ul class="problem-solution__card-list">
+          {% for item in module.solution_column.list_items %}
+            <li class="problem-solution__card-list-item">
+              <span class="problem-solution__card-list-icon problem-solution__card-list-icon--solution">{{ item.icon }}</span>
+              <span>{{ item.text }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>

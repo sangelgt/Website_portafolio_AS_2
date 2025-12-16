@@ -1,0 +1,92 @@
+/* Mobile-first styles */
+.case-study-hero {
+    position: relative;
+    padding: 4rem 1.5rem 3rem; /* pt-16 pb-12 px-6 */
+    overflow: hidden;
+    z-index: 1;
+}
+
+.case-study-hero__bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 500px;
+    background-image: linear-gradient(to bottom, #2a1f16, #221910);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.case-study-hero__container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* gap-6 */
+    align-items: center;
+}
+
+.case-study-hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; /* gap-2 */
+    padding: 0.25rem 0.75rem; /* px-3 py-1 */
+    border-radius: 9999px; /* rounded-full */
+    border: 1px solid rgba(242, 127, 13, 0.3); /* border-primary/30 */
+    background-color: rgba(242, 127, 13, 0.1); /* bg-primary/10 */
+    color: #f27f0d; /* text-primary */
+    font-size: 0.75rem; /* text-xs */
+    font-weight: 700; /* font-bold */
+    text-transform: uppercase;
+    letter-spacing: 0.05em; /* tracking-wider */
+}
+
+.case-study-hero__badge-icon {
+    width: 0.5rem; /* size-2 */
+    height: 0.5rem;
+    border-radius: 9999px;
+    background-color: #f27f0d; /* bg-primary */
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.case-study-hero__title {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 900; /* font-black */
+    color: #ffffff;
+    line-height: 1.1;
+    letter-spacing: -0.025em; /* tracking-tight */
+}
+
+.case-study-hero__subtitle {
+    font-size: 1.125rem; /* text-lg */
+    color: #cbad90; /* text-[#cbad90] */
+    font-weight: 400; /* font-normal */
+    line-height: 1.75; /* leading-relaxed */
+    max-width: 42rem; /* max-w-2xl */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tablet and Desktop styles */
+@media (min-width: 768px) { /* md breakpoint */
+    .case-study-hero__title {
+        font-size: 3rem; /* md:text-5xl */
+    }
+    .case-study-hero__subtitle {
+        font-size: 1.25rem; /* md:text-xl */
+    }
+}
+
+@media (min-width: 1024px) { /* lg breakpoint */
+    .case-study-hero__title {
+        font-size: 3.75rem; /* lg:text-6xl */
+    }
+}
+
+@keyframes pulse {
+    50% {
+        opacity: .5;
+    }
+}

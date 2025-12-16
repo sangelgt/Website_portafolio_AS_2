@@ -1,0 +1,32 @@
+{
+    "label": "Transparency Section",
+    "css_assets": [],
+    "external_js": [],
+    "global": false,
+    "host_template_types": ["PAGE"],
+    "js_assets": [],
+    "module_id": 1122334455,
+    "fields": [
+        {
+            "id": "icon",
+            "name": "icon",
+            "label": "Icon (Material Symbols Outlined)",
+            "type": "text",
+            "default": "lock_open"
+        },
+        {
+            "id": "title",
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "default": "Transparencia Radical: Lo que aprendimos"
+        },
+        {
+            "id": "text",
+            "name": "text",
+            "label": "Text",
+            "type": "richtext",
+            "default": "<p class=\"highlight\">\"No todo salió perfecto el primer día. La integración inicial tuvo fricción con el CRM legado, lo que nos obligó a crear un middleware personalizado. Esta honestidad técnica es parte de nuestra garantía.\"</p><p class=\"muted\">A menudo, las consultoras esconden los desafíos de implementación. Nosotros creemos que entender los obstáculos es tan valioso como celebrar las victorias. El retraso de 3 días en el lanzamiento nos permitió robustecer la seguridad del manejo de datos.</p>"
+        }
+    ]
+}

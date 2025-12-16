@@ -1,0 +1,46 @@
+{#
+  templateType: "module",
+  label: "Diagnostics Hero with Form",
+  description: "A two-column hero section with a form on the right."
+#}
+
+<main class="diagnostics-hero">
+  <div class="diagnostics-hero__bg-overlay"></div>
+  <div class="diagnostics-hero__container">
+
+    {# Left Column: Content #}
+    <div class="diagnostics-hero__content-column">
+      <div class="diagnostics-hero__text-content">
+        <h1 class="diagnostics-hero__title">{{ module.title }}</h1>
+        <p class="diagnostics-hero__subtitle">{{ module.subtitle }}</p>
+      </div>
+      <div class="diagnostics-hero__testimonial">
+        <div class="diagnostics-hero__testimonial-icon">format_quote</div>
+        <div>
+          <p class="diagnostics-hero__testimonial-text">{{ module.testimonial.text }}</p>
+          <div class="diagnostics-hero__testimonial-author">
+            <div class="diagnostics-hero__testimonial-author-avatar">
+              <span class="material-symbols-outlined">person</span>
+            </div>
+            <div>
+              <p class="diagnostics-hero__testimonial-author-name">{{ module.testimonial.author_name }}</p>
+              <p class="diagnostics-hero__testimonial-author-title">{{ module.testimonial.author_title }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {# Right Column: Form #}
+    <div class="diagnostics-hero__form-column">
+      <div class="diagnostics-hero__form-wrapper">
+        <h3 class="diagnostics-hero__form-title">{{ module.form.title }}</h3>
+        {% form
+          form_to_use="{{ module.form.form_field.form_id }}"
+          portal_id="{{ portal.id }}"
+        %}
+      </div>
+    </div>
+
+  </div>
+</main>

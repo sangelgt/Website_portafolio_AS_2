@@ -1,0 +1,21 @@
+{#
+  templateType: "module",
+  label: "Logo Cloud",
+  description: "A section to display a collection of client or partner logos."
+#}
+
+<div class="logo-cloud">
+  <div class="logo-cloud__container">
+    <p class="logo-cloud__title">{{ module.title }}</p>
+    <div class="logo-cloud__logos">
+      {% for item in module.logos %}
+        <div class="logo-cloud__logo-item">
+          {% if item.icon %}
+            <span class="logo-cloud__logo-icon">{{ item.icon }}</span>
+          {% endif %}
+          <span class="logo-cloud__logo-text">{{ item.text }}</span>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
