@@ -8,6 +8,7 @@
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <link rel="stylesheet" href="css/animations.css">
   <style>
     body {
       background-color: #221910;
@@ -40,7 +41,7 @@
 <body>
 
   <!-- Header -->
-  <header class="site-header">
+  <header class="site-header animate-fade-in">
     <div class="site-header__container">
       <div class="site-header__branding">
         <a href="/" class="site-header__logo-link">
@@ -55,7 +56,7 @@
         <a href="./diagnostics.html" class="site-header__nav-link">Diagnóstico</a>
       </nav>
       <div class="site-header__actions">
-        <a href="#" class="site-header__cta-button">Calcula TU ROI Ahora</a>
+        <a href="#" class="site-header__cta-button btn-scale-hover animate-pulse">Calcula TU ROI Ahora</a>
         <button class="site-header__mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
           <span class="site-header__mobile-toggle-icon material-symbols-outlined">menu</span>
         </button>
@@ -78,7 +79,7 @@
         <p class="hero-home__sub-headline">La tecnología por sí sola no genera dinero. Transformamos la adopción de IA desordenada en una estrategia de rentabilidad medible y escalable.</p>
       </div>
       <div class="hero-home__actions">
-        <a href="#" class="hero-home__cta hero-home__cta--primary">
+        <a href="#" class="hero-home__cta hero-home__cta--primary animate-pulse btn-scale-hover">
           <span>Calcula TU ROI Ahora</span>
           <span class="hero-home__cta-icon material-symbols-outlined">arrow_forward</span>
         </a>

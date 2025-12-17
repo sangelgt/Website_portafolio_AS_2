@@ -1,0 +1,43 @@
+/* Global Animation Styles */
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(242, 127, 13, 0.3);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgba(242, 127, 13, 0.5);
+  }
+}
+
+/* Animation Utility Classes */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out 0.2s forwards;
+  opacity: 0; /* Start hidden */
+}
+
+.animate-pulse {
+  animation: pulse 2.5s infinite ease-in-out;
+}
+
+/* General Hover Transition for Buttons */
+.btn-scale-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-scale-hover:hover {
+  transform: scale(1.05);
+}
