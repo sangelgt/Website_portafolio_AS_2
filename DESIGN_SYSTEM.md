@@ -30,6 +30,7 @@
 ## 3. Corrección de Errores Históricos
 
 - **Instancia Única del Header:** El componente del encabezado (`Header`) debe ser una instancia única en todas las plantillas. Se debe evitar la duplicación o la carga de múltiples versiones para prevenir distorsiones visuales y problemas de rendimiento.
+- **Sistema de Plantillas Sincronizadas:** Este proyecto es un sistema de plantillas sincronizadas, no una aplicación de React. Todos los cambios en los componentes globales deben reflejarse tanto en los módulos de HubSpot como en los archivos estáticos de GitHub Pages.
 
 ## 4. Estructura de Despliegue
 
