@@ -1,0 +1,85 @@
+{
+  "label": "Footer",
+  "css_assets": [],
+  "external_js": [],
+  "global": true,
+  "host_template_types": ["PAGE"],
+  "js_assets": [],
+  "module_id": 9876543210,
+  "fields": [
+    {
+      "id": "logo",
+      "name": "logo",
+      "label": "Logo",
+      "type": "image",
+      "default": {
+        "src": "https://via.placeholder.com/150",
+        "alt": "Company Logo"
+      }
+    },
+    {
+      "id": "company_name",
+      "name": "company_name",
+      "label": "Company Name",
+      "type": "text",
+      "default": "Construye Sistemas"
+    },
+    {
+      "id": "description",
+      "name": "description",
+      "label": "Description",
+      "type": "textarea",
+      "default": "Transformamos la adopción de IA desordenada en estrategias de rentabilidad medibles. Nuestra misión es construir sistemas que generen ROI real, no solo implementar tecnología."
+    },
+    {
+      "id": "navigation_columns",
+      "name": "navigation_columns",
+      "label": "Navigation Columns",
+      "type": "repeater",
+      "occurrence": {
+        "min": 1,
+        "max": 3
+      },
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "label": "Column Title",
+          "type": "text",
+          "default": "Explore"
+        },
+        {
+          "id": "links",
+          "name": "links",
+          "label": "Links",
+          "type": "repeater",
+          "fields": [
+            {
+              "id": "text",
+              "name": "text",
+              "label": "Link Text",
+              "type": "text",
+              "default": "Home"
+            },
+            {
+              "id": "url",
+              "name": "url",
+              "label": "Link URL",
+              "type": "url",
+              "default": {
+                "href": "#"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "copyright_text",
+      "name": "copyright_text",
+      "label": "Copyright Text",
+      "type": "text",
+      "default": "© 2024 Construye Sistemas de Rentabilidad. Todos los derechos reservados."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+    "label": "Results Grid",
+    "css_assets": [],
+    "external_js": [],
+    "global": false,
+    "host_template_types": ["PAGE"],
+    "js_assets": [],
+    "module_id": 9900112233,
+    "fields": [
+        {
+            "id": "title",
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "default": "Resultados Verificables"
+        },
+        {
+            "id": "subtitle",
+            "name": "subtitle",
+            "label": "Subtitle",
+            "type": "text",
+            "default": "3 Meses Post-Implementación"
+        },
+        {
+            "id": "results",
+            "name": "results",
+            "label": "Results",
+            "type": "repeater",
+            "occurrence": {
+                "min": 1,
+                "default": 4
+            },
+            "fields": [
+                {
+                    "id": "value",
+                    "name": "value",
+                    "label": "Value",
+                    "type": "text",
+                    "default": "30%"
+                },
+                {
+                    "id": "icon",
+                    "name": "icon",
+                    "label": "Icon (Material Symbols Outlined)",
+                    "type": "text",
+                    "default": "arrow_downward"
+                },
+                {
+                    "id": "title",
+                    "name": "title",
+                    "label": "Title",
+                    "type": "text",
+                    "default": "Reducción tiempo respuesta"
+                },
+                {
+                    "id": "subtitle",
+                    "name": "subtitle",
+                    "label": "Subtitle",
+                    "type": "text",
+                    "default": "De 48h a < 34h promedio"
+                }
+            ]
+        }
+    ]
+}

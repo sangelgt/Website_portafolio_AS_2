@@ -1,0 +1,36 @@
+{#
+  templateType: "module"
+  label: "Header"
+  description: "Global site header with navigation and CTA"
+  isGlobal: true
+#}
+
+<header class="site-header">
+  <div class="site-header__container">
+    <div class="site-header__branding">
+      <a href="/" class="site-header__logo-link">
+        {% if module.logo.src %}
+          <img src="{{ module.logo.src }}" alt="{{ module.logo.alt }}" class="site-header__logo-img">
+        {% else %}
+          <span class="site-header__logo-placeholder"></span>
+        {% endif %}
+        <span class="site-header__logo-text">{{ module.logo_text }}</span>
+      </a>
+    </div>
+    <nav class="site-header__nav">
+      {% for item in module.navigation_links %}
+        <a href="{{ item.url.href }}" class="site-header__nav-link">{{ item.text }}</a>
+      {% endfor %}
+    </nav>
+    <div class="site-header__actions">
+      {% if module.cta_button.text %}
+        <a href="{{ module.cta_button.url.href }}" class="site-header__cta-button">
+          {{ module.cta_button.text }}
+        </a>
+      {% endif %}
+      <button class="site-header__mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="site-header__mobile-toggle-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>

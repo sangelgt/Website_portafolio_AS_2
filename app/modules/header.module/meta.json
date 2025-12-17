@@ -1,0 +1,80 @@
+{
+  "label": "Header",
+  "css_assets": [],
+  "external_js": [],
+  "global": true,
+  "host_template_types": ["PAGE"],
+  "js_assets": [],
+  "module_id": 1234567890,
+  "fields": [
+    {
+      "id": "logo",
+      "name": "logo",
+      "label": "Logo",
+      "type": "image",
+      "default": {
+        "src": "https://via.placeholder.com/150",
+        "alt": "Company Logo"
+      }
+    },
+    {
+      "id": "logo_text",
+      "name": "logo_text",
+      "label": "Logo Text",
+      "type": "text",
+      "default": "Construye Sistemas"
+    },
+    {
+      "id": "navigation_links",
+      "name": "navigation_links",
+      "label": "Navigation Links",
+      "type": "repeater",
+      "occurrence": {
+        "min": 1,
+        "max": 5
+      },
+      "fields": [
+        {
+          "id": "text",
+          "name": "text",
+          "label": "Link Text",
+          "type": "text",
+          "default": "Home"
+        },
+        {
+          "id": "url",
+          "name": "url",
+          "label": "Link URL",
+          "type": "url",
+          "default": {
+            "href": "#"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cta_button",
+      "name": "cta_button",
+      "label": "CTA Button",
+      "type": "group",
+      "children": [
+        {
+          "id": "text",
+          "name": "text",
+          "label": "Button Text",
+          "type": "text",
+          "default": "Calcula TU ROI Ahora"
+        },
+        {
+          "id": "url",
+          "name": "url",
+          "label": "Button URL",
+          "type": "url",
+          "default": {
+            "href": "#"
+          }
+        }
+      ]
+    }
+  ]
+}

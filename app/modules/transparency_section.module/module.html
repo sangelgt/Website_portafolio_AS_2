@@ -1,0 +1,23 @@
+{#
+  templateType: "module",
+  label: "Transparency Section",
+  description: "A section to highlight transparency and learnings."
+#}
+
+<section class="transparency-section">
+  <div class="transparency-section__container">
+    <div class="transparency-section__card">
+      <div class="transparency-section__content">
+        <div class="transparency-section__header">
+          <div class="transparency-section__icon-wrapper">
+            <span class="material-symbols-outlined">{{ module.icon }}</span>
+          </div>
+          <h3 class="transparency-section__title">{{ module.title }}</h3>
+        </div>
+        <div class="transparency-section__text">
+          {{ module.text }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
