@@ -10,6 +10,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
+ feat-update-theme-add-recursos-page-12621761070229953014
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#9333ea",
+                "primary-hover": "#7e22ce",
+                "background-light": "#ffffff",
+                "background-dark": "#000000",
+                "surface-dark": "#121212",
+                "border-dark": "#27272a",
+                "text-muted": "#a1a1aa",
+              },
+              fontFamily: {
+                "display": ["Inter", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased overflow-x-hidden flex flex-col min-h-screen">
+
+
       tailwind.config = {
         darkMode: "class",
         theme: {
@@ -32,6 +58,7 @@
     </script>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white font-display overflow-x-hidden">
+ main
 <header class="fixed top-0 z-50 w-full border-b border-white/10 bg-background-dark/95 backdrop-blur-sm">
 <div class="layout-container flex h-full grow flex-col max-w-[1280px] mx-auto">
 <div class="flex items-center justify-between px-6 py-4 lg:px-10">
@@ -57,39 +84,135 @@
 </div>
 </header>
 
-  <!-- Diagnostics Hero with Form -->
-  <main class="diagnostics-hero">
-    <div class="diagnostics-hero__bg-overlay"></div>
-    <div class="diagnostics-hero__container">
-      <div class="diagnostics-hero__content-column">
-        <div class="diagnostics-hero__text-content">
-          <h1 class="diagnostics-hero__title">Deja de adivinar.<br/><span class="highlight">Calcula el impacto real</span> de la IA en tu negocio.</h1>
-          <p class="diagnostics-hero__subtitle">Recibe un estimado personalizado y una hoja de ruta basada en datos, no en tendencias. Descubre cuánto puedes ahorrar y crecer hoy mismo.</p>
-        </div>
-        <div class="diagnostics-hero__testimonial">
-          <span class="diagnostics-hero__testimonial-icon material-symbols-outlined">format_quote</span>
-          <div>
-            <p class="diagnostics-hero__testimonial-text">"La proyección de ROI fue exacta. Implementamos las sugerencias y ahorramos <span class="highlight">20 horas semanales</span> por empleado en el primer mes."</p>
-            <div class="diagnostics-hero__testimonial-author">
-              <div class="diagnostics-hero__testimonial-author-avatar"><span class="material-symbols-outlined">person</span></div>
-              <div>
-                <p class="diagnostics-hero__testimonial-author-name">Carlos Méndez</p>
-                <p class="diagnostics-hero__testimonial-author-title">CTO, FinTech Corp</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="diagnostics-hero__form-column">
-        <div class="diagnostics-hero__form-wrapper">
-          <h3 class="diagnostics-hero__form-title">Solicita tu Diagnóstico</h3>
-          <div style="border:2px dashed #493622; padding: 2rem; text-align: center; color: #cbad90;">
-            <p>HubSpot Form will be rendered here.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
+<main class="relative flex flex-col items-center justify-center flex-grow w-full py-12 px-6 lg:px-40">
+<div class="absolute inset-0 z-0 opacity-20 pointer-events-none overflow-hidden">
+<div class="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full bg-primary blur-[120px]"></div>
+<div class="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] rounded-full bg-[#581c87] blur-[100px]"></div>
+<div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23a1a1aa\' fill-opacity=\'0.05\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30" data-alt="Subtle abstract grid pattern for data analysis theme"></div>
+</div>
+<div class="relative z-10 w-full max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+<div class="flex flex-col gap-8">
+<div class="flex flex-col gap-4">
+<h1 class="text-white text-4xl lg:text-5xl font-black leading-[1.1] tracking-[-0.033em]">
+                        Deja de adivinar.<br/>
+                        Calcula el <span class="text-primary">impacto real</span> de la IA en tu negocio.
+                    </h1>
+<p class="text-text-muted text-lg lg:text-xl font-normal leading-relaxed max-w-[540px]">
+                        Recibe un estimado personalizado y una hoja de ruta basada en datos, no en tendencias. Descubre cuánto puedes ahorrar y crecer hoy mismo.
+                    </p>
+</div>
+<div class="mt-4 p-6 border-l-4 border-primary bg-surface-dark/50 rounded-r-xl backdrop-blur-sm">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-4xl">format_quote</span>
+<div>
+<p class="text-white text-lg font-medium italic leading-relaxed mb-4">
+                                "La proyección de ROI fue exacta. Implementamos las sugerencias y ahorramos <span class="text-primary font-bold">20 horas semanales</span> por empleado en el primer mes."
+                            </p>
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-border-dark flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-text-muted">person</span>
+</div>
+<div>
+<p class="text-white text-sm font-bold">Carlos Méndez</p>
+<p class="text-text-muted text-xs">CTO, FinTech Corp</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-center lg:justify-end">
+<div class="w-full max-w-[480px] bg-surface-dark border border-border-dark rounded-2xl p-6 lg:p-8 shadow-2xl relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+<h3 class="text-white text-2xl font-bold mb-6">Solicita tu Diagnóstico</h3>
+<form class="flex flex-col gap-5">
+<label class="flex flex-col w-full">
+<span class="text-white text-sm font-medium leading-normal pb-2">Nombre Completo</span>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-text-muted text-[20px]">person</span>
+</div>
+<input class="form-input flex w-full resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-1 focus:ring-primary border border-transparent bg-border-dark focus:border-primary h-12 pl-11 placeholder:text-text-muted/60 text-base font-normal leading-normal transition-all" placeholder="Ej. Juan Pérez" type="text"/>
+</div>
+</label>
+<label class="flex flex-col w-full">
+<span class="text-white text-sm font-medium leading-normal pb-2">Correo Corporativo</span>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-text-muted text-[20px]">business_center</span>
+</div>
+<input class="form-input flex w-full resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-1 focus:ring-primary border border-transparent bg-border-dark focus:border-primary h-12 pl-11 placeholder:text-text-muted/60 text-base font-normal leading-normal transition-all" placeholder="nombre@empresa.com" type="email"/>
+</div>
+</label>
+<label class="flex flex-col w-full">
+<span class="text-white text-sm font-medium leading-normal pb-2">Tamaño de la Empresa</span>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-text-muted text-[20px]">groups</span>
+</div>
+<select class="form-select flex w-full resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-1 focus:ring-primary border border-transparent bg-border-dark focus:border-primary h-12 pl-11 pr-10 placeholder:text-text-muted text-base font-normal leading-normal transition-all cursor-pointer">
+<option disabled="" selected="" value="">Selecciona una opción</option>
+<option value="1-10">1 - 10 empleados</option>
+<option value="11-50">11 - 50 empleados</option>
+<option value="51-200">51 - 200 empleados</option>
+<option value="201+">201+ empleados</option>
+</select>
+</div>
+</label>
+<button class="mt-2 w-full flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-primary text-background-dark text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary-hover transition-colors shadow-lg shadow-primary/20 hover:shadow-primary/40" type="button">
+                            Obtén TU Diagnóstico de ROI Gratuito
+                        </button>
+<div class="flex items-center justify-center gap-2 mt-1 opacity-80">
+<span class="material-symbols-outlined text-text-muted text-xs">lock</span>
+<p class="text-text-muted text-xs text-center">
+                                Tu correo está seguro. Odiamos el spam tanto como tú.
+                            </p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</main>
+
+ feat-update-theme-add-recursos-page-12621761070229953014
+<footer class="border-t border-white/10 bg-background-dark text-white pt-16 pb-12 px-5">
+<div class="layout-content-container flex flex-col max-w-[1280px] mx-auto gap-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8">
+<div class="md:col-span-5 flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 bg-primary/20 rounded-lg text-primary">
+<span class="material-symbols-outlined">dataset</span>
+</div>
+<span class="text-lg font-bold tracking-tight">Construye Sistemas</span>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed max-w-[400px]">
+                        Transformamos la adopción de IA desordenada en estrategias de rentabilidad medibles. Nuestra misión es construir sistemas que generen ROI real, no solo implementar tecnología.
+                    </p>
+</div>
+<div class="hidden md:block md:col-span-2"></div>
+<div class="md:col-span-2 flex flex-col gap-4">
+<h4 class="text-white font-bold text-sm">Explorar</h4>
+<div class="flex flex-col gap-3">
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./index.html">Home</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./methodology.html">Metodología</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./case-study.html">Casos de Éxito</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./recursos.html">Recursos</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./diagnostics.html">Diagnóstico</a>
+</div>
+</div>
+<div class="md:col-span-3 flex flex-col gap-4">
+<h4 class="text-white font-bold text-sm">Legal</h4>
+<div class="flex flex-col gap-3">
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Política de Privacidad</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Términos de Uso</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+<p>© 2024 Construye Sistemas de Rentabilidad. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
 
   <!-- Footer -->
   <footer class="site-footer" style="margin-top: auto;">
@@ -126,6 +249,7 @@
       </div>
     </div>
   </footer>
+ main
 
 </body>
 </html>

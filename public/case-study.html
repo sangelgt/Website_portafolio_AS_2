@@ -10,6 +10,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
+ feat-update-theme-add-recursos-page-12621761070229953014
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#9333ea",
+                "primary-hover": "#7e22ce",
+                "background-light": "#ffffff",
+                "background-dark": "#000000",
+                "surface-dark": "#121212",
+                "card-dark": "#121212",
+                "border-dark": "#27272a",
+              },
+              fontFamily: {
+                "display": ["Inter", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white overflow-x-hidden selection:bg-primary selection:text-white">
+
+
       tailwind.config = {
         darkMode: "class",
         theme: {
@@ -32,6 +58,7 @@
     </script>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white font-display overflow-x-hidden">
+ main
 <header class="fixed top-0 z-50 w-full border-b border-white/10 bg-background-dark/95 backdrop-blur-sm">
 <div class="layout-container flex h-full grow flex-col max-w-[1280px] mx-auto">
 <div class="flex items-center justify-between px-6 py-4 lg:px-10">
@@ -57,102 +84,190 @@
 </div>
 </header>
 
-  <main>
-    <!-- Case Study Hero -->
-    <section class="case-study-hero">
-      <div class="case-study-hero__bg-overlay"></div>
-      <div class="case-study-hero__container">
-        <div class="case-study-hero__badge">
-          <span class="case-study-hero__badge-icon"></span>
-          Caso de Estudio: Acme Corp
-        </div>
-        <h1 class="case-study-hero__title">Análisis Post-Mortem</h1>
-        <p class="case-study-hero__subtitle">De la ineficiencia operativa a la automatización rentable. Un desglose transparente de cómo transformamos los cuellos de botella en ROI cuantificable.</p>
-      </div>
-    </section>
-
-    <!-- Case Study Timeline -->
-    <section class="case-study-timeline">
-      <div class="case-study-timeline__container">
-        <div class="case-study-timeline__line"></div>
-        <div class="case-study-timeline__item">
-          <div class="case-study-timeline__icon-wrapper"><span class="case-study-timeline__icon material-symbols-outlined">report_problem</span></div>
-          <div class="case-study-timeline__content">
-            <h2 class="case-study-timeline__title">El Desafío: Parálisis Administrativa</h2>
-            <div class="case-study-timeline__description"><p>Acme Corp enfrentaba un estancamiento crítico. Su equipo de operaciones dedicaba más del 60% de la jornada laboral a tareas repetitivas: copiar datos de correos electrónicos y pegarlos en un CRM heredado.</p><p>Este proceso manual no solo era propenso a errores humanos, sino que creaba un retraso de 48 horas en la respuesta al cliente. En un mercado saturado, esa demora significaba perder ventas frente a competidores más ágiles.</p></div>
-          </div>
-        </div>
-        <div class="case-study-timeline__item">
-          <div class="case-study-timeline__icon-wrapper"><span class="case-study-timeline__icon material-symbols-outlined">psychology</span></div>
-          <div class="case-study-timeline__content">
-            <h2 class="case-study-timeline__title">La Solución: Estrategia, luego Automatización</h2>
-            <div class="case-study-timeline__description"><p>Nuestra intervención no fue solo tecnológica, sino estratégica. Antes de escribir una sola línea de código, redefinimos el flujo de trabajo para eliminar pasos innecesarios.</p><p>Desarrollamos un middleware personalizado que actúa como puente invisible entre las solicitudes entrantes y el CRM. Ahora, la clasificación, entrada de datos y asignación de tareas ocurre en milisegundos, liberando al equipo humano para hacer lo que mejor saben hacer: cerrar tratos.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Results Grid -->
-    <section class="results-grid">
-      <div class="results-grid__container">
-        <div class="results-grid__header">
-          <h2 class="results-grid__title">Resultados Verificables</h2>
-          <p class="results-grid__subtitle">3 Meses Post-Implementación</p>
-        </div>
-        <div class="results-grid__grid">
-          <div class="results-grid__card">
-            <div class="results-grid__card-value"><span class="results-grid__card-value-text">30%</span><span class="results-grid__card-value-icon"><span class="material-symbols-outlined">arrow_downward</span></span></div>
-            <p class="results-grid__card-title">Reducción tiempo respuesta</p>
-            <p class="results-grid__card-subtitle">De 48h a &lt; 34h promedio</p>
-          </div>
-          <div class="results-grid__card">
-            <div class="results-grid__card-value"><span class="results-grid__card-value-text">35%</span><span class="results-grid__card-value-icon"><span class="material-symbols-outlined">trending_up</span></span></div>
-            <p class="results-grid__card-title">Aumento tasa conversión</p>
-            <p class="results-grid__card-subtitle">Impacto directo en ventas</p>
-          </div>
-          <div class="results-grid__card">
-            <div class="results-grid__card-value"><span class="results-grid__card-value-text">2h</span><span class="results-grid__card-value-icon"><span class="material-symbols-outlined">schedule</span></span></div>
-            <p class="results-grid__card-title">Ahorro diario</p>
-            <p class="results-grid__card-subtitle">Por empleado administrativo</p>
-          </div>
-          <div class="results-grid__card">
-            <div class="results-grid__card-value"><span class="results-grid__card-value-text">2x</span><span class="results-grid__card-value-icon"><span class="material-symbols-outlined">mail</span></span></div>
-            <p class="results-grid__card-title">Tasa apertura emails</p>
-            <p class="results-grid__card-subtitle">Gracias a la inmediatez</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Transparency Section -->
-    <section class="transparency-section">
-        <div class="transparency-section__container">
-            <div class="transparency-section__card">
-                <div class="transparency-section__content">
-                    <div class="transparency-section__header">
-                        <div class="transparency-section__icon-wrapper"><span class="material-symbols-outlined">lock_open</span></div>
-                        <h3 class="transparency-section__title">Transparencia Radical: Lo que aprendimos</h3>
-                    </div>
-                    <div class="transparency-section__text"><p class="highlight">"No todo salió perfecto el primer día. La integración inicial tuvo fricción con el CRM legado, lo que nos obligó a crear un middleware personalizado. Esta honestidad técnica es parte de nuestra garantía."</p><p class="muted">A menudo, las consultoras esconden los desafíos de implementación. Nosotros creemos que entender los obstáculos es tan valioso como celebrar las victorias. El retraso de 3 días en el lanzamiento nos permitió robustecer la seguridad del manejo de datos.</p></div>
+<main class="flex flex-col min-h-screen">
+<section class="relative pt-16 pb-12 px-6 overflow-hidden">
+<div class="absolute top-0 inset-x-0 h-[500px] bg-gradient-to-b from-[#1e0b2b] to-background-dark pointer-events-none -z-10"></div>
+<div class="max-w-[800px] mx-auto text-center flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 self-center px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+<span class="size-2 rounded-full bg-primary animate-pulse"></span>
+                    Caso de Estudio: Acme Corp
                 </div>
-            </div>
-        </div>
-    </section>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] tracking-tight">
+                    Análisis Post-Mortem
+                </h1>
+<p class="text-lg md:text-xl text-gray-400 font-normal leading-relaxed max-w-2xl mx-auto">
+                    De la ineficiencia operativa a la automatización rentable. Un desglose transparente de cómo transformamos los cuellos de botella en ROI cuantificable.
+                </p>
+</div>
+</section>
+<section class="py-12 px-6">
+<div class="max-w-[800px] mx-auto relative">
+<div class="absolute left-6 md:left-[35px] top-6 bottom-6 w-0.5 bg-gradient-to-b from-white/20 via-primary/50 to-white/20"></div>
+<div class="flex gap-6 md:gap-10 mb-16 relative group">
+<div class="flex-none w-12 h-12 md:w-[72px] md:h-[72px] rounded-full bg-card-dark border border-border-dark shadow-lg shadow-black/40 flex items-center justify-center z-10 group-hover:border-red-500/50 transition-colors duration-300">
+<span class="material-symbols-outlined text-white/80 text-2xl md:text-3xl group-hover:text-red-500 transition-colors">report_problem</span>
+</div>
+<div class="pt-1 md:pt-3">
+<h2 class="text-2xl md:text-3xl font-bold text-white mb-4">El Desafío: Parálisis Administrativa</h2>
+<p class="text-base md:text-lg text-white/70 leading-relaxed mb-4">
+                            Acme Corp enfrentaba un estancamiento crítico. Su equipo de operaciones dedicaba más del 60% de la jornada laboral a tareas repetitivas: copiar datos de correos electrónicos y pegarlos en un CRM heredado.
+                        </p>
+<p class="text-base md:text-lg text-white/70 leading-relaxed">
+                            Este proceso manual no solo era propenso a errores humanos, sino que creaba un retraso de 48 horas en la respuesta al cliente. En un mercado saturado, esa demora significaba perder ventas frente a competidores más ágiles.
+                        </p>
+</div>
+</div>
+<div class="flex gap-6 md:gap-10 relative group">
+<div class="flex-none w-12 h-12 md:w-[72px] md:h-[72px] rounded-full bg-card-dark border border-primary shadow-[0_0_15px_rgba(168,85,247,0.15)] flex items-center justify-center z-10">
+<span class="material-symbols-outlined text-primary text-2xl md:text-3xl">psychology</span>
+</div>
+<div class="pt-1 md:pt-3">
+<h2 class="text-2xl md:text-3xl font-bold text-white mb-4">La Solución: Estrategia, luego Automatización</h2>
+<p class="text-base md:text-lg text-white/70 leading-relaxed mb-4">
+                            Nuestra intervención no fue solo tecnológica, sino estratégica. Antes de escribir una sola línea de código, redefinimos el flujo de trabajo para eliminar pasos innecesarios.
+                        </p>
+<p class="text-base md:text-lg text-white/70 leading-relaxed">
+                            Desarrollamos un middleware personalizado que actúa como puente invisible entre las solicitudes entrantes y el CRM. Ahora, la clasificación, entrada de datos y asignación de tareas ocurre en milisegundos, liberando al equipo humano para hacer lo que mejor saben hacer: cerrar tratos.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 px-6 bg-[#050505] border-y border-border-dark">
+<div class="max-w-[1000px] mx-auto">
+<div class="mb-12 text-center">
+<h2 class="text-3xl font-black text-white mb-2">Resultados Verificables</h2>
+<p class="text-white/50 text-sm font-medium uppercase tracking-widest">3 Meses Post-Implementación</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="flex flex-col p-6 rounded-xl bg-card-dark border border-border-dark hover:border-primary/30 transition-colors group">
+<div class="flex items-end gap-2 mb-2">
+<span class="text-4xl lg:text-5xl font-black text-primary tracking-tighter">30%</span>
+<span class="mb-2 text-primary">
+<span class="material-symbols-outlined text-2xl">arrow_downward</span>
+</span>
+</div>
+<p class="text-white font-bold text-lg leading-tight mb-1">Reducción tiempo respuesta</p>
+<p class="text-white/40 text-sm">De 48h a &lt; 34h promedio</p>
+</div>
+<div class="flex flex-col p-6 rounded-xl bg-card-dark border border-border-dark hover:border-primary/30 transition-colors group">
+<div class="flex items-end gap-2 mb-2">
+<span class="text-4xl lg:text-5xl font-black text-white tracking-tighter group-hover:text-primary transition-colors">35%</span>
+<span class="mb-2 text-[#0bda16]">
+<span class="material-symbols-outlined text-2xl">trending_up</span>
+</span>
+</div>
+<p class="text-white font-bold text-lg leading-tight mb-1">Aumento tasa conversión</p>
+<p class="text-white/40 text-sm">Impacto directo en ventas</p>
+</div>
+<div class="flex flex-col p-6 rounded-xl bg-card-dark border border-border-dark hover:border-primary/30 transition-colors group">
+<div class="flex items-end gap-2 mb-2">
+<span class="text-4xl lg:text-5xl font-black text-white tracking-tighter group-hover:text-primary transition-colors">2h</span>
+<span class="mb-2 text-[#0bda16]">
+<span class="material-symbols-outlined text-2xl">schedule</span>
+</span>
+</div>
+<p class="text-white font-bold text-lg leading-tight mb-1">Ahorro diario</p>
+<p class="text-white/40 text-sm">Por empleado administrativo</p>
+</div>
+<div class="flex flex-col p-6 rounded-xl bg-card-dark border border-border-dark hover:border-primary/30 transition-colors group">
+<div class="flex items-end gap-2 mb-2">
+<span class="text-4xl lg:text-5xl font-black text-white tracking-tighter group-hover:text-primary transition-colors">2x</span>
+<span class="mb-2 text-[#0bda16]">
+<span class="material-symbols-outlined text-2xl">mail</span>
+</span>
+</div>
+<p class="text-white font-bold text-lg leading-tight mb-1">Tasa apertura emails</p>
+<p class="text-white/40 text-sm">Gracias a la inmediatez</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 px-6">
+<div class="max-w-[800px] mx-auto">
+<div class="rounded-2xl bg-gradient-to-br from-[#1e1b4b] to-[#0a0a0a] border border-primary/20 p-1 md:p-1.5 shadow-2xl">
+<div class="rounded-xl bg-[#0a0a0a] p-8 md:p-10 relative overflow-hidden" data-alt="Abstract geometric pattern resembling a digital lock mechanism" style="background-image: radial-gradient(circle at top right, rgba(168, 85, 247, 0.08), transparent 40%);">
+<div class="absolute -right-6 -top-6 text-white/5 pointer-events-none select-none">
+<span class="material-symbols-outlined text-[180px]">visibility</span>
+</div>
+<div class="relative z-10 flex flex-col gap-4">
+<div class="flex items-center gap-3 mb-2">
+<div class="p-2 bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined text-primary">lock_open</span>
+</div>
+<h3 class="text-xl md:text-2xl font-bold text-white">Transparencia Radical: Lo que aprendimos</h3>
+</div>
+<div class="prose prose-invert max-w-none">
+<p class="text-lg text-white/90 font-medium leading-relaxed border-l-4 border-primary/40 pl-4 py-1">
+                                    "No todo salió perfecto el primer día. La integración inicial tuvo fricción con el CRM legado, lo que nos obligó a crear un middleware personalizado. Esta honestidad técnica es parte de nuestra garantía."
+                                </p>
+<p class="text-base text-white/60 mt-4">
+                                    A menudo, las consultoras esconden los desafíos de implementación. Nosotros creemos que entender los obstáculos es tan valioso como celebrar las victorias. El retraso de 3 días en el lanzamiento nos permitió robustecer la seguridad del manejo de datos.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-6 bg-background-dark border-t border-border-dark">
+<div class="max-w-[700px] mx-auto text-center flex flex-col items-center gap-8">
+<h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                    ¿Tu empresa enfrenta los mismos cuellos de botella?
+                </h2>
+<p class="text-white/60 text-lg">
+                    Deja de perder tiempo en procesos manuales y empieza a generar valor real.
+                </p>
+<button class="group relative inline-flex items-center justify-center px-8 py-4 text-base font-bold text-primary transition-all duration-200 bg-transparent border-2 border-primary rounded-lg hover:bg-primary hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-[#231a10]">
+<span class="mr-2">Verifica TU ROI Potencial</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+</button>
+<p class="text-xs text-white/30 mt-4">
+                    Sin compromiso. Auditoría inicial gratuita de 30 minutos.
+                </p>
+</div>
+</section>
+</main>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-      <div class="cta-section__container">
-        <h2 class="cta-section__title">¿Tu empresa enfrenta los mismos cuellos de botella?</h2>
-        <p class="cta-section__subtitle">Deja de perder tiempo en procesos manuales y empieza a generar valor real.</p>
-        <a href="#" class="cta-section__button">
-          <span class="cta-section__button-text">Verifica TU ROI Potencial</span>
-          <span class="material-symbols-outlined">arrow_forward</span>
-        </a>
-        <p class="cta-section__disclaimer">Sin compromiso. Auditoría inicial gratuita de 30 minutos.</p>
-      </div>
-    </section>
-  </main>
-
+ feat-update-theme-add-recursos-page-12621761070229953014
+<footer class="border-t border-white/10 bg-background-dark text-white pt-16 pb-12 px-5">
+<div class="layout-content-container flex flex-col max-w-[1280px] mx-auto gap-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8">
+<div class="md:col-span-5 flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 bg-primary/20 rounded-lg text-primary">
+<span class="material-symbols-outlined">dataset</span>
+</div>
+<span class="text-lg font-bold tracking-tight">Construye Sistemas</span>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed max-w-[400px]">
+                        Transformamos la adopción de IA desordenada en estrategias de rentabilidad medibles. Nuestra misión es construir sistemas que generen ROI real, no solo implementar tecnología.
+                    </p>
+</div>
+<div class="hidden md:block md:col-span-2"></div>
+<div class="md:col-span-2 flex flex-col gap-4">
+<h4 class="text-white font-bold text-sm">Explorar</h4>
+<div class="flex flex-col gap-3">
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./index.html">Home</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./methodology.html">Metodología</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./case-study.html">Casos de Éxito</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./recursos.html">Recursos</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./diagnostics.html">Diagnóstico</a>
+</div>
+</div>
+<div class="md:col-span-3 flex flex-col gap-4">
+<h4 class="text-white font-bold text-sm">Legal</h4>
+<div class="flex flex-col gap-3">
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Política de Privacidad</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Términos de Uso</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+<p>© 2024 Construye Sistemas de Rentabilidad. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
   <!-- Footer -->
   <footer class="site-footer">
     <div class="site-footer__container">
@@ -188,6 +303,6 @@
       </div>
     </div>
   </footer>
-
+ main
 </body>
 </html>
