@@ -1,16 +1,252 @@
 {% extends "./base.html" %}
 
 {% block body %}
-    <div class="section--black">
-        {% module "home_hero" path="../modules/home_hero_module.module" %}
-    </div>
-    <div class="section--black">
-        {% module "methodology" path="../modules/methodology_module.module" %}
-    </div>
-    <div class="section--white">
-        {% module "proyectos" path="../modules/proyectos_module.module" %}
-    </div>
-    <div class="section--black">
-        {% module "contacto_form" path="../modules/contacto_form_module.module" %}
-    </div>
+<div class="relative z-10 flex min-h-screen w-full flex-col">
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col items-center w-full">
+    <!-- Hero Section -->
+    <section class="w-full flex justify-center py-12 md:py-24 border-b border-border-dark relative overflow-hidden">
+        <!-- Abstract Deco Elements -->
+        <div class="absolute top-10 right-10 w-24 h-24 border-r-2 border-t-2 border-primary/30 hidden lg:block"></div>
+        <div class="absolute bottom-10 left-10 w-24 h-24 border-l-2 border-b-2 border-primary/30 hidden lg:block"></div>
+        <div class="layout-content-container flex flex-col max-w-[1280px] w-full px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+                <!-- Text Content -->
+                <div class="lg:col-span-8 flex flex-col gap-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 border border-primary/50 bg-primary/5 w-fit rounded-sm mb-4">
+                        <span class="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
+                        <span class="text-xs font-mono text-primary tracking-widest uppercase">System Operational // v.4.0</span>
+                    </div>
+                    <h1 class="text-white text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tighter uppercase break-words">
+                        Deje de <span class="text-primary/50 line-through decoration-primary">comprar</span><br/>
+                        herramientas.<br/>
+                        Construya <span class="text-primary">Sistemas.</span>
+                    </h1>
+                    <h2 class="text-text-dim text-lg md:text-xl font-mono border-l-4 border-primary pl-4 mt-4 max-w-2xl">
+                        &gt; AUTOMATION_PROTOCOL_INITIATED... <br/>
+                        &gt; CALCULATING_REVENUE_IMPACT...
+                    </h2>
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <button class="glitch-hover flex min-w-[200px] cursor-pointer items-center justify-center border-2 border-primary bg-primary text-white text-base font-bold uppercase tracking-widest h-14 px-8 rounded-sm transition-all shadow-[4px_4px_0px_0px_#333]">
+                            Calcula Tu ROI
+                        </button>
+                        <button class="flex min-w-[200px] cursor-pointer items-center justify-center border border-white/20 hover:border-white bg-transparent text-white text-base font-bold uppercase tracking-widest h-14 px-8 rounded-sm transition-all hover:bg-white/5">
+                            Auditar Sistema
+                        </button>
+                    </div>
+                </div>
+                <!-- Visual/Stats Content -->
+                <div class="lg:col-span-4 flex flex-col justify-end h-full">
+                    <div class="border border-border-dark bg-surface-dark p-6 rounded-sm relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-2 opacity-50">
+                            <span class="material-symbols-outlined text-primary text-4xl">warning</span>
+                        </div>
+                        <div class="flex flex-col gap-4 relative z-10">
+                            <p class="text-primary text-xs font-mono uppercase tracking-widest border-b border-border-dark pb-2">
+                                [ SYSTEM FAILURE ALERT ]
+                            </p>
+                            <div>
+                                <p class="text-white text-5xl font-black leading-none">95%</p>
+                                <p class="text-white text-lg font-bold mt-1">ROI FAILURE</p>
+                            </div>
+                            <p class="text-text-dim text-sm font-mono leading-relaxed">
+                                La mayoría de las implementaciones de IA fallan por falta de estrategia de rentabilidad (MIT Data).
+                            </p>
+                            <div class="w-full bg-black h-1 mt-2 overflow-hidden">
+                                <div class="h-full bg-primary w-[95%]"></div>
+                            </div>
+                        </div>
+                        <!-- Decorative Grid inside card -->
+                        <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 pointer-events-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Stats & Services Section -->
+    <section class="w-full flex justify-center py-16 border-b border-border-dark bg-surface-dark/30">
+        <div class="layout-content-container flex flex-col max-w-[1280px] w-full px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 border-b border-border-dark pb-6">
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-white text-3xl font-bold uppercase tracking-tight">[ CORE_MODULES ]</h3>
+                    <p class="text-text-dim font-mono text-sm">/root/services/active_protocols</p>
+                </div>
+                <div class="flex items-center gap-2 text-primary">
+                    <span class="material-symbols-outlined animate-spin">settings</span>
+                    <span class="text-sm font-mono">PROCESSING_DATA...</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Stat Card 1 -->
+                <div class="group flex flex-col gap-4 p-6 border border-border-dark bg-background-dark hover:border-primary transition-colors duration-300 rounded-sm relative">
+                    <div class="absolute top-4 right-4 text-border-dark group-hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-3xl">memory</span>
+                    </div>
+                    <p class="text-text-dim font-mono text-xs uppercase">/module_01</p>
+                    <h4 class="text-white text-xl font-bold leading-tight">AUTOMATION STRATEGY</h4>
+                    <p class="text-text-dim text-sm leading-normal">Arquitectura de sistemas autónomos diseñados para escalar sin intervención humana.</p>
+                    <div class="mt-auto pt-4 border-t border-border-dark flex justify-between items-center">
+                        <span class="text-xs text-primary font-mono">STATUS: ACTIVE</span>
+                        <span class="w-2 h-2 bg-primary rounded-full"></span>
+                    </div>
+                </div>
+                <!-- Stat Card 2 -->
+                <div class="group flex flex-col gap-4 p-6 border border-border-dark bg-background-dark hover:border-primary transition-colors duration-300 rounded-sm relative">
+                    <div class="absolute top-4 right-4 text-border-dark group-hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-3xl">data_object</span>
+                    </div>
+                    <p class="text-text-dim font-mono text-xs uppercase">/module_02</p>
+                    <h4 class="text-white text-xl font-bold leading-tight">DATA INTELLIGENCE</h4>
+                    <p class="text-text-dim text-sm leading-normal">Transformación de datos brutos en decisiones ejecutables en tiempo real.</p>
+                    <div class="mt-auto pt-4 border-t border-border-dark flex justify-between items-center">
+                        <span class="text-xs text-primary font-mono">STATUS: ACTIVE</span>
+                        <span class="w-2 h-2 bg-primary rounded-full"></span>
+                    </div>
+                </div>
+                <!-- Stat Card 3 -->
+                <div class="group flex flex-col gap-4 p-6 border border-border-dark bg-background-dark hover:border-primary transition-colors duration-300 rounded-sm relative">
+                    <div class="absolute top-4 right-4 text-border-dark group-hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-3xl">hub</span>
+                    </div>
+                    <p class="text-text-dim font-mono text-xs uppercase">/module_03</p>
+                    <h4 class="text-white text-xl font-bold leading-tight">SYSTEM INTEGRATION</h4>
+                    <p class="text-text-dim text-sm leading-normal">Conexión de silos empresariales mediante APIs y agentes inteligentes.</p>
+                    <div class="mt-auto pt-4 border-t border-border-dark flex justify-between items-center">
+                        <span class="text-xs text-primary font-mono">STATUS: ACTIVE</span>
+                        <span class="w-2 h-2 bg-primary rounded-full"></span>
+                    </div>
+                </div>
+                <!-- Stat Card 4 -->
+                <div class="group flex flex-col gap-4 p-6 border border-border-dark bg-background-dark hover:border-primary transition-colors duration-300 rounded-sm relative">
+                    <div class="absolute top-4 right-4 text-border-dark group-hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-3xl">monitoring</span>
+                    </div>
+                    <p class="text-text-dim font-mono text-xs uppercase">/module_04</p>
+                    <h4 class="text-white text-xl font-bold leading-tight">ROI AUDITING</h4>
+                    <p class="text-text-dim text-sm leading-normal">Medición precisa del retorno de inversión en cada implementación de IA.</p>
+                    <div class="mt-auto pt-4 border-t border-border-dark flex justify-between items-center">
+                        <span class="text-xs text-primary font-mono">STATUS: ACTIVE</span>
+                        <span class="w-2 h-2 bg-primary rounded-full"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients / Grid Section -->
+    <section class="w-full flex justify-center py-16 border-b border-border-dark">
+        <div class="layout-content-container flex flex-col max-w-[1280px] w-full px-6 lg:px-8">
+            <div class="flex flex-col gap-2 mb-8 text-center">
+                <h3 class="text-white text-xl font-bold uppercase tracking-widest">[ TRUSTED_NODES ]</h3>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-[1px] bg-border-dark border border-border-dark">
+                <!-- Client 1 -->
+                <div class="bg-background-dark aspect-video flex items-center justify-center p-8 group hover:bg-surface-dark transition-colors cursor-crosshair">
+                    <div class="flex flex-col items-center gap-2 opacity-60 group-hover:opacity-100 transition-opacity">
+                        <div class="w-10 h-10 border-2 border-white rounded-none flex items-center justify-center">
+                            <div class="w-4 h-4 bg-white"></div>
+                        </div>
+                        <span class="text-xs font-mono uppercase tracking-widest mt-2">Corp_A</span>
+                    </div>
+                </div>
+                <!-- Client 2 -->
+                <div class="bg-background-dark aspect-video flex items-center justify-center p-8 group hover:bg-surface-dark transition-colors cursor-crosshair">
+                    <div class="flex flex-col items-center gap-2 opacity-60 group-hover:opacity-100 transition-opacity">
+                        <div class="w-10 h-10 border-2 border-white rounded-full flex items-center justify-center">
+                            <div class="w-1 h-8 bg-white"></div>
+                        </div>
+                        <span class="text-xs font-mono uppercase tracking-widest mt-2">Tech_B</span>
+                    </div>
+                </div>
+                <!-- Client 3 -->
+                <div class="bg-background-dark aspect-video flex items-center justify-center p-8 group hover:bg-surface-dark transition-colors cursor-crosshair">
+                    <div class="flex flex-col items-center gap-2 opacity-60 group-hover:opacity-100 transition-opacity">
+                        <div class="w-10 h-10 border-2 border-white transform rotate-45 flex items-center justify-center">
+                            <div class="w-2 h-2 bg-white rounded-full"></div>
+                        </div>
+                        <span class="text-xs font-mono uppercase tracking-widest mt-2">Data_C</span>
+                    </div>
+                </div>
+                <!-- Client 4 -->
+                <div class="bg-background-dark aspect-video flex items-center justify-center p-8 group hover:bg-surface-dark transition-colors cursor-crosshair">
+                    <div class="flex flex-col items-center gap-2 opacity-60 group-hover:opacity-100 transition-opacity">
+                        <div class="w-12 h-6 border-2 border-white flex items-center justify-around px-1">
+                            <div class="w-1 h-1 bg-white"></div>
+                            <div class="w-1 h-1 bg-white"></div>
+                            <div class="w-1 h-1 bg-white"></div>
+                        </div>
+                        <span class="text-xs font-mono uppercase tracking-widest mt-2">Sys_D</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Case Study Grid -->
+    <section class="w-full flex justify-center py-16">
+        <div class="layout-content-container flex flex-col max-w-[1280px] w-full px-6 lg:px-8">
+            <div class="flex items-center justify-between mb-8">
+                <h3 class="text-white text-3xl font-bold uppercase tracking-tight">[ DEPLOYMENT_LOGS ]</h3>
+                <button class="text-primary text-sm font-mono hover:text-white transition-colors uppercase flex items-center gap-1">
+                    View All Logs <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+                </button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="group relative flex flex-col gap-4">
+                    <div class="w-full bg-surface-dark border border-border-dark aspect-[16/9] overflow-hidden rounded-sm">
+                        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0" data-alt="Abstract geometric dark data visualization showing network nodes and connections" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDm8eRCPqD295DY3uYYUHxAIZV94lW5W-H9rcCvV4HP6sBTQDQ_e6tVdg4jLQr2KJdH2o9ohkLLzr7tl6m258RxBiP8Tf9qMrGy8To3RBeJsP0chGgLsp3uziXXTflkFI1XGv2gFxzDqEKHniMmRCDPAN0IlxF3ObXVddoVujZ4uU60akkA3pnEOImiv4cjYS-nAmxJ8J_uF5gByOI8WtLOaOqRUtHFJqJ1dCOr4INqdYTKe7fG0SLa6eIVHMvMUeEAV8bLm8Vr0d3B");'>
+                            <div class="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <div class="flex items-center gap-4 text-xs font-mono text-primary">
+                            <span>// FINTECH_SECTOR</span>
+                            <span>// +300% ROI</span>
+                        </div>
+                        <h4 class="text-white text-2xl font-bold leading-tight group-hover:text-primary transition-colors">AUTOMATED TRADING INFRASTRUCTURE</h4>
+                        <p class="text-text-dim text-sm max-w-md">Reducción del tiempo de latencia en un 40% mediante la implementación de agentes autónomos predictivos.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="group relative flex flex-col gap-4">
+                    <div class="w-full bg-surface-dark border border-border-dark aspect-[16/9] overflow-hidden rounded-sm">
+                        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0" data-alt="Close up of black server rack hardware with purple led lights indicating status" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDLVqptgh541FXkkm-3-f4RVx0ZRGIlKFtaSWqs4aKuKoyIsrcpHsnhnPRNCnENDB5c23HlHun_RiTS49-FYIQTvHWTqix8Onys8BThLzgpWiOGjibJOdmFQP02NYWqLFAMtn7qFi_m5FoyI9WdPvPWxGwfVvEM5rQ9J4bhEFmUI5ni3etsKFMBOoXT3oz4NzPqaBchTGxsQUjQmw5VmKBFNCHEtjaIEU_EtigSEFBNeGyGXFQMdD--XYbrCpJWzrWwpG0lH1Fry1MN");'>
+                            <div class="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <div class="flex items-center gap-4 text-xs font-mono text-primary">
+                            <span>// HEALTHCARE_SECTOR</span>
+                            <span>// +150% EFFICIENCY</span>
+                        </div>
+                        <h4 class="text-white text-2xl font-bold leading-tight group-hover:text-primary transition-colors">DIAGNOSTIC DATA PIPELINE</h4>
+                        <p class="text-text-dim text-sm max-w-md">Sistema de triaje automatizado que procesa 10k registros médicos por hora con 99.9% de precisión.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="w-full flex justify-center py-20 border-t border-border-dark bg-surface-dark relative">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] bg-primary/10 blur-[100px] rounded-full"></div>
+        </div>
+        <div class="layout-content-container flex flex-col items-center text-center max-w-[800px] w-full px-6 relative z-10">
+            <h2 class="text-white text-4xl md:text-6xl font-black uppercase tracking-tighter mb-6">
+                ¿Listo para la <br/><span class="text-primary">ejecución?</span>
+            </h2>
+            <p class="text-text-dim text-lg mb-10 max-w-xl">
+                No vendemos humo. Construimos la infraestructura que su empresa necesita para dominar el mercado.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 w-full justify-center">
+                <button class="glitch-hover flex min-w-[240px] cursor-pointer items-center justify-center border-2 border-primary bg-primary text-white text-lg font-bold uppercase tracking-widest h-16 px-8 rounded-sm shadow-[4px_4px_0px_0px_#fff]">
+                    Iniciar Auditoría
+                </button>
+            </div>
+            <p class="mt-6 text-xs font-mono text-text-dim uppercase tracking-widest">
+                // Limited Slots Available for Q3
+            </p>
+        </div>
+    </section>
+    </main>
+</div>
 {% endblock body %}
