@@ -1,188 +1,247 @@
 <!DOCTYPE html>
-<html class="dark" lang="es">
-<head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Casos de Éxito: Acme Corp - ROI Cuantificable</title>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Casos de Éxito: Acme Corp - ROI Cuantificable</title>
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
-  <style>
-    body{background-color:#221910;color:#fff;font-family:'Inter',sans-serif;overflow-x:hidden}
-    .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24}
-    /* header.module.css */
-    .site-header{position:fixed;top:0;left:0;width:100%;z-index:50;border-bottom:1px solid #493622;background-color:rgba(34,25,16,.95);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.site-header__container{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.5rem;max-width:1280px;margin-left:auto;margin-right:auto}.site-header__branding{display:flex;align-items:center}.site-header__logo-link{display:flex;align-items:center;gap:.75rem;text-decoration:none;color:#fff}.site-header__logo-placeholder{display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;background-color:rgba(242,127,13,.2);border-radius:.5rem;color:#f27f0d}.site-header__logo-img{width:2rem;height:2rem;object-fit:contain}.site-header__logo-text{font-size:1.125rem;font-weight:700;line-height:1.2;letter-spacing:-.015em}.site-header__nav{display:none}.site-header__nav-link{color:rgba(255,255,255,.8);text-decoration:none;font-size:.875rem;font-weight:500;transition:color .2s ease-in-out}.site-header__nav-link:hover{color:#fff}.site-header__actions{display:flex;align-items:center;gap:1rem}.site-header__cta-button{display:flex;align-items:center;justify-content:center;min-width:84px;height:2.5rem;padding:0 1.5rem;background-color:#f27f0d;color:#231a10;border-radius:.5rem;font-size:.875rem;font-weight:700;text-decoration:none;transition:background-color .2s ease-in-out;text-align:center}.site-header__cta-button:hover{background-color:#e6780c}.site-header__mobile-toggle{display:block;background:0 0;border:none;color:#fff;cursor:pointer;padding:.5rem}@media (min-width:768px){.site-header__container{padding:1rem 2.5rem}.site-header__nav{display:flex;align-items:center;gap:2rem}.site-header__mobile-toggle{display:none}}
-    /* case_study_hero.module.css */
-    .case-study-hero{position:relative;padding:4rem 1.5rem 3rem;overflow:hidden;z-index:1}.case-study-hero__bg-overlay{position:absolute;top:0;left:0;right:0;height:500px;background-image:linear-gradient(to bottom,#2a1f16,#221910);pointer-events:none;z-index:-1}.case-study-hero__container{max-width:800px;margin-left:auto;margin-right:auto;text-align:center;display:flex;flex-direction:column;gap:1.5rem;align-items:center}.case-study-hero__badge{display:inline-flex;align-items:center;gap:.5rem;padding:.25rem .75rem;border-radius:9999px;border:1px solid rgba(242,127,13,.3);background-color:rgba(242,127,13,.1);color:#f27f0d;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em}.case-study-hero__badge-icon{width:.5rem;height:.5rem;border-radius:9999px;background-color:#f27f0d;animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}.case-study-hero__title{font-size:2.25rem;font-weight:900;color:#fff;line-height:1.1;letter-spacing:-.025em}.case-study-hero__subtitle{font-size:1.125rem;color:#cbad90;font-weight:400;line-height:1.75;max-width:42rem;margin-left:auto;margin-right:auto}@media (min-width:768px){.case-study-hero__title{font-size:3rem}.case-study-hero__subtitle{font-size:1.25rem}}@media (min-width:1024px){.case-study-hero__title{font-size:3.75rem}}@keyframes pulse{50%{opacity:.5}}
-    /* case_study_timeline.module.css */
-    .case-study-timeline{padding:3rem 1.5rem}.case-study-timeline__container{max-width:800px;margin-left:auto;margin-right:auto;position:relative}.case-study-timeline__line{position:absolute;left:1.5rem;top:1.5rem;bottom:1.5rem;width:2px;background-image:linear-gradient(to bottom,rgba(255,255,255,.2),rgba(242,127,13,.5),rgba(255,255,255,.2))}.case-study-timeline__item{display:flex;gap:1.5rem;position:relative;margin-bottom:4rem}.case-study-timeline__item:last-child{margin-bottom:0}.case-study-timeline__icon-wrapper{flex-shrink:0;width:3rem;height:3rem;border-radius:9999px;background-color:#2a2118;border:1px solid #493622;box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);display:flex;align-items:center;justify-content:center;z-index:10;transition:all .3s ease}.case-study-timeline__item:hover .case-study-timeline__icon-wrapper{border-color:rgba(239,68,68,.5)}.case-study-timeline__icon{font-family:'Material Symbols Outlined';font-size:1.5rem;color:rgba(255,255,255,.8);transition:color .3s ease}.case-study-timeline__item:hover .case-study-timeline__icon{color:#ef4444}.case-study-timeline__item:nth-child(2):hover .case-study-timeline__icon-wrapper{border-color:#f27f0d}.case-study-timeline__item:nth-child(2):hover .case-study-timeline__icon{color:#f27f0d}.case-study-timeline__content{padding-top:.25rem}.case-study-timeline__title{font-size:1.5rem;font-weight:700;color:#fff;margin-bottom:1rem}.case-study-timeline__description{font-size:1rem;color:rgba(255,255,255,.7);line-height:1.75}.case-study-timeline__description p{margin-bottom:1rem}.case-study-timeline__description p:last-child{margin-bottom:0}@media (min-width:768px){.case-study-timeline__line{left:35px}.case-study-timeline__item{gap:2.5rem}.case-study-timeline__icon-wrapper{width:72px;height:72px}.case-study-timeline__icon{font-size:1.875rem}.case-study-timeline__content{padding-top:.75rem}.case-study-timeline__title{font-size:1.875rem}.case-study-timeline__description{font-size:1.125rem}}
-    /* results_grid.module.css */
-    .results-grid{padding:4rem 1.5rem;background-color:#1a130c;border-top:1px solid #493622;border-bottom:1px solid #493622}.results-grid__container{max-width:1000px;margin-left:auto;margin-right:auto}.results-grid__header{margin-bottom:3rem;text-align:center}.results-grid__title{font-size:1.875rem;font-weight:900;color:#fff;margin-bottom:.5rem}.results-grid__subtitle{color:rgba(255,255,255,.5);font-size:.875rem;font-weight:500;text-transform:uppercase;letter-spacing:.1em}.results-grid__grid{display:grid;grid-template-columns:1fr;gap:1.5rem}.results-grid__card{display:flex;flex-direction:column;padding:1.5rem;border-radius:.75rem;background-color:#2a2118;border:1px solid #493622;transition:border-color .3s ease}.results-grid__card:hover{border-color:rgba(242,127,13,.3)}.results-grid__card-value{display:flex;align-items:flex-end;gap:.5rem;margin-bottom:.5rem}.results-grid__card-value-text{font-size:2.25rem;font-weight:900;color:#fff;letter-spacing:-.05em;transition:color .3s ease}.results-grid__card:hover .results-grid__card-value-text{color:#f27f0d}.results-grid__card-value-icon{margin-bottom:.5rem;color:#0bda16}.results-grid__card-value-icon .material-symbols-outlined{font-size:1.5rem}.results-grid__card:nth-child(1) .results-grid__card-value-icon{color:#f27f0d}.results-grid__card-title{color:#fff;font-weight:700;font-size:1.125rem;line-height:1.2;margin-bottom:.25rem}.results-grid__card-subtitle{color:rgba(255,255,255,.4);font-size:.875rem}@media (min-width:768px){.results-grid__grid{grid-template-columns:repeat(2,1fr)}.results-grid__card-value-text{font-size:3rem}}@media (min-width:1024px){.results-grid__grid{grid-template-columns:repeat(4,1fr)}}
-    /* transparency_section.module.css */
-    .transparency-section{padding:4rem 1.5rem}.transparency-section__container{max-width:800px;margin-left:auto;margin-right:auto}.transparency-section__card{border-radius:1rem;background-image:linear-gradient(to bottom right,#2f2216,#1e150f);border:1px solid rgba(242,127,13,.2);padding:1px;box-shadow:0 25px 50px -12px rgba(0,0,0,.25)}.transparency-section__content{border-radius:.9rem;background-color:#2a1f16;padding:2rem;position:relative;overflow:hidden;background-image:radial-gradient(circle at top right,rgba(242,128,13,.08),transparent 40%)}.transparency-section__header{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem}.transparency-section__icon-wrapper{padding:.5rem;background-color:rgba(242,127,13,.1);border-radius:.5rem}.transparency-section__icon-wrapper .material-symbols-outlined{color:#f27f0d;display:block}.transparency-section__title{font-size:1.25rem;font-weight:700;color:#fff}.transparency-section__text{color:rgba(255,255,255,.9);line-height:1.75}.transparency-section__text p{margin-bottom:1rem}.transparency-section__text p:last-child{margin-bottom:0}.transparency-section__text p.highlight{font-size:1.125rem;font-weight:500;line-height:1.75;border-left:4px solid rgba(242,127,13,.4);padding-left:1rem;padding-top:.25rem;padding-bottom:.25rem}.transparency-section__text p.muted{font-size:1rem;color:rgba(255,255,255,.6);margin-top:1rem}@media (min-width:768px){.transparency-section__content{padding:2.5rem}.transparency-section__title{font-size:1.5rem}}
-    /* cta_section.module.css */
-    .cta-section{padding:5rem 1.5rem;background-color:#221910;border-top:1px solid #493622}.cta-section__container{max-width:700px;margin-left:auto;margin-right:auto;text-align:center;display:flex;flex-direction:column;align-items:center;gap:2rem}.cta-section__title{font-size:1.875rem;font-weight:700;color:#fff;letter-spacing:-.025em}.cta-section__subtitle{color:rgba(255,255,255,.6);font-size:1.125rem}.cta-section__button{display:inline-flex;align-items:center;justify-content:center;padding:1rem 2rem;font-size:1rem;font-weight:700;color:#f27f0d;background-color:transparent;border:2px solid #f27f0d;border-radius:.5rem;text-decoration:none;transition:all .2s ease-in-out}.cta-section__button:hover{background-color:#f27f0d;color:#231a10}.cta-section__button-text{margin-right:.5rem}.cta-section__button .material-symbols-outlined{transition:transform .2s ease-in-out}.cta-section__button:hover .material-symbols-outlined{transform:translateX(4px)}.cta-section__disclaimer{font-size:.75rem;color:rgba(255,255,255,.3);margin-top:1rem}@media (min-width:768px){.cta-section__title{font-size:2.25rem}}
-    /* footer.module.css */
-    .site-footer{border-top:1px solid #493622;background-color:#221910;color:#fff;padding:4rem 1.25rem 3rem}.site-footer__container{max-width:1280px;margin-left:auto;margin-right:auto;display:flex;flex-direction:column;gap:3rem}.site-footer__grid{display:grid;grid-template-columns:1fr;gap:2.5rem}.site-footer__branding{display:flex;flex-direction:column;gap:1.5rem}.site-footer__logo-wrapper{display:flex;align-items:center;gap:.75rem}.site-footer__logo-placeholder{display:flex;align-items:center;justify-content:center;width:2rem;height:2rem;background-color:rgba(242,127,13,.2);border-radius:.5rem;color:#f27f0d}.site-footer__logo-img{width:2rem;height:2rem;object-fit:contain}.site-footer__logo-text{font-size:1.125rem;font-weight:700}.site-footer__description{color:#a0aec0;font-size:.875rem;line-height:1.6;max-width:400px}.site-footer__spacer{display:none}.site-footer__nav-column{display:flex;flex-direction:column;gap:1rem}.site-footer__nav-title{font-size:.875rem;font-weight:700;color:#fff}.site-footer__nav{display:flex;flex-direction:column;gap:.75rem}.site-footer__nav-link{color:#a0aec0;font-size:.875rem;text-decoration:none;transition:color .2s ease-in-out}.site-footer__nav-link:hover{color:#fff}.site-footer__bottom{border-top:1px solid #493622;padding-top:2rem;display:flex;flex-direction:column;align-items:center;gap:1rem;text-align:center}.site-footer__copyright{font-size:.875rem;color:#718096}@media (min-width:768px){.site-footer__grid{grid-template-columns:repeat(12,1fr);gap:2rem}.site-footer__branding{grid-column:span 5/span 5}.site-footer__spacer{display:block;grid-column:span 2/span 2}.site-footer__nav-column--explore{grid-column:span 2/span 2}.site-footer__nav-column--legal{grid-column:span 3/span 3}.site-footer__bottom{flex-direction:row;justify-content:space-between}}
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#9333ea",
+                "primary-hover": "#7e22ce",
+                "background-light": "#ffffff",
+                "background-dark": "#000000",
+                "surface-dark": "#121212",
+                "card-dark": "#121212",
+                "border-dark": "#27272a",
+              },
+              fontFamily: {
+                "display": ["Inter", "sans-serif"]
+              },
+              borderRadius: {
+                  "DEFAULT": "0.25rem",
+                  "lg": "0.5rem",
+                  "xl": "0.75rem",
+                  "2xl": "1rem",
+                  "full": "9999px"
+              },
+            },
+          },
+        }
+    </script>
 </head>
-<body style="padding-top: 65px;">
-
-  <!-- Header -->
-  <header class="site-header">
-    <div class="site-header__container">
-      <div class="site-header__branding">
-        <a href="/" class="site-header__logo-link">
-          <span class="site-header__logo-placeholder material-symbols-outlined">dataset</span>
-          <span class="site-header__logo-text">Construye Sistemas</span>
-        </a>
-      </div>
-      <nav class="site-header__nav">
-        <a href="./index.html" class="site-header__nav-link">Home</a>
-        <a href="./methodology.html" class="site-header__nav-link">Metodología</a>
-        <a href="./case-study.html" class="site-header__nav-link">Casos de Éxito</a>
-        <a href="./diagnostics.html" class="site-header__nav-link">Diagnóstico</a>
-      </nav>
-      <div class="site-header__actions">
-        <a href="#" class="site-header__cta-button">Calcula TU ROI Ahora</a>
-        <button class="site-header__mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
-          <span class="site-header__mobile-toggle-icon material-symbols-outlined">menu</span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- Case Study Hero -->
-    <section class="case-study-hero">
-      <div class="case-study-hero__bg-overlay"></div>
-      <div class="case-study-hero__container">
-        <div class="case-study-hero__badge">
-          <span class="case-study-hero__badge-icon"></span>
-          Caso de Estudio: Acme Corp
-        </div>
-        <h1 class="case-study-hero__title">Análisis Post-Mortem</h1>
-        <p class="case-study-hero__subtitle">De la ineficiencia operativa a la automatización rentable. Un desglose transparente de cómo transformamos los cuellos de botella en ROI cuantificable.</p>
-      </div>
-    </section>
-
-    <!-- Case Study Timeline -->
-    <section class="case-study-timeline">
-      <div class="case-study-timeline__container">
-        <div class="case-study-timeline__line"></div>
-        <div class="case-study-timeline__item">
-          <div class="case-study-timeline__icon-wrapper"><span class="case-study-timeline__icon material-symbols-outlined">report_problem</span></div>
-          <div class="case-study-timeline__content">
-            <h2 class="case-study-timeline__title">El Desafío: Parálisis Administrativa</h2>
-            <div class="case-study-timeline__description"><p>Acme Corp enfrentaba un estancamiento crítico. Su equipo de operaciones dedicaba más del 60% de la jornada laboral a tareas repetitivas: copiar datos de correos electrónicos y pegarlos en un CRM heredado.</p><p>Este proceso manual no solo era propenso a errores humanos, sino que creaba un retraso de 48 horas en la respuesta al cliente. En un mercado saturado, esa demora significaba perder ventas frente a competidores más ágiles.</p></div>
-          </div>
-        </div>
-        <div class="case-study-timeline__item">
-          <div class="case-study-timeline__icon-wrapper"><span class="case-study-timeline__icon material-symbols-outlined">psychology</span></div>
-          <div class="case-study-timeline__content">
-            <h2 class="case-study-timeline__title">La Solución: Estrategia, luego Automatización</h2>
-            <div class="case-study-timeline__description"><p>Nuestra intervención no fue solo tecnológica, sino estratégica. Antes de escribir una sola línea de código, redefinimos el flujo de trabajo para eliminar pasos innecesarios.</p><p>Desarrollamos un middleware personalizado que actúa como puente invisible entre las solicitudes entrantes y el CRM. Ahora, la clasificación, entrada de datos y asignación de tareas ocurre en milisegundos, liberando al equipo humano para hacer lo que mejor saben hacer: cerrar tratos.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Results Grid -->
-    <section class="results-grid">
-      <div class="results-grid__container">
-        <div class="results-grid__header">
-          <h2 class="results-grid__title">Resultados Verificables</h2>
-          <p class="results-grid__subtitle">3 Meses Post-Implementación</p>
-        </div>
-        <div class="results-grid__grid">
-          <div class="results-grid__card">
-            <div class="results-grid__card-value"><span class="results-grid__card-value-text">30%</span><span class="results-grid__card-value-icon"><span class="material-symbols-outlined">arrow_downward</span></span></div>
-            <p class="results-grid__card-title">Reducción tiempo respuesta</p>
-            <p class="results-grid__card-subtitle">De 48h a &lt; 34h promedio</p>
-          </div>
-          <div class="results-grid__card">
-            <div class="results-grid__card-value"><span class="results-grid__card-value-text">35%</span><span class="results-grid__card-value-icon"><span class="material-symbols-outlined">trending_up</span></span></div>
-            <p class="results-grid__card-title">Aumento tasa conversión</p>
-            <p class="results-grid__card-subtitle">Impacto directo en ventas</p>
-          </div>
-          <div class="results-grid__card">
-            <div class="results-grid__card-value"><span class="results-grid__card-value-text">2h</span><span class="results-grid__card-value-icon"><span class="material-symbols-outlined">schedule</span></span></div>
-            <p class="results-grid__card-title">Ahorro diario</p>
-            <p class="results-grid__card-subtitle">Por empleado administrativo</p>
-          </div>
-          <div class="results-grid__card">
-            <div class="results-grid__card-value"><span class="results-grid__card-value-text">2x</span><span class="results-grid__card-value-icon"><span class="material-symbols-outlined">mail</span></span></div>
-            <p class="results-grid__card-title">Tasa apertura emails</p>
-            <p class="results-grid__card-subtitle">Gracias a la inmediatez</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Transparency Section -->
-    <section class="transparency-section">
-        <div class="transparency-section__container">
-            <div class="transparency-section__card">
-                <div class="transparency-section__content">
-                    <div class="transparency-section__header">
-                        <div class="transparency-section__icon-wrapper"><span class="material-symbols-outlined">lock_open</span></div>
-                        <h3 class="transparency-section__title">Transparencia Radical: Lo que aprendimos</h3>
-                    </div>
-                    <div class="transparency-section__text"><p class="highlight">"No todo salió perfecto el primer día. La integración inicial tuvo fricción con el CRM legado, lo que nos obligó a crear un middleware personalizado. Esta honestidad técnica es parte de nuestra garantía."</p><p class="muted">A menudo, las consultoras esconden los desafíos de implementación. Nosotros creemos que entender los obstáculos es tan valioso como celebrar las victorias. El retraso de 3 días en el lanzamiento nos permitió robustecer la seguridad del manejo de datos.</p></div>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white overflow-x-hidden selection:bg-primary selection:text-white">
+<header class="fixed top-0 z-50 w-full border-b border-white/10 bg-background-dark/95 backdrop-blur-sm">
+<div class="layout-container flex h-full grow flex-col max-w-[1280px] mx-auto">
+<div class="flex items-center justify-between px-6 py-4 lg:px-10">
+<div class="flex items-center gap-3 text-white cursor-pointer">
+<div class="flex items-center justify-center size-8 bg-primary/20 rounded-lg text-primary">
+<span class="material-symbols-outlined">dataset</span>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Construye Sistemas</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-white/70 hover:text-white text-sm font-medium transition-colors" href="./index.html">Home</a>
+<a class="text-white/70 hover:text-white text-sm font-medium transition-colors" href="./methodology.html">Metodología</a>
+<a class="text-white text-sm font-bold transition-colors border-b border-primary pb-0.5" href="./case-study.html">Casos de Éxito</a>
+<a class="text-white/70 hover:text-white text-sm font-medium transition-colors" href="./recursos.html">Recursos</a>
+<a class="text-white/70 hover:text-white text-sm font-medium transition-colors" href="./diagnostics.html">Diagnóstico</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-primary-hover transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Calcula TU ROI Ahora</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex flex-col min-h-screen pt-16">
+<section class="relative pt-16 pb-12 px-6 overflow-hidden">
+<div class="absolute top-0 inset-x-0 h-[500px] bg-gradient-to-b from-[#1e0b2b] to-background-dark pointer-events-none -z-10"></div>
+<div class="max-w-[800px] mx-auto text-center flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 self-center px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+<span class="size-2 rounded-full bg-primary animate-pulse"></span>
+                    Caso de Estudio: Acme Corp
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-      <div class="cta-section__container">
-        <h2 class="cta-section__title">¿Tu empresa enfrenta los mismos cuellos de botella?</h2>
-        <p class="cta-section__subtitle">Deja de perder tiempo en procesos manuales y empieza a generar valor real.</p>
-        <a href="#" class="cta-section__button">
-          <span class="cta-section__button-text">Verifica TU ROI Potencial</span>
-          <span class="material-symbols-outlined">arrow_forward</span>
-        </a>
-        <p class="cta-section__disclaimer">Sin compromiso. Auditoría inicial gratuita de 30 minutos.</p>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="site-footer__container">
-      <div class="site-footer__grid">
-        <div class="site-footer__branding">
-          <div class="site-footer__logo-wrapper">
-            <span class="site-footer__logo-placeholder material-symbols-outlined">dataset</span>
-            <span class="site-footer__logo-text">Construye Sistemas</span>
-          </div>
-          <p class="site-footer__description">Transformamos la adopción de IA desordenada en estrategias de rentabilidad medibles. Nuestra misión es construir sistemas que generen ROI real, no solo implementar tecnología.</p>
-        </div>
-        <div class="site-footer__spacer"></div>
-        <div class="site-footer__nav-column">
-          <h4 class="site-footer__nav-title">Explorar</h4>
-          <nav class="site-footer__nav">
-          <a href="./index.html" class="site-footer__nav-link">Home</a>
-          <a href="./methodology.html" class="site-footer__nav-link">Metodología</a>
-          <a href="./case-study.html" class="site-footer__nav-link">Casos de Éxito</a>
-          <a href="./diagnostics.html" class="site-footer__nav-link">Diagnóstico</a>
-          </nav>
-        </div>
-        <div class="site-footer__nav-column">
-          <h4 class="site-footer__nav-title">Legal</h4>
-          <nav class="site-footer__nav">
-            <a href="#" class="site-footer__nav-link">Política de Privacidad</a>
-            <a href="#" class="site-footer__nav-link">Términos de Uso</a>
-          </nav>
-        </div>
-      </div>
-      <div class="site-footer__bottom">
-        <p class="site-footer__copyright">© 2024 Construye Sistemas de Rentabilidad. Todos los derechos reservados.</p>
-      </div>
-    </div>
-  </footer>
-
-</body>
-</html>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] tracking-tight">
+                    Análisis Post-Mortem
+                </h1>
+<p class="text-lg md:text-xl text-gray-400 font-normal leading-relaxed max-w-2xl mx-auto">
+                    De la ineficiencia operativa a la automatización rentable. Un desglose transparente de cómo transformamos los cuellos de botella en ROI cuantificable.
+                </p>
+</div>
+</section>
+<section class="py-12 px-6">
+<div class="max-w-[800px] mx-auto relative">
+<div class="absolute left-6 md:left-[35px] top-6 bottom-6 w-0.5 bg-gradient-to-b from-white/20 via-primary/50 to-white/20"></div>
+<div class="flex gap-6 md:gap-10 mb-16 relative group">
+<div class="flex-none w-12 h-12 md:w-[72px] md:h-[72px] rounded-full bg-card-dark border border-border-dark shadow-lg shadow-black/40 flex items-center justify-center z-10 group-hover:border-red-500/50 transition-colors duration-300">
+<span class="material-symbols-outlined text-white/80 text-2xl md:text-3xl group-hover:text-red-500 transition-colors">report_problem</span>
+</div>
+<div class="pt-1 md:pt-3">
+<h2 class="text-2xl md:text-3xl font-bold text-white mb-4">El Desafío: Parálisis Administrativa</h2>
+<p class="text-base md:text-lg text-white/70 leading-relaxed mb-4">
+                            Acme Corp enfrentaba un estancamiento crítico. Su equipo de operaciones dedicaba más del 60% de la jornada laboral a tareas repetitivas: copiar datos de correos electrónicos y pegarlos en un CRM heredado.
+                        </p>
+<p class="text-base md:text-lg text-white/70 leading-relaxed">
+                            Este proceso manual no solo era propenso a errores humanos, sino que creaba un retraso de 48 horas en la respuesta al cliente. En un mercado saturado, esa demora significaba perder ventas frente a competidores más ágiles.
+                        </p>
+</div>
+</div>
+<div class="flex gap-6 md:gap-10 relative group">
+<div class="flex-none w-12 h-12 md:w-[72px] md:h-[72px] rounded-full bg-card-dark border border-primary shadow-[0_0_15px_rgba(168,85,247,0.15)] flex items-center justify-center z-10">
+<span class="material-symbols-outlined text-primary text-2xl md:text-3xl">psychology</span>
+</div>
+<div class="pt-1 md:pt-3">
+<h2 class="text-2xl md:text-3xl font-bold text-white mb-4">La Solución: Estrategia, luego Automatización</h2>
+<p class="text-base md:text-lg text-white/70 leading-relaxed mb-4">
+                            Nuestra intervención no fue solo tecnológica, sino estratégica. Antes de escribir una sola línea de código, redefinimos el flujo de trabajo para eliminar pasos innecesarios.
+                        </p>
+<p class="text-base md:text-lg text-white/70 leading-relaxed">
+                            Desarrollamos un middleware personalizado que actúa como puente invisible entre las solicitudes entrantes y el CRM. Ahora, la clasificación, entrada de datos y asignación de tareas ocurre en milisegundos, liberando al equipo humano para hacer lo que mejor saben hacer: cerrar tratos.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 px-6 bg-[#050505] border-y border-border-dark">
+<div class="max-w-[1000px] mx-auto">
+<div class="mb-12 text-center">
+<h2 class="text-3xl font-black text-white mb-2">Resultados Verificables</h2>
+<p class="text-white/50 text-sm font-medium uppercase tracking-widest">3 Meses Post-Implementación</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="flex flex-col p-6 rounded-xl bg-card-dark border border-border-dark hover:border-primary/30 transition-colors group">
+<div class="flex items-end gap-2 mb-2">
+<span class="text-4xl lg:text-5xl font-black text-primary tracking-tighter">30%</span>
+<span class="mb-2 text-primary">
+<span class="material-symbols-outlined text-2xl">arrow_downward</span>
+</span>
+</div>
+<p class="text-white font-bold text-lg leading-tight mb-1">Reducción tiempo respuesta</p>
+<p class="text-white/40 text-sm">De 48h a &lt; 34h promedio</p>
+</div>
+<div class="flex flex-col p-6 rounded-xl bg-card-dark border border-border-dark hover:border-primary/30 transition-colors group">
+<div class="flex items-end gap-2 mb-2">
+<span class="text-4xl lg:text-5xl font-black text-white tracking-tighter group-hover:text-primary transition-colors">35%</span>
+<span class="mb-2 text-[#0bda16]">
+<span class="material-symbols-outlined text-2xl">trending_up</span>
+</span>
+</div>
+<p class="text-white font-bold text-lg leading-tight mb-1">Aumento tasa conversión</p>
+<p class="text-white/40 text-sm">Impacto directo en ventas</p>
+</div>
+<div class="flex flex-col p-6 rounded-xl bg-card-dark border border-border-dark hover:border-primary/30 transition-colors group">
+<div class="flex items-end gap-2 mb-2">
+<span class="text-4xl lg:text-5xl font-black text-white tracking-tighter group-hover:text-primary transition-colors">2h</span>
+<span class="mb-2 text-[#0bda16]">
+<span class="material-symbols-outlined text-2xl">schedule</span>
+</span>
+</div>
+<p class="text-white font-bold text-lg leading-tight mb-1">Ahorro diario</p>
+<p class="text-white/40 text-sm">Por empleado administrativo</p>
+</div>
+<div class="flex flex-col p-6 rounded-xl bg-card-dark border border-border-dark hover:border-primary/30 transition-colors group">
+<div class="flex items-end gap-2 mb-2">
+<span class="text-4xl lg:text-5xl font-black text-white tracking-tighter group-hover:text-primary transition-colors">2x</span>
+<span class="mb-2 text-[#0bda16]">
+<span class="material-symbols-outlined text-2xl">mail</span>
+</span>
+</div>
+<p class="text-white font-bold text-lg leading-tight mb-1">Tasa apertura emails</p>
+<p class="text-white/40 text-sm">Gracias a la inmediatez</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 px-6">
+<div class="max-w-[800px] mx-auto">
+<div class="rounded-2xl bg-gradient-to-br from-[#1e1b4b] to-[#0a0a0a] border border-primary/20 p-1 md:p-1.5 shadow-2xl">
+<div class="rounded-xl bg-[#0a0a0a] p-8 md:p-10 relative overflow-hidden" data-alt="Abstract geometric pattern resembling a digital lock mechanism" style="background-image: radial-gradient(circle at top right, rgba(168, 85, 247, 0.08), transparent 40%);">
+<div class="absolute -right-6 -top-6 text-white/5 pointer-events-none select-none">
+<span class="material-symbols-outlined text-[180px]">visibility</span>
+</div>
+<div class="relative z-10 flex flex-col gap-4">
+<div class="flex items-center gap-3 mb-2">
+<div class="p-2 bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined text-primary">lock_open</span>
+</div>
+<h3 class="text-xl md:text-2xl font-bold text-white">Transparencia Radical: Lo que aprendimos</h3>
+</div>
+<div class="prose prose-invert max-w-none">
+<p class="text-lg text-white/90 font-medium leading-relaxed border-l-4 border-primary/40 pl-4 py-1">
+                                    "No todo salió perfecto el primer día. La integración inicial tuvo fricción con el CRM legado, lo que nos obligó a crear un middleware personalizado. Esta honestidad técnica es parte de nuestra garantía."
+                                </p>
+<p class="text-base text-white/60 mt-4">
+                                    A menudo, las consultoras esconden los desafíos de implementación. Nosotros creemos que entender los obstáculos es tan valioso como celebrar las victorias. El retraso de 3 días en el lanzamiento nos permitió robustecer la seguridad del manejo de datos.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-6 bg-background-dark border-t border-border-dark">
+<div class="max-w-[700px] mx-auto text-center flex flex-col items-center gap-8">
+<h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                    ¿Tu empresa enfrenta los mismos cuellos de botella?
+                </h2>
+<p class="text-white/60 text-lg">
+                    Deja de perder tiempo en procesos manuales y empieza a generar valor real.
+                </p>
+<button class="group relative inline-flex items-center justify-center px-8 py-4 text-base font-bold text-primary transition-all duration-200 bg-transparent border-2 border-primary rounded-lg hover:bg-primary hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-[#231a10]">
+<span class="mr-2">Verifica TU ROI Potencial</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+</button>
+<p class="text-xs text-white/30 mt-4">
+                    Sin compromiso. Auditoría inicial gratuita de 30 minutos.
+                </p>
+</div>
+</section>
+</main>
+<footer class="border-t border-white/10 bg-background-dark text-white pt-16 pb-12 px-5">
+<div class="layout-content-container flex flex-col max-w-[1280px] mx-auto gap-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8">
+<div class="md:col-span-5 flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 bg-primary/20 rounded-lg text-primary">
+<span class="material-symbols-outlined">dataset</span>
+</div>
+<span class="text-lg font-bold tracking-tight">Construye Sistemas</span>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed max-w-[400px]">
+                        Transformamos la adopción de IA desordenada en estrategias de rentabilidad medibles. Nuestra misión es construir sistemas que generen ROI real, no solo implementar tecnología.
+                    </p>
+</div>
+<div class="hidden md:block md:col-span-2"></div>
+<div class="md:col-span-2 flex flex-col gap-4">
+<h4 class="text-white font-bold text-sm">Explorar</h4>
+<div class="flex flex-col gap-3">
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./index.html">Home</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./methodology.html">Metodología</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./case-study.html">Casos de Éxito</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./recursos.html">Recursos</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./diagnostics.html">Diagnóstico</a>
+</div>
+</div>
+<div class="md:col-span-3 flex flex-col gap-4">
+<h4 class="text-white font-bold text-sm">Legal</h4>
+<div class="flex flex-col gap-3">
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Política de Privacidad</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Términos de Uso</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+<p>© 2024 Construye Sistemas de Rentabilidad. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
+</body></html>
