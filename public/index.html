@@ -15,10 +15,11 @@
           theme: {
             extend: {
               colors: {
-                "primary": "#f27f0d",
-                "background-light": "#f8f7f5",
-                "background-dark": "#221910",
-                "surface-dark": "#2c2117",
+                "primary": "#9333ea",
+                "primary-hover": "#7e22ce",
+                "background-light": "#ffffff",
+                "background-dark": "#000000",
+                "surface-dark": "#121212",
               },
               fontFamily: {
                 "display": ["Inter", "sans-serif"]
@@ -31,7 +32,7 @@
 </head>
 <body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white font-display overflow-x-hidden">
 
-<header class="fixed top-0 z-50 w-full border-b border-[#493622] bg-background-dark/95 backdrop-blur-sm">
+<header class="fixed top-0 z-50 w-full border-b border-white/10 bg-background-dark/95 backdrop-blur-sm">
 <div class="layout-container flex h-full grow flex-col max-w-[1280px] mx-auto">
 <div class="flex items-center justify-between px-6 py-4 lg:px-10">
 <div class="flex items-center gap-3 text-white cursor-pointer">
@@ -41,13 +42,14 @@
 <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Construye Sistemas</h2>
 </div>
 <nav class="hidden md:flex items-center gap-8">
-<a class="text-white/80 hover:text-white text-sm font-medium transition-colors" href="#">Home</a>
-<a class="text-white/80 hover:text-white text-sm font-medium transition-colors" href="#">Metodología</a>
-<a class="text-white/80 hover:text-white text-sm font-medium transition-colors" href="#">Casos de Éxito</a>
-<a class="text-white/80 hover:text-white text-sm font-medium transition-colors" href="#">Diagnóstico</a>
+<a class="text-white text-sm font-bold transition-colors border-b border-primary pb-0.5" href="./index.html">Home</a>
+<a class="text-white/70 hover:text-white text-sm font-medium transition-colors" href="./methodology.html">Metodología</a>
+<a class="text-white/70 hover:text-white text-sm font-medium transition-colors" href="./case-study.html">Casos de Éxito</a>
+<a class="text-white/70 hover:text-white text-sm font-medium transition-colors" href="./recursos.html">Recursos</a>
+<a class="text-white/70 hover:text-white text-sm font-medium transition-colors" href="./diagnostics.html">Diagnóstico</a>
 </nav>
 <div class="flex items-center gap-4">
-<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-primary/90 transition-colors text-[#231a10] text-sm font-bold leading-normal tracking-[0.015em]">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-primary-hover transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
 <span class="truncate">Calcula TU ROI Ahora</span>
 </button>
 </div>
@@ -68,23 +70,23 @@
     <div class="flex flex-col gap-6">
     <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-6xl lg:text-7xl">
                         Deje de Comprar Herramientas. <br class="hidden md:block"/>
-    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-200">Construya Sistemas.</span>
+    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-200">Construya Sistemas.</span>
     </h1>
     <p class="mx-auto max-w-[720px] text-lg text-gray-300 md:text-xl font-light leading-relaxed">
                         La tecnología por sí sola no genera dinero. Transformamos la adopción de IA desordenada en una estrategia de rentabilidad medible y escalable.
                     </p>
     </div>
     <div class="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-    <button class="group flex min-w-[200px] cursor-pointer items-center justify-center gap-2 rounded-lg h-14 px-8 bg-primary hover:bg-orange-500 transition-all shadow-[0_0_20px_rgba(242,127,13,0.3)] hover:shadow-[0_0_30px_rgba(242,127,13,0.5)] text-[#231a10] text-base font-bold">
+    <button class="group flex min-w-[200px] cursor-pointer items-center justify-center gap-2 rounded-lg h-14 px-8 bg-primary hover:bg-purple-500 transition-all shadow-[0_0_20px_rgba(147,51,234,0.3)] hover:shadow-[0_0_30px_rgba(147,51,234,0.5)] text-white text-base font-bold">
     <span>Calcula TU ROI Ahora</span>
     <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
     </button>
-    <button class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 border border-[#493622] hover:bg-[#2c2117] transition-colors text-white text-base font-medium">
+    <button class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 border border-white/10 hover:bg-white/5 transition-colors text-white text-base font-medium">
                         Ver Metodología
                     </button>
     </div>
     </div>
-    <div class="mt-20 w-full max-w-[1280px] border-t border-[#493622]/50 pt-10">
+    <div class="mt-20 w-full max-w-[1280px] border-t border-white/10 pt-10">
     <p class="text-center text-sm font-medium text-gray-500 mb-8 uppercase tracking-widest">Empresas que escalan con nuestros sistemas</p>
     <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
     <div class="flex items-center gap-2 text-xl font-bold text-white"><span class="material-symbols-outlined text-3xl">token</span> NexTech</div>
@@ -95,9 +97,85 @@
     </div>
     </div>
     </section>
+
+    <section class="py-20 px-4 md:px-10 bg-surface-dark/30">
+        <div class="layout-content-container flex flex-col max-w-[1100px] mx-auto gap-12">
+        <div class="text-center space-y-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-white">El Problema vs. La Solución</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">La diferencia entre gastar presupuesto en "juguetes" tecnológicos y generar capital con sistemas estratégicos.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="flex flex-col gap-6 p-8 rounded-xl border border-red-900/30 bg-red-950/10">
+        <div class="size-12 rounded-lg bg-red-900/20 flex items-center justify-center text-red-500">
+        <span class="material-symbols-outlined text-3xl">money_off</span>
+        </div>
+        <h3 class="text-2xl font-bold text-white">Comprar Herramientas</h3>
+        <ul class="flex flex-col gap-4 text-gray-400">
+        <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-red-500 shrink-0 mt-0.5">close</span>
+        <span>Foco en características, no en resultados.</span>
+        </li>
+        <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-red-500 shrink-0 mt-0.5">close</span>
+        <span>Silos de datos desconectados.</span>
+        </li>
+        <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-red-500 shrink-0 mt-0.5">close</span>
+        <span>Adopción baja por el equipo humano.</span>
+        </li>
+        <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-red-500 shrink-0 mt-0.5">close</span>
+        <span>ROI negativo o imposible de medir.</span>
+        </li>
+        </ul>
+        </div>
+        <div class="relative flex flex-col gap-6 p-8 rounded-xl border border-primary/30 bg-primary/5">
+        <div class="absolute top-0 right-0 -mt-3 -mr-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">RECOMENDADO</div>
+        <div class="size-12 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+        <span class="material-symbols-outlined text-3xl">trending_up</span>
+        </div>
+        <h3 class="text-2xl font-bold text-white">Construir Sistemas</h3>
+        <ul class="flex flex-col gap-4 text-gray-300">
+        <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-primary shrink-0 mt-0.5">check_circle</span>
+        <span>Ingeniería inversa desde objetivos financieros.</span>
+        </li>
+        <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-primary shrink-0 mt-0.5">check_circle</span>
+        <span>Flujos de trabajo automatizados end-to-end.</span>
+        </li>
+        <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-primary shrink-0 mt-0.5">check_circle</span>
+        <span>Capacitación estratégica del personal.</span>
+        </li>
+        <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-primary shrink-0 mt-0.5">check_circle</span>
+        <span>KPIs de rentabilidad en tiempo real.</span>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-4 md:px-10 bg-surface-dark relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none"></div>
+        <div class="layout-content-container flex flex-col items-center max-w-[800px] mx-auto text-center relative z-10 gap-8">
+        <h2 class="text-3xl md:text-5xl font-black text-white leading-tight">
+                        ¿Su empresa está lista para escalar con IA?
+                    </h2>
+        <p class="text-xl text-gray-400">
+                        Solo trabajamos con 5 nuevos clientes al mes para garantizar la calidad de la implementación.
+                    </p>
+        <button class="flex min-w-[240px] cursor-pointer items-center justify-center rounded-lg h-16 px-10 bg-primary hover:bg-purple-500 transition-all shadow-lg shadow-primary/20 text-white text-lg font-bold">
+                        Agendar Consulta Estratégica
+                    </button>
+        <p class="text-sm text-gray-500 mt-4">Sin compromiso. Análisis preliminar gratuito incluido.</p>
+        </div>
+    </section>
 </main>
 
-<footer class="border-t border-[#493622] bg-background-dark text-white pt-16 pb-12 px-5">
+<footer class="border-t border-white/10 bg-background-dark text-white pt-16 pb-12 px-5">
 <div class="layout-content-container flex flex-col max-w-[1280px] mx-auto gap-12">
 <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8">
 <div class="md:col-span-5 flex flex-col gap-6">
@@ -115,10 +193,11 @@
 <div class="md:col-span-2 flex flex-col gap-4">
 <h4 class="text-white font-bold text-sm">Explorar</h4>
 <div class="flex flex-col gap-3">
-<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Home</a>
-<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Metodología</a>
-<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Casos de Éxito</a>
-<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Diagnóstico</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./index.html">Home</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./methodology.html">Metodología</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./case-study.html">Casos de Éxito</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./recursos.html">Recursos</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="./diagnostics.html">Diagnóstico</a>
 </div>
 </div>
 <div class="md:col-span-3 flex flex-col gap-4">
@@ -129,7 +208,7 @@
 </div>
 </div>
 </div>
-<div class="border-t border-[#493622] pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
 <p>© 2024 Construye Sistemas de Rentabilidad. Todos los derechos reservados.</p>
 </div>
 </div>
