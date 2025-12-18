@@ -15,6 +15,10 @@
 | **Header Component** | 🟢 **Sincronizado** | `/app/modules/header.module/`, `/public/*.html` | Coherencia estructural verificada. |
 | **Hero Banner** | 🟢 **Sincronizado** | `/app/modules/hero_banner.module/`, `/public/index.html` | Creado y sincronizado en HubSpot y estático. |
 | **Documentación** | 🟢 **Existente** | `AGENTS.md`, `DESIGN_SYSTEM.md` | El código ahora cumple con las reglas documentadas. |
+ docs/update-agents-md-14938801796521341817
+| **GitHub Pages** | 🟢 **Sincronizado/Cumple** | `.github/workflows/static.yml` | El mapeo de despliegue apunta correctamente a `/public`. |
+
+ main
 
 ---
 
