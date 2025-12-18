@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
+ feat-update-theme-add-recursos-page-12621761070229953014
         tailwind.config = {
           darkMode: "class",
           theme: {
@@ -34,6 +35,30 @@
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white overflow-x-hidden selection:bg-primary selection:text-white">
 
+
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#9333ea",
+              "primary-hover": "#7e22ce",
+              "background-light": "#ffffff",
+              "background-dark": "#000000",
+              "surface-dark": "#121212",
+              "surface-card": "#1E1E1E",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white font-display overflow-x-hidden">
+ main
 <header class="fixed top-0 z-50 w-full border-b border-white/10 bg-background-dark/95 backdrop-blur-sm">
 <div class="layout-container flex h-full grow flex-col max-w-[1280px] mx-auto">
 <div class="flex items-center justify-between px-6 py-4 lg:px-10">
@@ -204,6 +229,7 @@
 </section>
 </main>
 
+ feat-update-theme-add-recursos-page-12621761070229953014
 <footer class="border-t border-white/10 bg-background-dark text-white pt-16 pb-12 px-5">
 <div class="layout-content-container flex flex-col max-w-[1280px] mx-auto gap-12">
 <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8">
@@ -242,6 +268,41 @@
 </div>
 </div>
 </footer>
-
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__container">
+      <div class="site-footer__grid">
+        <div class="site-footer__branding">
+          <div class="site-footer__logo-wrapper">
+            <span class="site-footer__logo-placeholder material-symbols-outlined">dataset</span>
+            <span class="site-footer__logo-text">Construye Sistemas</span>
+          </div>
+          <p class="site-footer__description">Transformamos la adopción de IA desordenada en estrategias de rentabilidad medibles. Nuestra misión es construir sistemas que generen ROI real, no solo implementar tecnología.</p>
+        </div>
+        <div class="site-footer__spacer"></div>
+        <div class="site-footer__nav-column">
+          <h4 class="site-footer__nav-title">Explorar</h4>
+          <nav class="site-footer__nav">
+          <a href="./index.html" class="site-footer__nav-link">Home</a>
+          <a href="./methodology.html" class="site-footer__nav-link">Metodología</a>
+          <a href="./case-study.html" class="site-footer__nav-link">Casos de Éxito</a>
+          <a href="./recursos.html" class="site-footer__nav-link">Recursos</a>
+          <a href="./diagnostics.html" class="site-footer__nav-link">Diagnóstico</a>
+          </nav>
+        </div>
+        <div class="site-footer__nav-column">
+          <h4 class="site-footer__nav-title">Legal</h4>
+          <nav class="site-footer__nav">
+            <a href="#" class="site-footer__nav-link">Política de Privacidad</a>
+            <a href="#" class="site-footer__nav-link">Términos de Uso</a>
+          </nav>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright">© 2024 Construye Sistemas de Rentabilidad. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+ main
 </body>
 </html>
