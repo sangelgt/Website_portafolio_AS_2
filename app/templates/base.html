@@ -8,97 +8,71 @@
     {# Google Fonts #}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Hubot+Sans:wght@300;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+    {# Tailwind CSS #}
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    {# Tailwind Config #}
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            corePlugins: {
+                preflight: false, // Prevents conflicts with HubSpot's styles
+            },
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7f13ec",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#050505",
+                        "surface-dark": "#111111",
+                        "border-dark": "#333333",
+                        "text-dim": "#888888",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "monospace"],
+                        "mono": ["monospace"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(to right, #333 1px, transparent 1px), linear-gradient(to bottom, #333 1px, transparent 1px)",
+                    }
+                },
+            },
+        }
+    </script>
 
     <style>
-        :root {
-            --purple-transformation: #8E248C;
-            --black: #000000;
-            --white: #FFFFFF;
+        /* Custom Utilities for Brutalist Feel */
+        .glitch-hover:hover {
+            animation: glitch-anim 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+            background-color: #fff;
+            color: #7f13ec;
         }
-        body {
-            font-family: 'Roboto Mono', monospace;
-            background-color: var(--black);
-            color: var(--white);
-            margin: 0;
-            padding: 0;
-            text-align: center;
+        @keyframes glitch-anim {
+            0% { transform: translate(0) }
+            20% { transform: translate(-2px, 2px) }
+            40% { transform: translate(-2px, -2px) }
+            60% { transform: translate(2px, 2px) }
+            80% { transform: translate(2px, -2px) }
+            100% { transform: translate(0) }
         }
-        h1, h2, h3, h4 {
-            margin: 0;
-            padding: 2rem 0;
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(51, 51, 51, 0.3) 1px, transparent 1px), linear-gradient(to bottom, rgba(51, 51, 51, 0.3) 1px, transparent 1px);
         }
-        h1 {
-            font-family: 'Hubot Sans', sans-serif;
-            font-weight: 300;
-            font-style: italic;
-        }
-        h2, h3 {
-            font-family: 'Roboto Mono', monospace;
-            font-weight: 400;
-        }
-        h4 {
-            font-family: 'Hubot Sans', sans-serif;
-            font-weight: 800;
-        }
-        p {
-            font-family: sans-serif;
-        }
-        small {
-            font-family: sans-serif;
-        }
-        .header, .footer {
-            padding: 1rem;
-        }
-        .header__nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-        .header__nav a, .footer a {
-            color: var(--white);
-            text-decoration: none;
-        }
-        .section--white {
-            background-color: var(--white);
-            color: var(--black);
-        }
-        .section--black {
-            background-color: var(--black);
-            color: var(--white);
+        .scanline {
+            background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2));
+            background-size: 100% 4px;
+            pointer-events: none;
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script>
-      tailwind.config = {
-        darkMode: "class",
-        corePlugins: {
-          preflight: false,
-        },
-        theme: {
-          extend: {
-            colors: {
-              "primary": "#9333ea",
-              "background-light": "#ffffff",
-              "background-dark": "#000000",
-              "surface-dark": "#121212",
-            },
-            fontFamily: {
-              "display": ["Inter", "sans-serif"]
-            },
-            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-          },
-        },
-      }
-    </script>
+
     {{ standard_header_includes }}
 </head>
-<body>
+<body class="bg-background-light dark:bg-background-dark font-display text-white selection:bg-primary selection:text-white overflow-x-hidden">
     <div class="body-container-wrapper">
         {% block header %}
             {% include "./partials/header.html" %}

@@ -1,0 +1,153 @@
+{% extends "./base.html" %}
+
+{% block body %}
+<div class="relative z-10 flex min-h-screen w-full flex-col">
+    <!-- Main Content Wrapper -->
+    <main class="flex-grow flex flex-col items-center justify-start w-full pt-10 px-4 md:px-10 pb-20">
+        <div class="w-full max-w-[1200px] border border-border-purple bg-surface-dark relative shadow-[0_0_40px_rgba(127,19,236,0.1)]">
+            <!-- Brutalist Grid Header -->
+            <div class="border-b border-border-purple p-8 md:p-12 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-20 pointer-events-none">
+                    <span class="material-symbols-outlined text-9xl text-primary transform rotate-12">hub</span>
+                </div>
+                <div class="relative z-10 flex flex-col gap-2">
+                    <div class="flex items-center gap-2 text-primary mb-2">
+                        <span class="animate-pulse text-xs">●</span>
+                        <span class="text-xs font-mono tracking-widest">SYSTEM_READY</span>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-black leading-none tracking-tighter uppercase text-white glitch-text">
+                        [&gt;_] CONTACTO DIRECTO
+                    </h1>
+                    <p class="text-[#ad92c9] text-lg font-normal font-mono mt-4 max-w-2xl border-l-2 border-primary pl-4">
+                        INICIAR PROTOCOLO DE COMUNICACIÓN. NUESTROS SISTEMAS DE AUTOMATIZACIÓN ESTÁN ESPERANDO SUS PARÁMETROS.
+                    </p>
+                </div>
+            </div>
+            <!-- Content Split -->
+            <div class="flex flex-col lg:flex-row h-full">
+                <!-- Left Column: Form -->
+                <div class="flex-1 p-8 md:p-12 lg:border-r border-border-purple">
+                    <form class="flex flex-col gap-8">
+                        <!-- Input Group 1 -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <label class="flex flex-col gap-2 group">
+                                <span class="text-primary text-sm font-mono font-bold group-focus-within:text-white transition-colors">// NOMBRE_COMPLETO</span>
+                                <div class="relative">
+                                    <input class="w-full bg-black/40 border-2 border-border-purple text-white px-4 py-4 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all placeholder:text-gray-600 font-mono" placeholder="INPUT_STRING..." type="text"/>
+                                    <div class="absolute right-0 top-0 h-full w-1 bg-border-purple group-focus-within:bg-primary transition-colors"></div>
+                                </div>
+                            </label>
+                            <label class="flex flex-col gap-2 group">
+                                <span class="text-primary text-sm font-mono font-bold group-focus-within:text-white transition-colors">// CORREO_EMPRESARIAL</span>
+                                <div class="relative">
+                                    <input class="w-full bg-black/40 border-2 border-border-purple text-white px-4 py-4 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all placeholder:text-gray-600 font-mono" placeholder="USER@DOMAIN.COM" type="email"/>
+                                    <div class="absolute right-0 top-0 h-full w-1 bg-border-purple group-focus-within:bg-primary transition-colors"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <!-- Input Group 2 -->
+                        <label class="flex flex-col gap-2 group">
+                            <span class="text-primary text-sm font-mono font-bold group-focus-within:text-white transition-colors">// OBJETIVO_ROI</span>
+                            <div class="relative">
+                                <select class="w-full bg-black/40 border-2 border-border-purple text-white px-4 py-4 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all font-mono appearance-none">
+                                    <option>SELECCIONAR KPI PRINCIPAL...</option>
+                                    <option>AUTOMATIZACIÓN DE PROCESOS</option>
+                                    <option>ANÁLISIS DE DATOS</option>
+                                    <option>REDUCCIÓN DE COSTOS OPERATIVOS</option>
+                                    <option>CONSULTORÍA ESTRATÉGICA</option>
+                                </select>
+                                <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-primary pointer-events-none">expand_more</span>
+                            </div>
+                        </label>
+                        <!-- Input Group 3: Textarea -->
+                        <label class="flex flex-col gap-2 group">
+                            <span class="text-primary text-sm font-mono font-bold group-focus-within:text-white transition-colors">// MENSAJE_DATA</span>
+                            <div class="relative">
+                                <textarea class="w-full bg-black/40 border-2 border-border-purple text-white px-4 py-4 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all placeholder:text-gray-600 font-mono resize-none" placeholder="DESCRIBA SUS REQUERIMIENTOS TÉCNICOS..." rows="5"></textarea>
+                            </div>
+                        </label>
+                        <!-- Security Badge -->
+                        <div class="flex items-center gap-2 py-2 px-4 bg-primary/10 border border-primary/30 w-fit">
+                            <span class="material-symbols-outlined text-primary text-sm">lock</span>
+                            <span class="text-xs text-primary font-mono tracking-wider">SECURE_PROTOCOL: ENABLED. ZERO_SPAM.</span>
+                        </div>
+                        <!-- Submit Button -->
+                        <button class="group relative w-full md:w-auto bg-primary hover:bg-primary/90 text-white font-bold py-5 px-10 transition-all active:scale-[0.99] border border-transparent hover:border-white" type="button">
+                            <div class="flex items-center justify-center gap-3">
+                                <span class="text-lg tracking-widest">[ ENVIAR_MENSAJE_ ]</span>
+                                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+                <!-- Right Column: System Info -->
+                <div class="w-full lg:w-[35%] bg-black/30 p-8 md:p-12 flex flex-col gap-10">
+                    <!-- Info Block 1 -->
+                    <div class="flex flex-col gap-4">
+                        <h3 class="text-white text-lg font-bold border-b border-dashed border-gray-700 pb-2 flex items-center justify-between">
+                            <span>SISTEMA_INFO</span>
+                            <span class="material-symbols-outlined text-primary">dns</span>
+                        </h3>
+                        <div class="font-mono text-sm space-y-3 text-gray-400">
+                            <div class="flex justify-between">
+                                <span>ESTADO:</span>
+                                <span class="text-green-400">ONLINE ●</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>LATENCIA:</span>
+                                <span class="text-primary">12ms</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>VERSIÓN:</span>
+                                <span>v2.4.0-build</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Info Block 2 -->
+                    <div class="flex flex-col gap-4">
+                        <h3 class="text-white text-lg font-bold border-b border-dashed border-gray-700 pb-2 flex items-center justify-between">
+                            <span>CANALES_COM</span>
+                            <span class="material-symbols-outlined text-primary">contact_mail</span>
+                        </h3>
+                        <div class="font-mono text-sm space-y-4">
+                            <div class="group cursor-pointer">
+                                <p class="text-xs text-gray-500 mb-1">EMAIL_PRINCIPAL</p>
+                                <a class="text-white hover:text-primary transition-colors flex items-center gap-2" href="#">
+                                    <span class="material-symbols-outlined text-sm">alternate_email</span>
+                                    HOLA@AGENCIA.AI
+                                </a>
+                            </div>
+                            <div class="group cursor-pointer">
+                                <p class="text-xs text-gray-500 mb-1">HQ_LOCATION</p>
+                                <div class="text-white flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-sm">pin_drop</span>
+                                    <span>[REDACTED] / REMOTE_FIRST</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decorative Map / Abstract Data Vis -->
+                    <div class="mt-auto pt-8 border-t border-border-purple/30">
+                        <div class="aspect-video w-full bg-black border border-border-purple relative overflow-hidden group">
+                            <!-- Abstract grid background representing data map -->
+                            <div class="absolute inset-0 opacity-30" style="background-image: linear-gradient(#4d3267 1px, transparent 1px), linear-gradient(90deg, #4d3267 1px, transparent 1px); background-size: 20px 20px;"></div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-16 h-16 border border-primary rounded-full animate-ping opacity-20 absolute"></div>
+                                <div class="w-2 h-2 bg-primary rounded-full shadow-[0_0_10px_#7f13ec]"></div>
+                            </div>
+                            <div class="absolute bottom-2 left-2 text-[10px] text-primary font-mono">
+                                COORDINATES: 19.4326° N, 99.1332° W
+                            </div>
+                            <!-- Using a background image as well for texture if needed, but keeping CSS pure for speed -->
+                            <img alt="Abstract digital data pattern representing server node connections" class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay" data-alt="Abstract digital data pattern representing server node connections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsHmhqtcFVWWA9N8aOeeQ_ID69hy2EWyPMbTPmmg4uX6-dYx0dTgE-460TI69jLszsJ18OvyiSWED6I9uWqqeL_gnP44LFRyLCPT72gVAtmG51IlayT7un1arUa9CabfJk1dEWWoMlQSNdoS5Rr6P9A-ffnbRnX-bcEG7QeNERr2zs2-RSwnXe1r62rUG6QntUrHADlCe2tSUX7lDAnLzajifOnWHl103684ZhXc-a2i-vI-jJmt3ccoGa8M-Pa1K2_2n5qAdZ6bSm"/>
+                        </div>
+                        <p class="text-xs text-gray-500 font-mono mt-2 text-right">SERVER_NODE_MX01</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom decorative bar -->
+            <div class="h-2 w-full bg-gradient-to-r from-primary via-purple-900 to-black"></div>
+        </div>
+    </main>
+</div>
+{% endblock body %}
