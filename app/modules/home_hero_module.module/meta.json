@@ -4,10 +4,133 @@
   "external_js": [],
   "global": false,
   "help_text": "Un módulo de sección 'hero' para la página de inicio, con título, biografía y CTAs.",
-  "host_template_types": ["PAGE", "BLOG_POST", "BLOG_LISTING"],
+  "host_template_types": [
+    "PAGE",
+    "BLOG_POST",
+    "BLOG_LISTING"
+  ],
   "js_assets": [],
   "other_assets": [],
   "smart_type": "NOT_SMART",
-  "tags": ["Homepage", "Hero"],
-  "is_available_for_new_content": true
+  "tags": [
+    "Homepage",
+    "Hero"
+  ],
+  "is_available_for_new_content": true,
+  "fields": [
+    {
+      "name": "warning_banner_text",
+      "label": "Warning Banner Text",
+      "type": "text",
+      "default": "Datos del MIT: El 95% de los pilotos de IA fallan financieramente"
+    },
+    {
+      "name": "headline",
+      "label": "Headline",
+      "type": "group",
+      "children": [
+        {
+          "name": "line_1",
+          "label": "Line 1",
+          "type": "text",
+          "default": "Deje de Comprar Herramientas."
+        },
+        {
+          "name": "line_2_highlighted",
+          "label": "Line 2 (Highlighted)",
+          "type": "text",
+          "default": "Construya Sistemas."
+        }
+      ]
+    },
+    {
+      "name": "sub_headline",
+      "label": "Sub-headline",
+      "type": "richtext",
+      "default": "<p>La tecnología por sí sola no genera dinero. Transformamos la adopción de IA desordenada en una estrategia de rentabilidad medible y escalable.</p>"
+    },
+    {
+      "name": "primary_cta",
+      "label": "Primary CTA",
+      "type": "group",
+      "children": [
+        {
+          "name": "text",
+          "label": "Button Text",
+          "type": "text",
+          "default": "Calcula TU ROI Ahora"
+        },
+        {
+          "name": "link",
+          "label": "Button Link",
+          "type": "url",
+          "default": {
+            "src": "#",
+            "type": "EXTERNAL"
+          }
+        }
+      ]
+    },
+    {
+      "name": "secondary_cta",
+      "label": "Secondary CTA",
+      "type": "group",
+      "children": [
+        {
+          "name": "text",
+          "label": "Button Text",
+          "type": "text",
+          "default": "Ver Metodología"
+        },
+        {
+          "name": "link",
+          "label": "Button Link",
+          "type": "url",
+          "default": {
+            "src": "#",
+            "type": "EXTERNAL"
+          }
+        }
+      ]
+    },
+    {
+      "name": "authority_logos_title",
+      "label": "Authority Logos Title",
+      "type": "text",
+      "default": "Empresas que escalan con nuestros sistemas"
+    },
+    {
+      "name": "authority_logos",
+      "label": "Authority Logos",
+      "type": "list",
+      "children": [
+        {
+          "name": "logo",
+          "label": "Logo",
+          "type": "group",
+          "children": [
+            {
+              "name": "icon",
+              "label": "Material Icon Name",
+              "type": "text",
+              "default": "token"
+            },
+            {
+              "name": "name",
+              "label": "Company Name",
+              "type": "text",
+              "default": "NexTech"
+            }
+          ]
+        }
+      ],
+      "default": [
+        { "logo": { "icon": "token", "name": "NexTech" } },
+        { "logo": { "icon": "hub", "name": "Orbital" } },
+        { "logo": { "icon": "change_history", "name": "DeltaForce" } },
+        { "logo": { "icon": "pentagon", "name": "Stratos" } },
+        { "logo": { "icon": "all_inclusive", "name": "InfinityCorp" } }
+      ]
+    }
+  ]
 }
