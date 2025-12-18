@@ -12,9 +12,15 @@
 | Componente Clave | Estado | Ubicaciones | Notas |
 | :--- | :--- | :--- | :--- |
 | **Pila Tecnológica** | 🟢 **Cumple** | `.` | HTML, CSS, HubL, JS. Código React (`.tsx`) eliminado. |
+ feat-update-theme-add-recursos-page-12621761070229953014
+| **Navegación** | 🟢 **Sincronizado y Verificado** | `/app/modules/header.module/`, `/public/*.html` | Enlaces corregidos a rutas relativas. Sin duplicados. |
+| **Sincronización de Color**| 🟢 **Sincronizado y Verificado** | `/public/*.html` | Paleta de colores (negro/púrpura) es consistente globalmente. |
+| **Header Component** | 🟢 **Sincronizado y Verificado** | `/app/modules/header.module/`, `/public/*.html` | No hay duplicados. Estructura y estilos son consistentes. |
+
 | **Navegación** | 🟢 **Completado** | `/app/templates/partials/header.html`, `/public/*.html` | Enlaces corregidos y nueva página "Recursos" añadida. |
 | **Sincronización de Color**| 🟢 **Completado** | `/app/templates/base.html`, `/public/*.html` | Paleta de colores actualizada a negro y púrpura en todo el sitio. |
 | **Header Component** | 🟢 **Sincronizado** | `/app/modules/header.module/`, `/public/*.html` | Coherencia estructural verificada. |
+ main
 | **Hero Banner** | 🟢 **Sincronizado** | `/app/modules/hero_banner.module/`, `/public/index.html` | Creado y sincronizado en HubSpot y estático. |
 | **Documentación** | 🟢 **Existente** | `AGENTS.md`, `DESIGN_SYSTEM.md` | El código ahora cumple con las reglas documentadas. |
 | **GitHub Pages** | 🟢 **Sincronizado/Cumple** | `.github/workflows/static.yml` | El mapeo de despliegue apunta correctamente a `/public`. |
