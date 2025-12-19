@@ -87,21 +87,40 @@
                             <a class="text-text-dim hover:text-primary text-sm font-medium tracking-wide transition-colors" href="./recursos.html">Recursos</a>
                             <a class="text-text-dim hover:text-primary text-sm font-medium tracking-wide transition-colors" href="./diagnostics.html">Diagnóstico</a>
                         </nav>
-                        <button class="group flex cursor-pointer items-center justify-center overflow-hidden border border-primary bg-primary/10 hover:bg-primary text-primary hover:text-white px-6 py-2 transition-all duration-150 rounded-sm">
+                        <a href="./diagnostics.html" class="group flex cursor-pointer items-center justify-center overflow-hidden border border-primary bg-primary/10 hover:bg-primary text-primary hover:text-white px-6 py-2 transition-all duration-150 rounded-sm">
                             <span class="text-sm font-bold tracking-widest uppercase flex items-center gap-2">
                                 <span class="material-symbols-outlined text-[16px]">power_settings_new</span>
                                 Calcula tu ROI
                             </span>
-                        </button>
+                        </a>
                     </div>
                     <!-- Mobile Menu Icon -->
-                    <div class="md:hidden text-white">
-                        <span class="material-symbols-outlined">menu</span>
-                    </div>
+                    <button id="mobile-menu-button" class="md:hidden text-white z-50">
+                        <span id="mobile-menu-icon" class="material-symbols-outlined">menu</span>
+                    </button>
                 </div>
             </div>
         </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-0 left-0 w-full h-screen bg-background-dark/95 backdrop-blur-sm z-40">
+            <div class="layout-content-container flex flex-col items-center justify-center h-full max-w-[1280px] w-full px-6 lg:px-8 mx-auto">
+                <nav class="flex flex-col items-center gap-8 mb-8">
+                    <a class="text-text-dim hover:text-primary text-2xl font-bold tracking-wide transition-colors" href="./index.html">Inicio</a>
+                    <a class="text-text-dim hover:text-primary text-2xl font-bold tracking-wide transition-colors" href="./methodology.html">Metodología</a>
+                    <a class="text-text-dim hover:text-primary text-2xl font-bold tracking-wide transition-colors" href="./case-study.html">Casos de Éxito</a>
+                    <a class="text-text-dim hover:text-primary text-2xl font-bold tracking-wide transition-colors" href="./recursos.html">Recursos</a>
+                    <a class="text-text-dim hover:text-primary text-2xl font-bold tracking-wide transition-colors" href="./diagnostics.html">Diagnóstico</a>
+                </nav>
+                <a href="./diagnostics.html" class="group flex cursor-pointer items-center justify-center overflow-hidden border border-primary bg-primary/10 hover:bg-primary text-primary hover:text-white px-8 py-3 transition-all duration-150 rounded-sm">
+                    <span class="text-lg font-bold tracking-widest uppercase flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[20px]">power_settings_new</span>
+                        Calcula tu ROI
+                    </span>
+                </a>
+            </div>
+        </div>
     </div>
+    <script src="./js/header.js" defer></script>
 </header>
 
 <!-- Main Content -->
@@ -126,9 +145,9 @@
                                 Transformamos la adopción de IA desordenada en estrategias de retorno medible. Automatice su operación para escalar sin aumentar sus costos.
                             </h2>
 <div class="flex flex-wrap gap-4 mt-8">
-<button class="glitch-hover flex min-w-[200px] cursor-pointer items-center justify-center border-2 border-primary bg-primary text-white text-base font-bold uppercase tracking-widest h-14 px-8 rounded-sm transition-all shadow-[4px_4px_0px_0px_#333]">
+<a href="./diagnostics.html" class="glitch-hover flex min-w-[200px] cursor-pointer items-center justify-center border-2 border-primary bg-primary text-white text-base font-bold uppercase tracking-widest h-14 px-8 rounded-sm transition-all shadow-[4px_4px_0px_0px_#333]">
                                     Obtener mi Diagnóstico
-                                </button>
+                                </a>
 <button class="flex min-w-[200px] cursor-pointer items-center justify-center border border-white/20 hover:border-white bg-transparent text-white text-base font-bold uppercase tracking-widest h-14 px-8 rounded-sm transition-all hover:bg-white/5">
                                     Suscribirse al Boletín Estratégico
                                 </button>
@@ -337,9 +356,9 @@
                         No vendemos humo. Construimos la infraestructura que su empresa necesita para dominar el mercado.
                     </p>
 <div class="flex flex-col md:flex-row gap-4 w-full justify-center">
-<button class="glitch-hover flex min-w-[240px] cursor-pointer items-center justify-center border-2 border-primary bg-primary text-white text-lg font-bold uppercase tracking-widest h-16 px-8 rounded-sm shadow-[4px_4px_0px_0px_#fff]">
+<a href="./diagnostics.html" class="glitch-hover flex min-w-[240px] cursor-pointer items-center justify-center border-2 border-primary bg-primary text-white text-lg font-bold uppercase tracking-widest h-16 px-8 rounded-sm shadow-[4px_4px_0px_0px_#fff]">
                             Iniciar Auditoría
-                        </button>
+                        </a>
 </div>
 <p class="mt-6 text-xs font-mono text-text-dim uppercase tracking-widest">
                         // Cupos limitados para Q3
