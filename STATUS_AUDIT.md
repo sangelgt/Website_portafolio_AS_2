@@ -1,46 +1,79 @@
 # STATUS_AUDIT.md
 
-**Última Auditoría:** 2024-07-27 10:00:00 UTC
-**Última Remediación:** 2024-07-27 10:05:00 UTC
+**Fecha de Ejecución:** 19 de diciembre de 2024
+**Próxima Auditoría:** 19 de enero de 2025
 
-**Nota:** Este documento debe actualizarse en cada ciclo de auditoría para reflejar el estado actual del repositorio.
+**Nota:** Este documento debe actualizarse en cada ciclo de auditoría para reflejar el estado actual del repositorio y las acciones requeridas para mantener la integridad del sistema.
 
 ---
 
-## Salud del Repositorio
+## 1. Salud del Repositorio y Cumplimiento de Protocolos
 
 | Componente Clave | Estado | Ubicaciones | Notas |
 | :--- | :--- | :--- | :--- |
-| **Pila Tecnológica** | 🟢 **Sincronizado y Optimizado** | `.` | HTML, CSS, HubL, JS. Código limpio y sin dependencias no deseadas. |
-| **Navegación** | 🟢 **Sincronizado y Optimizado** | `/public/*.html`, `/app/templates` | Enlaces 100% funcionales con rutas relativas correctas. |
-| **Sincronización de Color**| 🟢 **Sincronizado y Optimizado** | `/public/*.html`, `/app/templates` | Paleta de colores (negro/púrpura) es consistente globalmente. |
-| **Integridad del Header** | 🟢 **Sincronizado y Optimizado** | `/public/*.html`, `/app/templates/partials` | No hay duplicados. Estructura y estilos son consistentes. |
-| **Integridad del Contenido** | 🟢 **Sincronizado y Optimizado** | `/public/*.html`, `/app/templates` | El contenido de todas las páginas está completo y verificado. |
- content-seo-audit-15836753882672589722
-| **Contenido y SEO** | 🟢 **100% Optimizado y Localizado** | `/public/*.html`, `/app/templates` | El contenido de todo el sitio ha sido localizado al español y optimizado para SEO. |
- main
-| **Código Muerto/Inyectado**| 🟢 **Sincronizado y Optimizado** | `/app/modules` | No se encontró código comentado, metadatos de Git ni lógica "envenenada". |
-| **Documentación** | 🟢 **Sincronizado y Optimizado** | `AGENTS.md` | El código cumple con las reglas documentadas. `DESIGN_SYSTEM.md` obsoleto eliminado. |
-| **GitHub Pages** | 🟢 **Sincronizado y Optimizado** | `.github/workflows/static.yml` | El mapeo de despliegue apunta correctamente a `/public`. |
+| **Sincronización de Documentación** | 🟢 **Sincronizado y Optimizado** | `SYSTEM_DESIGN.md` | El manual maestro ha sido actualizado para reflejar la nueva arquitectura y estrategia. |
+| **Auditoría de Enlaces** | 🟢 **Sincronizado y Optimizado** | `AUDIT_REPORT.csv` | El informe de auditoría de enlaces ha sido generado y no muestra enlaces rotos. |
+| **Protocolo Híbrido (HubSpot/Static)** | 🟡 **Requiere Verificación** | `/app`, `/public` | Aunque los archivos estáticos están actualizados, se necesita una validación cruzada con los módulos de HubSpot. |
+| **Accesibilidad (WCAG 2.2 AA)** | 🟠 **Acción Requerida** | `/public/*.html` | Faltan atributos `aria-live` en formularios y una `Declaración de Accesibilidad` formal. |
+| **Integridad del Contenido SEO** | 🟢 **Sincronizado y Optimizado** | `CONTENIDO_SEO.md` | El contenido de las páginas estáticas está alineado con la estrategia SEO. |
 
 ---
 
-## Conflictos Resueltos (Remediación del 2024-07-27)
+## 2. Acciones Técnicas Requeridas para Escalar
 
-1.  **Purga Final de CSS (Resuelto):** Se eliminaron todos los archivos `.css` obsoletos de la carpeta `/app/modules/`. Se verificó que no existan enlaces rotos a hojas de estilo en ningún archivo `.html` o `.module`.
+Tras el análisis de la nueva arquitectura, se han identificado las siguientes acciones técnicas como prioritarias para garantizar la escalabilidad y robustez del sistema:
 
-2.  **Validación de Navegación 360° (Resuelto):** Se probaron manualmente todos los enlaces de navegación en el `<header>` y `<footer>` de cada una de las páginas estáticas (`index.html`, `methodology.html`, `case-study.html`, `diagnostics.html`, `recursos.html`), confirmando que no existen enlaces rotos.
+1.  **Componentización de Módulos en HubSpot:**
+    -   **Acción:** Desacoplar los componentes de las páginas estáticas (ej. header, footer, CTAs) y convertirlos en módulos globales reutilizables en el HubSpot CMS.
+    -   **Justificación:** Reducir la duplicación de código y centralizar la gestión de componentes críticos, facilitando futuras actualizaciones.
 
-3.  **Verificación de Diseño (Resuelto):** Se confirmó que las páginas de `recursos.html` y `diagnostics.html` cargan correctamente la nueva paleta de colores y no presentan destellos de contenido sin estilo (FOUC).
+2.  **Implementación de un Sistema de Pruebas de Regresión Visual:**
+    -   **Acción:** Configurar un pipeline de CI/CD (GitHub Actions) que utilice herramientas como Playwright o Cypress para comparar capturas de pantalla de las páginas estáticas antes y después de cada cambio.
+    -   **Justificación:** Automatizar la detección de inconsistencias visuales entre el entorno de desarrollo y producción, asegurando la integridad del diseño "brutalist tech".
+
+3.  **Creación de una `Declaración de Accesibilidad` Formal:**
+    -   **Acción:** Generar una página dedicada que detalle el nivel de conformidad con WCAG 2.2 AA, las tecnologías utilizadas y los métodos de validación, como se especifica en `STRUCTURE_MAP.md`.
+    -   **Justificación:** Cumplir con los estándares de accesibilidad y construir confianza con los usuarios que dependen de tecnologías de asistencia.
 
 ---
 
-## Nota Técnica Arquitectónica
+## 3. Módulos y Páginas Faltantes (Análisis Comparativo)
 
-Se confirma la eliminación de cualquier arquitectura o dependencia relacionada con React. El proyecto se ha consolidado exitosamente en un **modelo Híbrido (HubSpot/Static)**, donde los componentes visuales se mantienen sincronizados entre los módulos de HubSpot (`/app/modules`) y las páginas estáticas de GitHub (`/public`).
+Al comparar el código base actual con la nueva `STRUCTURE_MAP.md`, se han detectado los siguientes elementos faltantes:
+
+-   **Página Faltante:** `Declaración de Accesibilidad`
+    -   **Descripción:** No existe un archivo `accessibility-statement.html` (o similar) en el directorio `/public`.
+    -   **Prioridad:** Alta.
+
+-   **Módulo Faltante (Conceptual):** Repositorio de Documentos PDF Accesibles
+    -   **Descripción:** La sección de "Recursos" actual no incluye la funcionalidad para listar y descargar guías técnicas en formato PDF accesible, como se describe en el mapa del sitio.
+    -   **Prioridad:** Media.
+
+-   **Componente Faltante:** Soporte y Contacto Humano (Sección)
+    -   **Descripción:** Aunque la información de contacto puede estar presente en el footer, `STRUCTURE_MAP.md` especifica una sección dedicada para ofrecer canales de contacto predecibles y humanos, la cual no está implementada de forma explícita.
+    -   **Prioridad:** Media.
+
+---
+
+## 4. Plan de Implementación Detallado (Hitos Técnicos)
+
+**Hito 1: Sincronización y Refactorización del Core (Sprint 1)**
+-   **[ ] Tarea 1.1:** Convertir el header y footer de las páginas estáticas en `partials` globales de HubSpot.
+-   **[ ] Tarea 1.2:** Crear los módulos de HubSpot correspondientes a los componentes de `index.html`.
+-   **[ ] Tarea 1.3:** Validar que el renderizado en HubSpot es idéntico al de las páginas estáticas.
+
+**Hito 2: Implementación de Contenido Faltante (Sprint 2)**
+-   **[ ] Tarea 2.1:** Crear la página `accessibility-statement.html` y su correspondiente plantilla en HubSpot.
+-   **[ ] Tarea 2.2:** Desarrollar el módulo para el "Repositorio de Documentos PDF" y añadirlo a la página de "Recursos".
+-   **[ ] Tarea 2.3:** Diseñar e implementar la sección de "Soporte y Contacto Humano".
+
+**Hito 3: Automatización y Pruebas (Sprint 3)**
+-   **[ ] Tarea 3.1:** Configurar el pipeline de CI/CD con Playwright para pruebas de regresión visual.
+-   **[ ] Tarea 3.2:** Escribir los scripts de prueba iniciales para las páginas clave (Home, Metodología, Diagnóstico).
+-   **[ ] Tarea 3.3:** Ejecutar una auditoría final de accesibilidad y remediar los problemas encontrados.
 
 ---
 
 ## Veredicto Final de la Auditoría
 
-El repositorio se encuentra en estado **🟢 Saludable**. La deuda técnica ha sido resuelta y el código base cumple con los estándares de producción para el nuevo diseño "Brutalist Tech".
+El repositorio se encuentra en un estado **🟡 Parcialmente Sincronizado**. La documentación estratégica ha sido consolidada con éxito, pero existe una brecha técnica entre la visión arquitectónica y la implementación actual. Se requiere la ejecución del plan de implementación detallado para alcanzar la plena conformidad y escalabilidad.
