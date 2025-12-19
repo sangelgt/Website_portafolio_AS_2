@@ -15,7 +15,7 @@
 | **Auditoría de Enlaces** | 🟢 **Sincronizado y Optimizado** | `AUDIT_REPORT.csv` | El informe de auditoría de enlaces ha sido regenerado y está actualizado. |
 | **Protocolo Híbrido (HubSpot/Static)** | 🟢 **Sincronizado y Optimizado** | `/app`, `/public` | Los componentes han sido refactorizados a módulos globales y sincronizados. |
 | **Accesibilidad (WCAG 2.2 AA)** | 🟢 **Sincronizado y Optimizado** | `/public/accessibility-statement.html` | Se ha creado la página de Declaración de Accesibilidad, cumpliendo un requisito clave. |
-| **Integridad del Contenido SEO** | 🟢 **Sincronizado y Optimizado** | `CONTENIDO_SEO.md` | El contenido de las páginas estáticas está alineado con la estrategia SEO. |
+| **Integridad del Contenido SEO** | 🟢 **Sincronizado y Optimizado** | `strategy/CONTENIDO_SEO.md` | El contenido de las páginas estáticas está alineado con la estrategia SEO. |
 | **Pruebas de Regresión Visual** | 🟢 **Implementado** | `.github/workflows/visual-regression.yml` | El pipeline de CI/CD para pruebas visuales con Playwright está configurado. |
 
 ---
@@ -56,6 +56,12 @@ Todos los módulos y páginas identificados como faltantes en la auditoría ante
 -   **[✔️] Tarea 3.1:** Configurar el pipeline de CI/CD con Playwright para pruebas de regresión visual.
 -   **[✔️] Tarea 3.2:** Escribir los scripts de prueba iniciales para las páginas clave (Home, Metodología, Diagnóstico).
 -   **[✔️] Tarea 3.3:** Ejecutar una auditoría final de accesibilidad y remediar los problemas encontrados.
+
+---
+
+## Log de Acciones Recientes
+
+-   **20 de diciembre de 2024:** Reestructuración de la documentación estratégica. Los archivos de planificación (`CONTENIDO_SEO.md`, `Handoff_TRASPASO.md`, `STRUCTURE_MAP.md`) han sido movidos al nuevo directorio `/strategy` para mejorar la organización del repositorio. Todas las referencias internas han sido actualizadas.
 
 ---
 

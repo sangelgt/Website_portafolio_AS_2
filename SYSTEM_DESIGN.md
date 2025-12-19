@@ -12,7 +12,7 @@ Este proyecto opera bajo un **Protocolo de Desarrollo Híbrido**, manteniendo un
 ### 1.3. Ecosistema de Documentación
 La integridad del proyecto se mantiene a través de un conjunto de documentos vivos, regidos por el **Protocolo de Sincronización Perpetua de Documentación**:
 -   **`AGENTS.md`**: Protocolos operativos para agentes de IA.
--   **`STRUCTURE_MAP.md`**: Arquitectura de la información.
+-   **`strategy/STRUCTURE_MAP.md`**: Arquitectura de la información.
 -   **`AUDIT_REPORT.csv`**: Estado de todos los enlaces internos/externos.
 -   **`STATUS_AUDIT.md`**: Cumplimiento de protocolos de calidad.
 
