@@ -88,6 +88,6 @@ Ante cualquier cambio en el código base, Jules debe actualizar automáticamente
 
 AUDIT_REPORT.csv: Ejecutar auditoría de enlaces para validar que no existan 404 internos tras refactors.
 
-STRUCTURE_MAP.md: Actualizar la jerarquía de navegación si se han creado o movido archivos.
+strategy/STRUCTURE_MAP.md: Actualizar la jerarquía de navegación si se han creado o movido archivos.
 
 SYSTEM_DESIGN.md: Reflejar cualquier cambio en la arquitectura de componentes o lógica de integración (APIs/Webhooks).
