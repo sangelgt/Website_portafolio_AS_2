@@ -67,6 +67,7 @@ Todos los módulos y páginas identificados como faltantes en la auditoría ante
 ## Log de Acciones Recientes
 
 -   **20 de diciembre de 2024:** Reestructuración de la documentación estratégica. Los archivos de planificación (`CONTENIDO_SEO.md`, `Handoff_TRASPASO.md`, `STRUCTURE_MAP.md`) han sido movidos al nuevo directorio `/strategy` para mejorar la organización del repositorio. Todas las referencias internas han sido actualizadas.
+-   **21 de diciembre de 2024:** Corrección de desbordamiento horizontal en el Directorio de Recursos. Se aplicó `min-w-0` a los contenedores de texto para permitir el truncado y ajuste correcto en anchos de pantalla reducidos. El estado del módulo es "Público / Optimizado".
  main
 
 ---
@@ -74,5 +75,5 @@ Todos los módulos y páginas identificados como faltantes en la auditoría ante
 ## Veredicto Final de la Auditoría
 
  feat/documentation-synchronization-12119633349580291143
-El repositorio se encuentra en un estado **🟢 Saludable**. La deuda técnica ha sido resuelta, la arquitectura ha sido modularizada según el plan, y se han implementado los mecanismos de prueba automatizada. El proyecto cumple con los estándares de producción y está listo para la siguiente fase de desarrollo.
+El repositorio se encuentra en un estado **🟢 Saludable**. La deuda técnica ha sido resuelta, la arquitectura ha sido modularizada según el plan, y se han implementado los mecanismos de prueba automatizada. El proyecto cumple con los estándares de producción y está listo para la siguiente fase de desarrollo. Se ha verificado la corrección del desbordamiento de contenido en el Directorio de Recursos.
  main
