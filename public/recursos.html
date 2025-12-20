@@ -59,6 +59,10 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #7f0df2;
         }
+        p, .font-mono {
+            overflow-wrap: anywhere;
+            word-break: break-word;
+        }
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white overflow-x-hidden min-h-screen flex flex-col font-display">
@@ -167,7 +171,7 @@
 </div>
 <!-- Featured Section (Grid) -->
 <section class="mb-16">
-<div class="flex items-center justify-between mb-6">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 gap-4">
 <h2 class="text-2xl font-bold uppercase flex items-center gap-2">
 <span class="w-2 h-6 bg-primary block"></span>
                         DIRECTORIO: CASOS_DE_ÉXITO // ESTADO: PÚBLICO
@@ -178,14 +182,14 @@
 <!-- Card 1 -->
 <div class="group brutalist-border bg-[#261834]/50 p-6 flex flex-col gap-4 hover:border-primary transition-all duration-200 hover:-translate-y-1 relative overflow-hidden">
 <div class="absolute top-0 right-0 p-2 opacity-50">
-<span class="material-symbols-outlined text-border-purple text-[64px] group-hover:text-primary/20 transition-colors">bar_chart</span>
+<span class="material-symbols-outlined text-border-purple text-[64px] group-hover:text-primary/20 transition-colors flex-shrink-0">bar_chart</span>
 </div>
 <div class="flex items-center gap-3 text-primary">
-<span class="material-symbols-outlined text-[24px]">dataset</span>
-<span class="text-xs font-mono border border-primary/30 px-1 py-0.5 rounded text-primary">v.2.0.4</span>
+<span class="material-symbols-outlined text-[24px] flex-shrink-0">dataset</span>
+<span class="text-xs font-mono border border-primary/30 px-1 py-0.5 rounded text-primary flex-shrink-0">v.2.0.4</span>
 </div>
-<div class="z-10">
-<h3 class="text-white text-lg font-bold leading-tight uppercase mb-2 group-hover:text-primary transition-colors">FINTECH_OPS_AUTO.v2</h3>
+<div class="z-10 min-w-0">
+<h3 class="text-white text-base md:text-lg font-bold leading-tight uppercase mb-2 group-hover:text-primary transition-colors break-words whitespace-normal">FINTECH_OPS_AUTO.v2</h3>
                             <p class="text-text-dim text-sm font-mono leading-relaxed">// SECTOR: FINANZAS<br/>// IMPACTO: +40% EFICIENCIA<br/>// FECHA: 2023-11-02</p>
 </div>
 <div class="mt-auto pt-4 flex justify-between items-center border-t border-border-purple group-hover:border-primary/50">
@@ -196,14 +200,14 @@
 <!-- Card 2 -->
 <div class="group brutalist-border bg-[#261834]/50 p-6 flex flex-col gap-4 hover:border-primary transition-all duration-200 hover:-translate-y-1 relative overflow-hidden">
 <div class="absolute top-0 right-0 p-2 opacity-50">
-<span class="material-symbols-outlined text-border-purple text-[64px] group-hover:text-primary/20 transition-colors">local_shipping</span>
+<span class="material-symbols-outlined text-border-purple text-[64px] group-hover:text-primary/20 transition-colors flex-shrink-0">local_shipping</span>
 </div>
 <div class="flex items-center gap-3 text-primary">
-<span class="material-symbols-outlined text-[24px]">conveyor_belt</span>
-<span class="text-xs font-mono border border-primary/30 px-1 py-0.5 rounded text-primary">LOG_X</span>
+<span class="material-symbols-outlined text-[24px] flex-shrink-0">conveyor_belt</span>
+<span class="text-xs font-mono border border-primary/30 px-1 py-0.5 rounded text-primary flex-shrink-0">LOG_X</span>
 </div>
-<div class="z-10">
-                            <h3 class="text-white text-lg font-bold leading-tight uppercase mb-2 group-hover:text-primary transition-colors">LOGÍSTICA_IA_RETAIL</h3>
+<div class="z-10 min-w-0">
+                            <h3 class="text-white text-base md:text-lg font-bold leading-tight uppercase mb-2 group-hover:text-primary transition-colors break-words whitespace-normal">LOGÍSTICA_IA_RETAIL</h3>
                             <p class="text-text-dim text-sm font-mono leading-relaxed">// SECTOR: RETAIL<br/>// IMPACTO: -20% GASTOS GENERALES<br/>// FECHA: 2023-10-15</p>
 </div>
 <div class="mt-auto pt-4 flex justify-between items-center border-t border-border-purple group-hover:border-primary/50">
@@ -214,14 +218,14 @@
 <!-- Card 3 -->
 <div class="group brutalist-border bg-[#261834]/50 p-6 flex flex-col gap-4 hover:border-primary transition-all duration-200 hover:-translate-y-1 relative overflow-hidden">
 <div class="absolute top-0 right-0 p-2 opacity-50">
-<span class="material-symbols-outlined text-border-purple text-[64px] group-hover:text-primary/20 transition-colors">database</span>
+<span class="material-symbols-outlined text-border-purple text-[64px] group-hover:text-primary/20 transition-colors flex-shrink-0">database</span>
 </div>
 <div class="flex items-center gap-3 text-primary">
-<span class="material-symbols-outlined text-[24px]">dns</span>
-                            <span class="text-xs font-mono border border-primary/30 px-1 py-0.5 rounded text-primary">LEGADO</span>
+<span class="material-symbols-outlined text-[24px] flex-shrink-0">dns</span>
+                            <span class="text-xs font-mono border border-primary/30 px-1 py-0.5 rounded text-primary flex-shrink-0">LEGADO</span>
 </div>
-<div class="z-10">
-                            <h3 class="text-white text-lg font-bold leading-tight uppercase mb-2 group-hover:text-primary transition-colors">MUERTE_DEL_ERP_LEGADO.doc</h3>
+<div class="z-10 min-w-0">
+                            <h3 class="text-white text-base md:text-lg font-bold leading-tight uppercase mb-2 group-hover:text-primary transition-colors break-words whitespace-normal">MUERTE_DEL_ERP_LEGADO.doc</h3>
                             <p class="text-text-dim text-sm font-mono leading-relaxed">// SECTOR: EMPRESARIAL<br/>// ANÁLISIS: CAMBIO ESTRATÉGICO<br/>// FECHA: 2023-09-20</p>
 </div>
 <div class="mt-auto pt-4 flex justify-between items-center border-t border-border-purple group-hover:border-primary/50">
@@ -246,12 +250,12 @@
 <div class="flex flex-col gap-3">
 <!-- List Item 1 -->
 <div class="flex flex-col md:flex-row gap-4 bg-[#1a1023] border border-[#362249] p-4 items-start md:items-center justify-between hover:border-primary group transition-all">
-<div class="flex items-start gap-5 w-full md:w-auto">
+<div class="flex items-start gap-5 w-full md:w-auto min-w-0">
 <div class="text-white flex items-center justify-center rounded bg-[#362249] shrink-0 size-12 group-hover:bg-primary group-hover:text-black transition-colors">
 <span class="material-symbols-outlined">calculate</span>
 </div>
-<div class="flex flex-col">
-                                <p class="text-white text-base font-bold uppercase leading-normal group-hover:text-primary transition-colors">FÓRMULAS_DE_CÁLCULO_DE_ROI.pdf</p>
+<div class="flex flex-col min-w-0">
+                                <p class="text-white text-base md:text-base font-bold uppercase leading-normal group-hover:text-primary transition-colors break-words whitespace-normal">FÓRMULAS_DE_CÁLCULO_DE_ROI.pdf</p>
                                 <p class="text-text-dim text-sm font-mono leading-normal mt-1">Modelos matemáticos para predecir las tasas de éxito de la automatización.</p>
 <div class="flex gap-3 mt-2 md:hidden">
                                     <span class="text-xs text-primary font-mono bg-primary/10 px-1">[DOCUMENTO_TÉCNICO]</span>
@@ -272,12 +276,12 @@
 </div>
 <!-- List Item 2 -->
 <div class="flex flex-col md:flex-row gap-4 bg-[#1a1023] border border-[#362249] p-4 items-start md:items-center justify-between hover:border-primary group transition-all">
-<div class="flex items-start gap-5 w-full md:w-auto">
+<div class="flex items-start gap-5 w-full md:w-auto min-w-0">
 <div class="text-white flex items-center justify-center rounded bg-[#362249] shrink-0 size-12 group-hover:bg-primary group-hover:text-black transition-colors">
 <span class="material-symbols-outlined">description</span>
 </div>
-<div class="flex flex-col">
-                                <p class="text-white text-base font-bold uppercase leading-normal group-hover:text-primary transition-colors">MATRIZ_DE_RIESGOS_DE_AUTOMATIZACIÓN.xlsx</p>
+<div class="flex flex-col min-w-0">
+                                <p class="text-white text-base md:text-base font-bold uppercase leading-normal group-hover:text-primary transition-colors break-words whitespace-normal">MATRIZ_DE_RIESGOS_DE_AUTOMATIZACIÓN.xlsx</p>
                                 <p class="text-text-dim text-sm font-mono leading-normal mt-1">Hoja de cálculo completa para evaluar los riesgos operativos en la implementación de IA.</p>
 <div class="flex gap-3 mt-2 md:hidden">
                                     <span class="text-xs text-primary font-mono bg-primary/10 px-1">[PLANTILLA]</span>
@@ -298,12 +302,12 @@
 </div>
 <!-- List Item 3 -->
 <div class="flex flex-col md:flex-row gap-4 bg-[#1a1023] border border-[#362249] p-4 items-start md:items-center justify-between hover:border-primary group transition-all">
-<div class="flex items-start gap-5 w-full md:w-auto">
+<div class="flex items-start gap-5 w-full md:w-auto min-w-0">
 <div class="text-white flex items-center justify-center rounded bg-[#362249] shrink-0 size-12 group-hover:bg-primary group-hover:text-black transition-colors">
 <span class="material-symbols-outlined">videocam</span>
 </div>
-<div class="flex flex-col">
-                                <p class="text-white text-base font-bold uppercase leading-normal group-hover:text-primary transition-colors">GRABACIÓN_WEBINAR_Q4.mp4</p>
+<div class="flex flex-col min-w-0">
+                                <p class="text-white text-base md:text-base font-bold uppercase leading-normal group-hover:text-primary transition-colors break-words whitespace-normal">GRABACIÓN_WEBINAR_Q4.mp4</p>
                                 <p class="text-text-dim text-sm font-mono leading-normal mt-1">Análisis completo de las tendencias de la industria en el Q4 y pronóstico estratégico.</p>
 <div class="flex gap-3 mt-2 md:hidden">
                                     <span class="text-xs text-primary font-mono bg-primary/10 px-1">[REGISTRO_DE_VIDEO]</span>
