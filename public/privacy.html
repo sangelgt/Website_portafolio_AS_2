@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Política de Privacidad - AI Systems</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Tailwind Config -->
+  <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7f13ec",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#050505", /* Deep black as requested */
+                        "surface-dark": "#111111",
+                        "border-dark": "#333333",
+                        "text-dim": "#888888",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "monospace"],
+                        "mono": ["monospace"] // Fallback for code-like text
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(to right, #333 1px, transparent 1px), linear-gradient(to bottom, #333 1px, transparent 1px)",
+                    }
+                },
+            },
+        }
+    </script>
+  <style>
+        /* Custom Utilities for Brutalist Feel */
+        .glitch-hover:hover {
+            animation: glitch-anim 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+            background-color: #fff;
+            color: #7f13ec;
+        }
+        @keyframes glitch-anim {
+            0% { transform: translate(0) }
+            20% { transform: translate(-2px, 2px) }
+            40% { transform: translate(-2px, -2px) }
+            60% { transform: translate(2px, 2px) }
+            80% { transform: translate(2px, -2px) }
+            100% { transform: translate(0) }
+        }
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(51, 51, 51, 0.3) 1px, transparent 1px), linear-gradient(to bottom, rgba(51, 51, 51, 0.3) 1px, transparent 1px);
+        }
+        .scanline {
+            background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2));
+            background-size: 100% 4px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white selection:bg-primary selection:text-white overflow-x-hidden">
+
+<header class="sticky top-0 z-50 w-full border-b border-border-dark bg-background-dark/90 backdrop-blur-sm">
+    <div class="layout-container flex h-full grow flex-col">
+        <div class="flex flex-1 justify-center">
+            <div class="layout-content-container flex flex-col w-full max-w-[1280px] flex-1 px-6 lg:px-8">
+                <div class="flex items-center justify-between whitespace-nowrap py-4">
+                    <div class="flex items-center gap-4 text-white">
+                        <div class="size-8 flex items-center justify-center border border-primary text-primary">
+                            <span class="material-symbols-outlined">terminal</span>
+                        </div>
+                        <h2 class="text-white text-xl font-bold leading-tight tracking-tight font-mono">
+                            <span class="text-primary">&gt;</span> ConstruyeSistemas
+                        </h2>
+                    </div>
+                    <!-- Desktop Nav -->
+                    <div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+                        <nav class="flex items-center gap-6">
+                            <a class="text-text-dim hover:text-primary text-sm font-medium tracking-wide transition-colors" href="./index.html">Inicio</a>
+                            <a class="text-text-dim hover:text-primary text-sm font-medium tracking-wide transition-colors" href="./methodology.html">Metodología</a>
+                            <a class="text-text-dim hover:text-primary text-sm font-medium tracking-wide transition-colors" href="./case-study.html">Casos de Éxito</a>
+                            <a class="text-text-dim hover:text-primary text-sm font-medium tracking-wide transition-colors" href="./recursos.html">Recursos</a>
+                            <a class="text-text-dim hover:text-primary text-sm font-medium tracking-wide transition-colors" href="./diagnostics.html">Diagnóstico</a>
+                        </nav>
+                        <a href="./diagnostics.html" class="group flex cursor-pointer items-center justify-center overflow-hidden border border-primary bg-primary/10 hover:bg-primary text-primary hover:text-white px-6 py-2 transition-all duration-150 rounded-sm">
+                            <span class="text-sm font-bold tracking-widest uppercase flex items-center gap-2">
+                                <span class="material-symbols-outlined text-[16px]">power_settings_new</span>
+                                Calcula tu ROI
+                            </span>
+                        </a>
+                    </div>
+                    <!-- Mobile Menu Icon -->
+                    <button id="mobile-menu-button" class="md:hidden text-white z-50">
+                        <span id="mobile-menu-icon" class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-0 left-0 w-full h-screen bg-background-dark/95 backdrop-blur-sm z-40">
+            <div class="layout-content-container flex flex-col items-center justify-center h-full max-w-[1280px] w-full px-6 lg:px-8 mx-auto">
+                <nav class="flex flex-col items-center gap-8 mb-8">
+                    <a class="text-text-dim hover:text-primary text-2xl font-bold tracking-wide transition-colors" href="./index.html">Inicio</a>
+                    <a class="text-text-dim hover:text-primary text-2xl font-bold tracking-wide transition-colors" href="./methodology.html">Metodología</a>
+                    <a class="text-text-dim hover:text-primary text-2xl font-bold tracking-wide transition-colors" href="./case-study.html">Casos de Éxito</a>
+                    <a class="text-text-dim hover:text-primary text-2xl font-bold tracking-wide transition-colors" href="./recursos.html">Recursos</a>
+                    <a class="text-text-dim hover:text-primary text-2xl font-bold tracking-wide transition-colors" href="./diagnostics.html">Diagnóstico</a>
+                </nav>
+                <a href="./diagnostics.html" class="group flex cursor-pointer items-center justify-center overflow-hidden border border-primary bg-primary/10 hover:bg-primary text-primary hover:text-white px-8 py-3 transition-all duration-150 rounded-sm">
+                    <span class="text-lg font-bold tracking-widest uppercase flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[20px]">power_settings_new</span>
+                        Calcula tu ROI
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="./js/header.js" defer></script>
+</header>
+
+<!-- Main Content -->
+<main class="flex-1 flex flex-col items-center w-full">
+    <section class="w-full flex justify-center py-16">
+        <div class="layout-content-container flex flex-col max-w-[1280px] w-full px-6 lg:px-8">
+            <h1 class="text-white text-4xl md:text-6xl font-black uppercase tracking-tighter mb-6">Política de Privacidad</h1>
+            <div class="text-text-dim space-y-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="border-t border-border-dark bg-background-dark py-12">
+    <div class="layout-container flex flex-col items-center">
+        <div class="layout-content-container flex flex-col max-w-[1280px] w-full px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 text-white mb-4">
+                        <div class="size-6 flex items-center justify-center border border-primary text-primary">
+                            <span class="material-symbols-outlined text-sm">terminal</span>
+                        </div>
+                        <h2 class="text-lg font-bold font-mono">ConstruyeSistemas</h2>
+                    </div>
+                    <p class="text-text-dim text-sm max-w-xs">
+                        Consultoría estratégica de automatización e inteligencia artificial enfocada en ROI tangible y arquitectura robusta.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h4 class="text-white text-sm font-bold uppercase tracking-widest border-b border-border-dark pb-2 w-fit">/ Directorio</h4>
+                    <a class="text-text-dim hover:text-primary text-sm font-mono transition-colors" href="./index.html">/ Inicio</a>
+                    <a class="text-text-dim hover:text-primary text-sm font-mono transition-colors" href="./methodology.html">/ Metodología</a>
+                    <a class="text-text-dim hover:text-primary text-sm font-mono transition-colors" href="./case-study.html">/ Casos de Éxito</a>
+                    <a class="text-text-dim hover:text-primary text-sm font-mono transition-colors" href="./recursos.html">/ Recursos</a>
+                    <a class="text-text-dim hover:text-primary text-sm font-mono transition-colors" href="./diagnostics.html">/ Diagnóstico</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h4 class="text-white text-sm font-bold uppercase tracking-widest border-b border-border-dark pb-2 w-fit">/ Legal</h4>
+                    <a class="text-text-dim hover:text-primary text-sm font-mono transition-colors" href="./privacy.html">/ Política de Privacidad</a>
+                    <a class="text-text-dim hover:text-primary text-sm font-mono transition-colors" href="./terms.html">/ Términos de Uso</a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-border-dark gap-4">
+                <p class="text-text-dim text-xs font-mono">
+                    v.2024.1.0 build_stable // ConstruyeSistemas © 2024
+                </p>
+                <div class="flex items-center gap-4">
+                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                    <span class="text-xs font-mono text-green-500 uppercase">Todos los Sistemas en Operación</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
