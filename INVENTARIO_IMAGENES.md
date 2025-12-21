@@ -1,5 +1,7 @@
 # Inventario de Imágenes
 
+ fix/responsive-layout-recursos-11270512732813222217
+
 Este documento audita y mapea todos los activos de imagen utilizados en el proyecto, su ubicación y su propósito técnico, organizado por página.
 
 **Nota:** Las dimensiones de las imágenes se registran cuando están disponibles en el código. Para imágenes externas o de CDN, es posible que las dimensiones no se puedan determinar estáticamente y se marcarán como "N/A".
@@ -14,10 +16,14 @@ Este documento audita y mapea todos los activos de imagen utilizados en el proye
 ## Página: Metodología
 
 | Componente/Contenedor | Ruta de Subida/Reemplazo | Metadato Descriptivo (Propósito) | Especificaciones (Dimensión/Tipo) |
+ fix/responsive-layout-recursos-11270512732813222217
+
 | :--- | :--- | :--- | :--- |
 | `app/templates/methodology.html` | https://lh3.googleusercontent.com/aida-public/AB6AXuA6n5KMDLj3fh9nO9hXsoKKOEQbDt9hzCXByvtrohNHDIWLijdImudnTI1MNF4w8uSd6sdj6saIpgzkQj1-bmaWHzYx_ivubM-IdLSCb2MGdkD4siuupf4eiN4tMLwnkv9P600xKmlG0C6ewAGZNuSoJO5tkAlqJt6NKeIhpiUM1-x8bXeMS_c3FMCoHTwYxc3O2pBF9pWq2uFevbNmoAW8O3ObbH_3WeWUwCttlpRnH5DybysfeBGiPBl-aVPPm6bMr2UW2Ye-q8zx | Data visualization graph on a dark monitor screen showing abstract network analysis | N/A, CDN, No lazy-loading |
 | `app/templates/methodology.html` | https://lh3.googleusercontent.com/aida-public/AB6AXuCzYVULmhOUUi2cHCWmNyQahXFxbsJvX9RNHb2u2Yo0csZa7Ezs_pUwVO_X5tqw_kB5su_yDoGkheychBPsemGI4kuR_27FF4EeoAG54-S6lFMcSU5PFP8bEZbe2aHm6TOu3iRqo2q9GLIWjAIzHaL1LR0JmQUaGvj7HzAFApJs4LiSs0Ne1i3cjtoE0eS25lLQzrLnDanH-4iEW5UVcEarMyQjY3VbrQhtCbDE0LR7QSpE9UrIx_dC2d7tRoevMW8Ybnk_X8WRQaK4 | Abstract artificial intelligence neural network nodes connecting in dark space | N/A, CDN, No lazy-loading |
 | `app/templates/methodology.html` | https://lh3.googleusercontent.com/aida-public/AB6AXuBSIPh00Fg4n3I7O875BSb-WntqcauZ3EkbQYdZkI951PRyj1B2KUhsAXsQHuV_gaRv_GTh6H5_rjeqdkwj-gM47TISydokcYt8pQfznBqIQGUChLGIkI13YMR7vl5zdtZXKyOI81D37Z4cRyAW0AebEspua9HevN4-TEIGUQ6PYQbCx8jwIeQPPOD59DkQU5-zQV31r27uyY8nhm0Jk2avBIuI7oQ1wnhIm_5sv5n5EOy0rBg-O0Laj8vadbECIEqLXAkqwnfFEzc9 | Close up of computer servers with blinking lights in a data center | N/A, CDN, No lazy-loading |
+ fix/responsive-layout-recursos-11270512732813222217
+
 
 ## Página: Index
 
@@ -37,4 +43,6 @@ Este documento audita y mapea todos los activos de imagen utilizados en el proye
 
 | Componente/Contenedor | Ruta de Subida/Reemplazo | Metadato Descriptivo (Propósito) | Especificaciones (Dimensión/Tipo) |
 | :--- | :--- | :--- | :--- |
+ fix/responsive-layout-recursos-11270512732813222217
+
 | `app/templates/case-study.html` | https://lh3.googleusercontent.com/aida-public/AB6AXuDWTv5TbwO5KXyogdZWsht0lP_Pa13p2wwEOO4HARv4B--JlROq6nQV41V-ZuR2frinndZ6auY-1sXO1J3vXwEhHB3gP3PGAWrwwFenRRsDYhw4e5ahP168bRXhxbVAK1HyfddUjCibcrpr0qi9qygoenWklxRAjK1xw2WcJ9F4kNpqfQvNZycMdRDscGs5ffw7WFXvPD8VNWgPyLJtGTOnRAetQsf8QLWYAEGYgvl1_OqtHEioLuTypSdx0zSmrCuvp9Vr_YV1fuFI | Abstract visualization of digital data streams and cybernetic structures in dark purple | N/A, CDN, No lazy-loading |
