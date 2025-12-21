@@ -1,13 +1,111 @@
+
 {
   "label": "Hero Banner",
   "css_assets": [],
-  "external_js": [],
-  "global": false,
-  "help_text": "",
-  "host_template_types": ["PAGE"],
   "js_assets": [],
-  "other_assets": [],
-  "smart_type": "NOT_SMART",
-  "tags": [],
-  "is_available_for_new_content": true
+  "fields": [
+    {
+      "name": "background_image",
+      "label": "Background Image",
+      "type": "image",
+      "default": {
+        "src": "/MEDIA/HERO_BG.webp"
+      }
+    },
+    {
+      "name": "tag_text",
+      "label": "Tag Text",
+      "type": "text",
+      "default": "SISTEMA OPERACIONAL // v.4.0"
+    },
+    {
+      "name": "headline",
+      "label": "Headline",
+      "type": "richtext",
+      "default": "Deje de Comprar Herramientas. Empiece a Construir Sistemas de Rentabilidad."
+    },
+    {
+      "name": "subheadline",
+      "label": "Subheadline",
+      "type": "richtext",
+      "default": "Transformamos la adopción de IA desordenada en estrategias de retorno medible. Automatice su operación para escalar sin aumentar sus costos."
+    },
+    {
+      "name": "cta_primary",
+      "label": "Primary CTA",
+      "type": "group",
+      "children": [
+        {
+          "name": "text",
+          "label": "Button Text",
+          "type": "text",
+          "default": "Obtener mi Diagnóstico"
+        },
+        {
+          "name": "url",
+          "label": "Button URL",
+          "type": "url",
+          "default": {
+            "href": "./diagnostics.html"
+          }
+        }
+      ]
+    },
+    {
+      "name": "cta_secondary",
+      "label": "Secondary CTA",
+      "type": "group",
+      "children": [
+        {
+          "name": "text",
+          "label": "Button Text",
+          "type": "text",
+          "default": "Suscribirse al Boletín Estratégico"
+        }
+      ]
+    },
+    {
+      "name": "stat_card",
+      "label": "Stat Card",
+      "type": "group",
+      "children": [
+        {
+          "name": "icon",
+          "label": "Icon",
+          "type": "text",
+          "default": "warning"
+        },
+        {
+          "name": "title",
+          "label": "Title",
+          "type": "text",
+          "default": "[ SYSTEM FAILURE ALERT ]"
+        },
+        {
+          "name": "value",
+          "label": "Value",
+          "type": "text",
+          "default": "95%"
+        },
+        {
+          "name": "label",
+          "label": "Label",
+          "type": "text",
+          "default": "ROI FAILURE"
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "type": "text",
+          "default": "La mayoría de las implementaciones de IA fallan por falta de estrategia de rentabilidad (MIT Data)."
+        },
+        {
+          "name": "bar_width",
+          "label": "Bar Width",
+          "type": "number",
+          "default": 95
+        }
+      ]
+    }
+  ]
 }

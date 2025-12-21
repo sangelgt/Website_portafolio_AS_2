@@ -23,7 +23,7 @@ La integridad del proyecto se mantiene a través de un conjunto de documentos vi
 ### 2.1. Mapa del Sitio Estratégico
 La estructura del sitio está diseñada como un embudo de conversión para guiar al usuario desde la validación del problema hasta la solicitud de un diagnóstico personalizado. Las páginas clave son:
 1.  **Inicio (Home)**: Captura la necesidad y valida la frustración del cliente.
-2.  **Casos de Éxito**: Construye confianza a través de análisis "Post-Mortem" transparentes.
+2.  **Casos de Éxito (Página de Detalle)**: Construye confianza a través de análisis "Post-Mortem" transparentes (`case-study.html`). Cada caso detalla el desafío, la solución implementada y el ROI cuantificable.
 3.  **Metodología**: Explica el sistema "Orden antes que Herramienta".
 4.  **Recursos**: Proporciona activos de conocimiento para evitar la "amnesia organizacional".
 5.  **Diagnóstico Estratégico**: Convierte al usuario ofreciendo un cálculo de ROI personalizado.
@@ -37,6 +37,7 @@ Para guiar al usuario de forma clara, se utiliza una jerarquía visual estricta:
 
 ### 3.1. Estética y Jerarquía Visual
 La interfaz sigue una estética "brutalist tech" limpia y funcional, con un tema oscuro (`#050505` de fondo) para maximizar el impacto del contenido.
+-   **Diseño Inmersivo con Fondos de Sangrado Completo (Full-Bleed)**: En páginas clave como los estudios de caso, se utilizan imágenes de fondo que ocupan toda la ventana gráfica (`full-bleed`). Estas imágenes se colocan en un contenedor `div` separado con posicionamiento absoluto (`absolute inset-0`) para asegurar que no interfieran con el flujo del contenido principal, que permanece centrado y legible. Se aplica una superposición oscura (`bg-black/80`) para garantizar el contraste del texto.
 -   **Tipografía**: Uso exclusivo de fuentes sans-serif (ej. 'Space Grotesk') para legibilidad.
 -   **Jerarquía de Encabezados**:
     -   `<h1>`: Mensaje central de alto impacto. Solo uno por página.

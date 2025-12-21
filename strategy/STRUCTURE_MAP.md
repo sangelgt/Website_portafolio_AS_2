@@ -16,6 +16,7 @@ Tabla de Contenidos
 1.1 Casos de Éxito: Análisis Post-Mortem
 • Propósito: Aplicar transparencia radical mediante el análisis de obstáculos y errores superados, no solo éxitos idealizados, para construir confianza cognitiva.
 • Métrica de Éxito: Tiempo de permanencia en el detalle de resultados cuantificables (ej. ahorro de 2 horas diarias).
+• **Implementación Específica**: La página `case-study.html` sirve como la plantilla para cada análisis Post-Mortem individual. Utiliza un diseño inmersivo con una imagen de fondo de sangrado completo para enfocar la atención del usuario en los datos críticos del caso.
 --------------------------------------------------------------------------------
 2. Sistemas de Rentabilidad y Gobernanza
 2.0 Metodología: "Orden antes que Herramienta"

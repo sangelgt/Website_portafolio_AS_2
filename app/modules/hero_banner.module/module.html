@@ -1,5 +1,58 @@
-<div class="hero-banner">
-  <h1 class="hero-banner__title">Transformación Digital a Escala Humana</h1>
-  <p class="hero-banner__subtitle">De un MVP a una plataforma robusta, te acompaño en cada etapa.</p>
-  <a href="#" class="hero-banner__cta">Inicia tu Diagnóstico</a>
-</div>
+
+<!-- Hero Section -->
+<section class="w-full flex justify-center py-12 md:py-24 border-b border-border-dark relative overflow-hidden" style="background-image: url('{{ module.background_image.src }}'); background-size: cover; background-position: center; position: relative; z-index: 1;">
+    <!-- Abstract Deco Elements -->
+    <div class="absolute top-10 right-10 w-24 h-24 border-r-2 border-t-2 border-primary/30 hidden lg:block" style="z-index: 2;"></div>
+    <div class="absolute bottom-10 left-10 w-24 h-24 border-l-2 border-b-2 border-primary/30 hidden lg:block" style="z-index: 2;"></div>
+    <div class="absolute inset-0 bg-black/70" style="z-index: 2;"></div>
+    <div class="layout-content-container flex flex-col max-w-[1280px] w-full px-6 lg:px-8 relative" style="z-index: 3;">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+            <!-- Text Content -->
+            <div class="lg:col-span-8 flex flex-col gap-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 border border-primary/50 bg-primary/5 w-fit rounded-sm mb-4">
+                    <span class="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
+                    <span class="text-xs font-mono text-primary tracking-widest uppercase">{{ module.tag_text }}</span>
+                </div>
+                <h1 class="text-white text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tighter uppercase break-words">
+                    {{ module.headline }}
+                </h1>
+                <h2 class="text-text-dim text-lg md:text-xl font-mono border-l-4 border-primary pl-4 mt-4 max-w-2xl">
+                    {{ module.subheadline }}
+                </h2>
+                <div class="flex flex-wrap gap-4 mt-8">
+                    <a href="{{ module.cta_primary.url.href }}" onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Hero Banner', 'value': 'Calculate ROI'});" class="glitch-hover flex min-w-[200px] cursor-pointer items-center justify-center border-2 border-primary bg-primary text-white text-base font-bold uppercase tracking-widest h-14 px-8 rounded-sm transition-all shadow-[4px_4px_0px_0px_#333]">
+                        {{ module.cta_primary.text }}
+                    </a>
+                    <button class="flex min-w-[200px] cursor-pointer items-center justify-center border border-white/20 hover:border-white bg-transparent text-white text-base font-bold uppercase tracking-widest h-14 px-8 rounded-sm transition-all hover:bg-white/5">
+                        {{ module.cta_secondary.text }}
+                    </button>
+                </div>
+            </div>
+            <!-- Visual/Stats Content -->
+            <div class="lg:col-span-4 flex flex-col justify-end h-full">
+                <div class="border border-border-dark bg-surface-dark p-6 rounded-sm relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-2 opacity-50">
+                        <span class="material-symbols-outlined text-primary text-4xl">{{ module.stat_card.icon }}</span>
+                    </div>
+                    <div class="flex flex-col gap-4 relative z-10">
+                        <p class="text-primary text-xs font-mono uppercase tracking-widest border-b border-border-dark pb-2">
+                            {{ module.stat_card.title }}
+                        </p>
+                        <div>
+                            <p class="text-white text-5xl font-black leading-none">{{ module.stat_card.value }}</p>
+                            <p class="text-white text-lg font-bold mt-1">{{ module.stat_card.label }}</p>
+                        </div>
+                        <p class="text-text-dim text-sm font-mono leading-relaxed">
+                            {{ module.stat_card.description }}
+                        </p>
+                        <div class="w-full bg-black h-1 mt-2 overflow-hidden">
+                            <div class="h-full bg-primary" style="width: {{ module.stat_card.bar_width }}%;"></div>
+                        </div>
+                    </div>
+                    <!-- Decorative Grid inside card -->
+                    <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 pointer-events-none"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
