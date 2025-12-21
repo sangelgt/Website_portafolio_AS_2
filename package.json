@@ -9,6 +9,6 @@
     "http-server": "*"
   },
   "scripts": {
-    "start": "http-server public"
+    "start": "http-server public -p 3000"
   }
 }
