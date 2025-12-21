@@ -126,23 +126,24 @@
 <main class="flex-grow">
 <div class="max-w-[1200px] mx-auto w-full px-6 lg:px-12 py-10">
 <!-- Page Header -->
-<div class="flex flex-col gap-6 mb-12 relative">
-<!-- Decorative Top Border -->
-<div class="absolute -top-6 left-0 w-24 h-1 bg-primary"></div>
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
-<div class="flex flex-col gap-2">
-<h1 class="text-4xl md:text-6xl font-black tracking-[-0.05em] uppercase leading-tight">
-                            RECURSOS:<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-text-dim">INTELIGENCIA ESTRATÉGICA</span>
-</h1>
-<p class="text-primary font-mono text-sm md:text-base">
-                            // ACCEDIENDO A ARCHIVOS DE AUTOMATIZACIÓN DE ROI... CARGA_COMPLETA_100%
-                        </p>
-</div>
-<button class="flex items-center gap-2 border border-border-purple bg-[#261834] hover:bg-border-purple text-white px-4 py-2 text-sm font-bold uppercase tracking-wide transition-all h-fit group">
-<span class="material-symbols-outlined text-[18px] group-hover:text-primary">filter_list</span>
-                        FILTRAR_ÍNDICE
-                    </button>
-</div>
+<div class="flex flex-col gap-6 mb-12 relative bg-cover bg-center" style="background-image: url('/MEDIA/RECURSOS_BG.webp'); position: relative; z-index: 1;">
+    <div class="absolute inset-0 bg-black/50" style="z-index: 2;"></div>
+    <!-- Decorative Top Border -->
+    <div class="absolute -top-6 left-0 w-24 h-1 bg-primary" style="z-index: 3;"></div>
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 relative p-6" style="z-index: 3;">
+        <div class="flex flex-col gap-2">
+            <h1 class="text-4xl md:text-6xl font-black tracking-[-0.05em] uppercase leading-tight">
+                RECURSOS:<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-text-dim">INTELIGENCIA ESTRATÉGICA</span>
+            </h1>
+            <p class="text-primary font-mono text-sm md:text-base">
+                // ACCEDIENDO A ARCHIVOS DE AUTOMATIZACIÓN DE ROI... CARGA_COMPLETA_100%
+            </p>
+        </div>
+        <button class="flex items-center gap-2 border border-border-purple bg-[#261834] hover:bg-border-purple text-white px-4 py-2 text-sm font-bold uppercase tracking-wide transition-all h-fit group">
+            <span class="material-symbols-outlined text-[18px] group-hover:text-primary">filter_list</span>
+            FILTRAR_ÍNDICE
+        </button>
+    </div>
 </div>
 <!-- Chips / Categories -->
 <div class="border-y border-border-purple py-4 mb-12 overflow-x-auto">

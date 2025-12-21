@@ -44,5 +44,14 @@ Este documento audita y mapea todos los activos de imagen utilizados en el proye
 | Componente/Contenedor | Ruta de Subida/Reemplazo | Metadato Descriptivo (Propósito) | Especificaciones (Dimensión/Tipo) |
 | :--- | :--- | :--- | :--- |
  fix/responsive-layout-recursos-11270512732813222217
-
 | `app/templates/case-study.html` | https://lh3.googleusercontent.com/aida-public/AB6AXuDWTv5TbwO5KXyogdZWsht0lP_Pa13p2wwEOO4HARv4B--JlROq6nQV41V-ZuR2frinndZ6auY-1sXO1J3vXwEhHB3gP3PGAWrwwFenRRsDYhw4e5ahP168bRXhxbVAK1HyfddUjCibcrpr0qi9qygoenWklxRAjK1xw2WcJ9F4kNpqfQvNZycMdRDscGs5ffw7WFXvPD8VNWgPyLJtGTOnRAetQsf8QLWYAEGYgvl1_OqtHEioLuTypSdx0zSmrCuvp9Vr_YV1fuFI | Abstract visualization of digital data streams and cybernetic structures in dark purple | N/A, CDN, No lazy-loading |
+
+## Páginas
+
+| Página | Ruta de la Imagen | Metadato Descriptivo (Propósito) |
+| :--- | :--- | :--- |
+| `case-study.html` | `/MEDIA/ANALISIS_PAGE.webp` | Imagen de fondo para la página de estudio de caso. |
+| `index.html` | `/MEDIA/HERO_BG.webp` | Imagen de fondo para el banner principal. |
+| `methodology.html` | `/MEDIA/METODOLOGIA_BG.webp` | Imagen de fondo para la página de metodología. |
+| `recursos.html` | `/MEDIA/RECURSOS_BG.webp` | Imagen de fondo para la página de recursos. |
+
