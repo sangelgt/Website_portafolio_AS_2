@@ -6,6 +6,7 @@ Este documento realiza un escaneo profundo de la arquitectura del repositorio, d
 
 | Módulo | Ubicación | Utilidad y Funciones | Dependencias | Animación Implementada |
 | :--- | :--- | :--- | :--- | :--- |
+ fix/responsive-layout-recursos-11270512732813222217
 | Responsive Header | `app/templates/partials/header.html` | Encabezado principal del sitio, con menú de escritorio y menú de hamburguesa para móviles. | `main.js` para la funcionalidad del menú móvil. | Transiciones de color en hover (`transition-colors`) |
 | Footer | `app/templates/partials/footer.html` | Pie de página principal del sitio, con enlaces y copyright. | Google Fonts (iconos) | `animate-pulse` en el indicador de estado. |
 
@@ -13,6 +14,7 @@ Este documento realiza un escaneo profundo de la arquitectura del repositorio, d
 
 | Módulo | Ubicación | Utilidad y Funciones | Dependencias | Animación Implementada |
 | :--- | :--- | :--- | :--- | :--- |
+ fix/responsive-layout-recursos-11270512732813222217
 | Hero Banner | `app/modules/hero_banner.module` | Banner principal de la página de inicio, con imagen de fondo, titular y CTA. | Globales | `animate-pulse` en el indicador de estado. `glitch-hover` en el botón de diagnóstico. |
 | Stats & Services | `app/templates/index.html` | Sección de tarjetas con estadísticas y servicios. | Globales | `animate-spin` en el icono de procesamiento. Transiciones de color en hover. |
 | Clients / Grid | `app/templates/index.html` | Rejilla de logotipos de clientes. | Globales | Transiciones de opacidad y color en hover. |
