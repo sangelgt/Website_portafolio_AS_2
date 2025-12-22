@@ -9,7 +9,7 @@
       "label": "Background Image",
       "type": "image",
       "default": {
-        "src": "/MEDIA/HERO_BG.webp"
+        "src": "/MEDIA/HOME_PAGE.webp"
       }
     },
     {
